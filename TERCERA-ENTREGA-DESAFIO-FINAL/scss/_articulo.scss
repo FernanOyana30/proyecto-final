@@ -1,0 +1,124 @@
+/*ARTICULO*/   
+#notaPartido{
+    grid-area: notaPartido;
+    .divNota{
+        display: grid;        
+        grid-template-rows: 50px 150px 80px 450px 60px 1700px 410px;
+        div{
+            .copeteNota{
+                @include copete;
+                width: 284px;
+            }
+        }
+        div{
+            .titular{
+                @include titular;
+            }
+        }
+        #cajaSubtitulo{
+            @include subtitulo;
+        }        
+        .fotoArticulo{
+            width: 900px;
+        }
+        .cajaPie{
+            @include pieFoto;
+        }
+        .notaPeriodistica{
+            @include nota; 
+        }
+        .videoResumen{
+            .resumenPartido{
+                @include videoResumen;
+            }
+        }
+    }
+}
+#cajaComentarios{
+    @include cajaComentarios;
+}
+
+/**/
+#notaPartido{
+    grid-area: notaPartido;
+    #divNota2{        
+        display: grid;        
+        grid-template-rows: 50px 150px 80px 450px 60px 796px 500px;
+        div{
+            .copeteNota{  
+                @include copete;            
+                width: 284px;
+            }
+        }
+        div{
+            .titular{
+                @include titular;
+            }
+        }        
+        #cajaSubtitulo{
+            @include subtitulo;
+        }
+        
+        .fotoArticulo{
+            width: 900px;
+        }
+        .cajaPie{
+            @include pieFoto;
+        }
+        .notaPeriodistica{
+            @include nota; 
+        }
+        .VideoResumen{
+            .resumenPartido{
+                @include videoResumen;
+            }
+        }
+    }
+    
+    #cajaComentarios{
+        @include cajaComentarios;
+    }
+}
+
+/**/
+#notaPartido{
+    grid-area: notaPartido;
+    #divNota3{
+        display: grid;        
+        grid-template-rows: 50px 150px 80px 450px 60px 1130px 500px;
+        div{
+            .copeteNota2{
+                @include copete;
+                width: 340px;
+            }
+        }
+        div{
+            .titular{
+                @include titular;
+            }
+        }
+        #cajaSubtitulo{
+            @include subtitulo;               
+        }
+        
+        .fotoArticulo{
+            width: 900px;
+        }
+        .cajaPie{
+            @include pieFoto;
+        }
+        .notaPeriodistica{
+            @include nota; 
+            .title-franklin{
+                font-family: $font_franklin;
+                font-weight: bold;
+            }
+        }
+        .VideoResumen{
+            @include videoResumen;  
+        }
+    }    
+    #cajaComentarios{
+        @include cajaComentarios;
+    }
+}
