@@ -1,0 +1,1081 @@
+@charset "UTF-8";
+/*VARIABLES*/
+/*MAPS*/
+/*MIXINS*/
+/*Index*/
+/*Artículos*/
+/*IMPORTS*/
+/*
+***
+*INICIO GRIDS
+***
+*Maquetación del layout con el sistema de grillas 
+***
+*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+/*INDEX*/
+#padreIndex {
+  display: grid;
+  grid-template-rows: 100px 128px 900px 340px 465px;
+  grid-template-columns: 100px 350px 350px 350px 198px;
+  grid-row-gap: 35px;
+  grid-template-areas: "cabecera navegador navegador navegador navegador"                         ". publicidad publicidad publicidad ."                         " . titulares titulares titulares ." " . titulares titulares titulares ." "footer footer footer footer footer"; }
+
+/*ARTICULOS*/
+#padreArticulo {
+  display: grid;
+  grid-template-rows: 100px 2890px 150px 470px;
+  grid-template-columns: 100px 920px 128px 200px;
+  grid-row-gap: 50px;
+  grid-template-areas: "cabecera navegador navegador navegador" ". notaPartido notaPartido ." ". cajaComentarios cajaComentarios ." "footer footer footer footer"; }
+
+#padreArticulo2 {
+  display: grid;
+  grid-template-rows: 100px 1985px 150px 470px;
+  grid-template-columns: 100px 920px 128px 200px;
+  grid-row-gap: 50px;
+  grid-template-areas: "cabecera navegador navegador navegador" ". notaPartido notaPartido . " ". cajaComentarios cajaComentarios . " "footer footer footer footer"; }
+
+#padreArticulo3 {
+  display: grid;
+  grid-template-rows: 100px 2320px 150px 470px;
+  grid-template-columns: 100px 920px 128px 200px;
+  grid-row-gap: 50px;
+  grid-template-areas: "cabecera navegador navegador navegador" ". notaPartido notaPartido . " ". cajaComentarios cajaComentarios . " "footer footer footer footer"; }
+
+/*ESTADISTICAS*/
+#padreStats {
+  display: grid;
+  grid-template-rows: 100px 1090px 470px;
+  grid-template-columns: 100px 700px 420px 129px;
+  grid-row-gap: 50px;
+  grid-template-areas: "cabecera navegador navegador navegador" ". tablaGrupo . ." "footer footer footer footer"; }
+
+/*AGENDA*/
+#padreAgenda {
+  display: grid;
+  grid-template-rows: 100px 300px 10px 1200px 470px;
+  grid-template-columns: 100px 800px 248px 200px;
+  grid-row-gap: 50px;
+  grid-template-areas: "cabecera navegador  navegador navegador" " . encabezadoAgenda . ." " . selector . ." " . cajaAgenda . ." "footer footer footer footer"; }
+
+/*FORMULARIOS*/
+#padreForm {
+  display: grid;
+  grid-template-rows: 100px 500px 470px;
+  grid-template-columns: 100px 800px 300px 149px;
+  grid-row-gap: 10px;
+  grid-template-areas: "cabecera navegador navegador navegador" ". . formularioSuscribe ." "footer footer footer  footer"; }
+
+/*
+***
+*ESTILOS GENERALES
+***
+*INDEX
+***
+*Estilos para los elementos del index
+*(Header, Nav, titulares)
+***
+*/
+/*HEADER*/
+#cabecera {
+  grid-area: cabecera;
+  height: 100px;
+  display: flex;
+  background-image: linear-gradient(to top, #73a314, #9ed333);
+  width: 100px;
+  border-bottom: inset 3px gray;
+  justify-content: center;
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  z-index: 3; }
+  #cabecera a .logoSportia {
+    width: 100px;
+    height: 100px;
+    display: flex;
+    padding-top: 5px; }
+
+/*NAV*/
+#navegador {
+  grid-area: navegador;
+  background-image: linear-gradient(to top, #73a314, #9ed333);
+  font-family: Arial, Helvetica, sans-serif;
+  width: 1246px;
+  height: 100px;
+  display: flex;
+  align-content: center;
+  align-items: center;
+  position: fixed;
+  top: 0px;
+  left: 100px;
+  border-bottom: inset 3px gray;
+  z-index: 3; }
+  #navegador .menuNav {
+    width: 800px;
+    height: 80px;
+    color: black;
+    font-family: Arial, Helvetica, sans-serif;
+    position: fixed;
+    z-index: 2;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+    transform: translate(400px, 5px); }
+    #navegador .menuNav ul li a .stat-icon {
+      width: 30px;
+      height: 24px; }
+    #navegador .menuNav ul li a .textoNav {
+      color: black; }
+      #navegador .menuNav ul li a .textoNav:hover {
+        color: white; }
+    #navegador .menuNav ul li a .calendario-icon {
+      width: 30px;
+      height: 30px; }
+    #navegador .menuNav .suscribirme {
+      background-color: black;
+      color: white;
+      font-size: 15px;
+      font-family: Arial, Helvetica, sans-serif;
+      padding: 10px 10px 10px 10px;
+      text-decoration: none;
+      transition: background-color gray , border , font-size 1ms;
+      transform: translateY(0px); }
+
+/*ASIDE*/
+#publicidad {
+  grid-area: publicidad;
+  display: flex;
+  justify-content: center; }
+  #publicidad .bannerPublicitario {
+    width: 1050px; }
+
+/*TITULARES INDEX*/
+#titulares {
+  grid-area: titulares;
+  background-color: aqua; }
+  #titulares #titularPrincipal div {
+    transform: translateY(-29px); }
+    #titulares #titularPrincipal div .copete {
+      color: white;
+      text-shadow: 1px 1px black;
+      font-family: Arial, Helvetica, sans-serif;
+      font-size: 10px;
+      transform: translate(20px, 30px);
+      display: inline-block; }
+    #titulares #titularPrincipal div a .imagenPrincipal {
+      width: 1050px; }
+    #titulares #titularPrincipal div .decoration {
+      text-decoration: none;
+      color: black; }
+      #titulares #titularPrincipal div .decoration .tituloPrincipal {
+        width: 800px;
+        text-align: center;
+        font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+        font-size: 70px;
+        text-shadow: 1px 1px black;
+        color: white;
+        display: inline-block;
+        transform: translate(120px, -300px);
+        text-align: center; }
+        #titulares #titularPrincipal div .decoration .tituloPrincipal:hover {
+          text-decoration: underline; }
+    #titulares #titularPrincipal div .subtituloPrincipal {
+      transform: translate(120px, -280px);
+      left: 220px;
+      width: 800px;
+      text-align: center;
+      font-family: Arial, Helvetica, sans-serif;
+      font-size: 12px;
+      text-shadow: 1px 1px black;
+      color: white; }
+  #titulares #titularSecundario {
+    display: grid;
+    justify-content: flex-start;
+    font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif; }
+    #titulares #titularSecundario .cajaTitular {
+      background-color: burlywood;
+      width: 348px;
+      height: 340px;
+      transform: translateY(-213px); }
+      #titulares #titularSecundario .cajaTitular a .imagenTitulo2 {
+        width: 348px;
+        transform: translate(-1px, 0px); }
+      #titulares #titularSecundario .cajaTitular .copete2 {
+        width: 300px;
+        color: white;
+        text-shadow: 1px 1px black;
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 10px;
+        transform: translate(4px, -165px); }
+      #titulares #titularSecundario .cajaTitular .decoration {
+        text-decoration: none;
+        color: black; }
+        #titulares #titularSecundario .cajaTitular .decoration .titulo2 {
+          width: 350px;
+          height: 50px;
+          color: black;
+          transform: translate(0px, -20px);
+          text-align: left; }
+          #titulares #titularSecundario .cajaTitular .decoration .titulo2:hover {
+            text-decoration: underline; }
+  #titulares #titularSecundario2 {
+    display: grid;
+    justify-content: flex-start;
+    font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif; }
+    #titulares #titularSecundario2 .cajaTitular2 {
+      background-color: brown;
+      width: 350px;
+      height: 340px;
+      transform: translate(700px, -554px); }
+      #titulares #titularSecundario2 .cajaTitular2 a .imagenTitulo3 {
+        width: 350px;
+        transform: translate(0px, 0px); }
+      #titulares #titularSecundario2 .cajaTitular2 .copete3 {
+        color: white;
+        text-shadow: 1px 1px black;
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 10px;
+        transform: translate(4px, -170px); }
+      #titulares #titularSecundario2 .cajaTitular2 .decoration {
+        text-decoration: none;
+        color: black; }
+        #titulares #titularSecundario2 .cajaTitular2 .decoration .titulo3 {
+          width: 290px;
+          color: black;
+          transform: translate(0px, -20px); }
+          #titulares #titularSecundario2 .cajaTitular2 .decoration .titulo3:hover {
+            text-decoration: underline; }
+      #titulares #titularSecundario2 .cajaTitular2 .subtitulo3 {
+        width: 357px;
+        text-align: left;
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 16px;
+        transform: translate(0px, -26px); }
+
+/*ARTICULO*/
+#notaPartido {
+  grid-area: notaPartido; }
+  #notaPartido .divNota {
+    display: grid;
+    grid-template-rows: 50px 150px 80px 450px 60px 1700px 410px; }
+    #notaPartido .divNota div .copeteNota {
+      background-color: yellowgreen;
+      color: white;
+      text-shadow: 1px 1px black;
+      border: ridge 1px 1px gray;
+      font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+      font-size: 14px;
+      font-weight: bold;
+      text-align: center;
+      padding-top: 10px;
+      padding-right: 18px;
+      padding-bottom: 10px;
+      padding-left: 18px;
+      width: 284px; }
+    #notaPartido .divNota div .titular {
+      width: 800px;
+      height: 120px;
+      font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+      font-size: 50px;
+      line-height: normal; }
+    #notaPartido .divNota #cajaSubtitulo {
+      width: 900px;
+      height: 50px; }
+      #notaPartido .divNota #cajaSubtitulo .subtitulo {
+        color: #504f4f;
+        font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+        font-size: 19px; }
+    #notaPartido .divNota .fotoArticulo {
+      width: 900px; }
+    #notaPartido .divNota .cajaPie {
+      width: 700px;
+      margin-right: 100px;
+      padding-right: 10px;
+      font-family: Arial, Helvetica, sans-serif;
+      font-weight: bold;
+      font-size: 14px;
+      color: #504f4f; }
+    #notaPartido .divNota .notaPeriodistica {
+      width: 500px;
+      font-family: Georgia, "Times New Roman", Times, serif;
+      font-size: 16px;
+      line-height: 25px; }
+      #notaPartido .divNota .notaPeriodistica p .negrita {
+        font-weight: bold; }
+    #notaPartido .divNota .videoResumen .resumenPartido {
+      font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+      font-size: 22px; }
+
+#cajaComentarios {
+  grid-area: cajaComentarios; }
+  #cajaComentarios .comentarios {
+    display: grid;
+    grid-template-rows: 30px 30px 50px; }
+    #cajaComentarios .comentarios .resumenPartido {
+      font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+      font-size: 22px; }
+  #cajaComentarios form .botonForm:hover {
+    background-color: #b4f03d; }
+
+/**/
+#notaPartido {
+  grid-area: notaPartido; }
+  #notaPartido #divNota2 {
+    display: grid;
+    grid-template-rows: 50px 150px 80px 450px 60px 796px 500px; }
+    #notaPartido #divNota2 div .copeteNota {
+      background-color: yellowgreen;
+      color: white;
+      text-shadow: 1px 1px black;
+      border: ridge 1px 1px gray;
+      font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+      font-size: 14px;
+      font-weight: bold;
+      text-align: center;
+      padding-top: 10px;
+      padding-right: 18px;
+      padding-bottom: 10px;
+      padding-left: 18px;
+      width: 284px; }
+    #notaPartido #divNota2 div .titular {
+      width: 800px;
+      height: 120px;
+      font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+      font-size: 50px;
+      line-height: normal; }
+    #notaPartido #divNota2 #cajaSubtitulo {
+      width: 900px;
+      height: 50px; }
+      #notaPartido #divNota2 #cajaSubtitulo .subtitulo {
+        color: #504f4f;
+        font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+        font-size: 19px; }
+    #notaPartido #divNota2 .fotoArticulo {
+      width: 900px; }
+    #notaPartido #divNota2 .cajaPie {
+      width: 700px;
+      margin-right: 100px;
+      padding-right: 10px;
+      font-family: Arial, Helvetica, sans-serif;
+      font-weight: bold;
+      font-size: 14px;
+      color: #504f4f; }
+    #notaPartido #divNota2 .notaPeriodistica {
+      width: 500px;
+      font-family: Georgia, "Times New Roman", Times, serif;
+      font-size: 16px;
+      line-height: 25px; }
+      #notaPartido #divNota2 .notaPeriodistica p .negrita {
+        font-weight: bold; }
+    #notaPartido #divNota2 .VideoResumen .resumenPartido {
+      font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+      font-size: 22px; }
+  #notaPartido #cajaComentarios {
+    grid-area: cajaComentarios; }
+    #notaPartido #cajaComentarios .comentarios {
+      display: grid;
+      grid-template-rows: 30px 30px 50px; }
+      #notaPartido #cajaComentarios .comentarios .resumenPartido {
+        font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+        font-size: 22px; }
+    #notaPartido #cajaComentarios form .botonForm:hover {
+      background-color: #b4f03d; }
+
+/**/
+#notaPartido {
+  grid-area: notaPartido; }
+  #notaPartido #divNota3 {
+    display: grid;
+    grid-template-rows: 50px 150px 80px 450px 60px 1130px 500px; }
+    #notaPartido #divNota3 div .copeteNota2 {
+      background-color: yellowgreen;
+      color: white;
+      text-shadow: 1px 1px black;
+      border: ridge 1px 1px gray;
+      font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+      font-size: 14px;
+      font-weight: bold;
+      text-align: center;
+      padding-top: 10px;
+      padding-right: 18px;
+      padding-bottom: 10px;
+      padding-left: 18px;
+      width: 340px; }
+    #notaPartido #divNota3 div .titular {
+      width: 800px;
+      height: 120px;
+      font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+      font-size: 50px;
+      line-height: normal; }
+    #notaPartido #divNota3 #cajaSubtitulo {
+      width: 900px;
+      height: 50px; }
+      #notaPartido #divNota3 #cajaSubtitulo .subtitulo {
+        color: #504f4f;
+        font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+        font-size: 19px; }
+    #notaPartido #divNota3 .fotoArticulo {
+      width: 900px; }
+    #notaPartido #divNota3 .cajaPie {
+      width: 700px;
+      margin-right: 100px;
+      padding-right: 10px;
+      font-family: Arial, Helvetica, sans-serif;
+      font-weight: bold;
+      font-size: 14px;
+      color: #504f4f; }
+    #notaPartido #divNota3 .notaPeriodistica {
+      width: 500px;
+      font-family: Georgia, "Times New Roman", Times, serif;
+      font-size: 16px;
+      line-height: 25px; }
+      #notaPartido #divNota3 .notaPeriodistica p .negrita {
+        font-weight: bold; }
+      #notaPartido #divNota3 .notaPeriodistica .title-franklin {
+        font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+        font-weight: bold; }
+    #notaPartido #divNota3 .VideoResumen {
+      font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+      font-size: 22px; }
+  #notaPartido #cajaComentarios {
+    grid-area: cajaComentarios; }
+    #notaPartido #cajaComentarios .comentarios {
+      display: grid;
+      grid-template-rows: 30px 30px 50px; }
+      #notaPartido #cajaComentarios .comentarios .resumenPartido {
+        font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+        font-size: 22px; }
+    #notaPartido #cajaComentarios form .botonForm:hover {
+      background-color: #b4f03d; }
+
+/*AGENDA*/
+#encabezadoAgenda {
+  grid-area: encabezadoAgenda;
+  width: 800px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-style: italic;
+  font-size: 15px;
+  line-height: 30px; }
+  #encabezadoAgenda .contAgenda div .tituloAgenda {
+    font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+    font-weight: bold;
+    line-height: 30px; }
+  #encabezadoAgenda .contAgenda div .subtituloAgenda .negrita {
+    font-weight: bold; }
+
+#selector {
+  width: 360px;
+  grid-area: selector;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  transform: translateY(-40px);
+  z-index: 2; }
+
+#cajaAgenda {
+  grid-area: cajaAgenda;
+  z-index: 1; }
+  #cajaAgenda .eventosAgenda div table .horario {
+    width: 100px; }
+  #cajaAgenda .eventosAgenda div table .celdaAgenda {
+    background-color: #e6e6e3;
+    width: 550px;
+    height: 44px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    transform: translateX(-30px);
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+    font-weight: bold;
+    padding-top: 5px;
+    padding-right: 10px;
+    padding-left: 10px;
+    position: relative; }
+    #cajaAgenda .eventosAgenda div table .celdaAgenda .vs {
+      width: 180px;
+      display: inline-block;
+      position: absolute;
+      left: 180px;
+      text-align: center;
+      font-size: 14px;
+      font-weight: bold; }
+
+/*ESTADISTICAS*/
+#tablaGrupo {
+  grid-area: tablaGrupo;
+  display: grid;
+  grid-template-rows: 100px 515px 392px; }
+  #tablaGrupo div .tituloEstadisticas {
+    font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif; }
+  #tablaGrupo div .nombreTorneo {
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: normal; }
+  #tablaGrupo table tr .celda-grupo {
+    background-color: yellowgreen;
+    width: 616px;
+    font-size: 15px;
+    font-weight: bold;
+    text-align: left;
+    padding-top: 6px;
+    padding-bottom: 6px;
+    padding-left: 6px; }
+  #tablaGrupo table tr .columnaPos, #tablaGrupo table tr .columnaEquipo, #tablaGrupo table tr .columnaPts, #tablaGrupo table tr .columnaJGEP {
+    background-color: #cec9c9;
+    width: 50px;
+    text-align: left;
+    display: inline-block;
+    padding-top: 4px;
+    padding-bottom: 4px;
+    padding-left: 6px; }
+  #tablaGrupo table tr .columnaEquipo {
+    width: 231px;
+    height: 32px;
+    text-align: center;
+    padding-top: 7px; }
+  #tablaGrupo table tr .columnaPts {
+    text-align: center; }
+  #tablaGrupo table tr .columnaJGEP {
+    width: 57px;
+    text-align: center; }
+  #tablaGrupo table tr .celdaPos, #tablaGrupo table tr .celdaEquipo, #tablaGrupo table tr .celdaPts, #tablaGrupo table tr .celdaJGEP, #tablaGrupo table tr .celdaPosGris, #tablaGrupo table tr .celdaEquipoGris, #tablaGrupo table tr .celdaPtsGris, #tablaGrupo table tr .celdaJGEPGris {
+    width: 50px;
+    text-align: left;
+    display: inline-block;
+    padding-top: 4px;
+    padding-bottom: 4px;
+    padding-left: 6px; }
+  #tablaGrupo table tr .celdaEquipo {
+    width: 231px;
+    text-align: center; }
+  #tablaGrupo table tr .celdaPts {
+    text-align: center; }
+  #tablaGrupo table tr .celdaJGEP {
+    width: 57px;
+    text-align: center; }
+  #tablaGrupo table tr .celdaPosGris {
+    background-color: #e7e5e5; }
+  #tablaGrupo table tr .celdaEquipoGris {
+    background-color: #e7e5e5;
+    width: 231px;
+    text-align: center; }
+  #tablaGrupo table tr .celdaPtsGris {
+    background-color: #e7e5e5;
+    text-align: center; }
+  #tablaGrupo table tr .celdaJGEPGris {
+    background-color: #e7e5e5;
+    width: 57px;
+    text-align: center; }
+
+/*FORMULARIOS*/
+#navegador {
+  grid-area: navegador; }
+  #navegador .menuNav .ingresar {
+    display: none; }
+
+/*Ingresar*/
+.fondo-form {
+  background-image: url(../img/fondo-formulario.jpg);
+  background-repeat: no-repeat;
+  background-size: 64%;
+  background-position: 0px 67px; }
+
+#formularioSuscribe {
+  grid-area: formularioSuscribe; }
+  #formularioSuscribe .caja-form-principal {
+    display: grid;
+    grid-template-rows: 22px 30px 200px 140px;
+    padding-top: 15px;
+    background-color: #dddfdb;
+    font-family: Arial, Helvetica, sans-serif;
+    font-style: inherit;
+    font-size: 12px;
+    text-align: center;
+    border-color: yellowgreen;
+    border-radius: 30px;
+    border-style: inset;
+    border-width: 3px;
+    width: 300px;
+    height: 450px;
+    padding-left: 10px;
+    padding-right: 10px;
+    transform: translateY(30px); }
+    #formularioSuscribe .caja-form-principal form .campoDatos {
+      width: 240px; }
+    #formularioSuscribe .caja-form-principal form .botonContinuar {
+      background-color: yellowgreen;
+      width: 250px;
+      height: 30px;
+      color: white;
+      text-shadow: 1px 1px black;
+      border: solid 1px gray;
+      font-weight: bold;
+      font-size: 11px; }
+    #formularioSuscribe .caja-form-principal form .link-subscribe {
+      color: black; }
+      #formularioSuscribe .caja-form-principal form .link-subscribe:hover {
+        color: yellowgreen; }
+    #formularioSuscribe .caja-form-principal div .facebookLogin {
+      width: 20px;
+      display: inline-block;
+      position: relative;
+      left: -80px;
+      bottom: -28px; }
+    #formularioSuscribe .caja-form-principal div .googleLogin {
+      width: 18px;
+      display: inline-block;
+      position: relative;
+      left: -104px;
+      bottom: -57px; }
+    #formularioSuscribe .caja-form-principal div .appleLogin {
+      width: 15px;
+      display: inline-block;
+      position: relative;
+      left: -123px;
+      bottom: -87px; }
+    #formularioSuscribe .caja-form-principal div form .botonLogin {
+      background-color: white;
+      width: 250px;
+      height: 30px;
+      font-size: 10px;
+      font-weight: bold;
+      border: solid 1px gray; }
+
+/*SUSCRIBIRME*/
+.botonForm:hover {
+  background-color: #b4f03d; }
+
+.enviar {
+  background-color: yellowgreen;
+  color: white;
+  text-shadow: 1px 1px black;
+  border: solid 1px gray;
+  text-shadow: 1px 1px black;
+  font-weight: bold; }
+
+/*FOOTER*/
+#piePagina {
+  grid-area: footer;
+  border-top: solid 6px black;
+  background-image: linear-gradient(to right, #73a314, #9ed333);
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  font-family: Arial, Helvetica, sans-serif;
+  padding-top: 50px; }
+  #piePagina .contacto div .iconoRedes {
+    height: 30px;
+    width: 30px;
+    transform: translateY(20px); }
+    #piePagina .contacto div .iconoRedes:hover {
+      height: 50px;
+      width: 50px; }
+  #piePagina .columnaFooter {
+    width: 550px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between; }
+    #piePagina .columnaFooter div .negrita {
+      font-weight: bold; }
+    #piePagina .columnaFooter div .decoration {
+      text-decoration: none;
+      color: black; }
+      #piePagina .columnaFooter div .decoration:hover {
+        color: white; }
+
+/*      
+***
+*INICIO MODELO RESPONSIVE
+***
+*Aplicando Media Queries 
+*para las diferentes páginas
+***
+*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+/*INDEX*/
+@media (min-width: 0px) and (max-width: 425px) {
+  #padreIndex {
+    display: grid;
+    grid-template-areas: "cabecera navegador  "  ". aside " ". titularPrincipal " ". titularSecundario " ". titularSecundario2 " "footer footer ";
+    grid-template-columns: 10px 415px;
+    grid-template-rows: 100px 80px 360px 360px 360px 400px;
+    grid-row-gap: 15px;
+    grid-column-gap: 10px; }
+  /*Header*/
+  #cabecera {
+    display: grid;
+    grid-area: cabecera;
+    z-index: 3; }
+    #cabecera .logoSportia {
+      display: flex;
+      width: 60px;
+      height: 60px;
+      justify-items: center;
+      transform: translateY(10px); }
+  /*Nav*/
+  #navegador {
+    grid-area: navegador; }
+    #navegador .menuNav {
+      width: 360px;
+      transform: translate(20px, 10px);
+      position: fixed;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      z-index: 3; }
+      #navegador .menuNav ul li a .stat-icon {
+        width: 30px; }
+      #navegador .menuNav ul li a .textoNav {
+        display: none; }
+      #navegador .menuNav ul li li a .calendario-icon {
+        width: 30px; }
+      #navegador .menuNav .suscribirme {
+        background-color: black;
+        color: white;
+        font-size: 12px;
+        font-family: Arial, Helvetica, sans-serif;
+        padding: 10px 10px 10px 10px;
+        text-decoration: none;
+        transform: translateY(3px); }
+  /*Aside*/
+  #publicidad {
+    grid-area: aside; }
+    #publicidad .bannerPublicitario {
+      width: 400px; }
+  /*Titulares*/
+  #titularPrincipal {
+    grid-area: titularPrincipal; }
+    #titularPrincipal div .copete {
+      width: 300px;
+      transform: translate(10px, 25px); }
+    #titularPrincipal div a .imagenPrincipal {
+      width: 400px; }
+    #titularPrincipal div .decoration .tituloPrincipal {
+      width: 400px;
+      color: black;
+      transform: translateX(0px);
+      font-size: 25px;
+      text-shadow: none;
+      text-align: left; }
+    #titularPrincipal div .subtituloPrincipal {
+      width: 400px;
+      font-size: 14px;
+      text-align: left;
+      color: black;
+      text-shadow: none;
+      transform: translate(0px, 5px);
+      line-height: 20px; }
+  #titularSecundario {
+    grid-area: titularSecundario; }
+    #titularSecundario div a .imagenTitulo2 {
+      width: 400px; }
+    #titularSecundario div .copete2 {
+      transform: translate(10px, -220px); }
+    #titularSecundario div .decoration .titulo2 {
+      width: 400px;
+      color: black;
+      transform: translateY(-75px);
+      font-size: 25px;
+      text-shadow: none; }
+  section#titularSecundario2 {
+    grid-area: titularSecundario2; }
+    section#titularSecundario2 div a .imagenTitulo3 {
+      display: inline-block;
+      position: absolute;
+      width: 400px; }
+    section#titularSecundario2 div .copete3 {
+      width: 400px;
+      transform: translate(10px, -72px); }
+    section#titularSecundario2 div .decoration .titulo3 {
+      width: 400px;
+      color: black;
+      transform: translateY(25px);
+      font-size: 25px;
+      text-shadow: none; }
+    section#titularSecundario2 div .subtitulo3 {
+      width: 400px;
+      font-size: 14px;
+      text-align: left;
+      color: black;
+      text-shadow: none;
+      transform: translateY(30px);
+      line-height: 20px; } }
+
+/*ARTICULO*/
+@media (min-width: 0px) and (max-width: 425px) {
+  #padreArticulo {
+    display: grid;
+    grid-template-areas: "cabecera navegador"   ". notaPartido  "  ". cajaComentarios "  "footer footer  ";
+    grid-template-columns: 10px 315px;
+    grid-template-rows: 100px 3500px 170px 400px;
+    grid-row-gap: 10px; }
+  #padreArticulo2 {
+    display: grid;
+    grid-template-areas: "cabecera navegador" ". notaPartido  " ". cajaComentarios  " "footer footer  ";
+    grid-template-columns: 10px 315px;
+    grid-template-rows: 100px 2000px 170px 400px;
+    grid-row-gap: 10px; }
+  #padreArticulo3 {
+    display: grid;
+    grid-template-areas: "cabecera navegador  " ". notaPartido " ". cajaComentarios " "footer footer ";
+    grid-template-columns: 10px 315px;
+    grid-template-rows: 100px 2580px 170px 400px;
+    grid-row-gap: 10px; }
+  /*Articulo River*/
+  #notaPartido {
+    display: flex;
+    grid-area: notaPartido; }
+    #notaPartido .divNota {
+      display: grid;
+      grid-template-rows: 50px 140px 160px 150px 50px 2700px 800px; }
+      #notaPartido .divNota div .copeteNota {
+        width: 250px;
+        font-size: 11px;
+        padding-top: 10px;
+        padding-right: 18px;
+        padding-bottom: 10px;
+        padding-left: 18px; }
+      #notaPartido .divNota div .titular {
+        width: 310px;
+        font-size: 35px; }
+      #notaPartido .divNota #cajaSubtitulo {
+        width: 302px; }
+      #notaPartido .divNota .fotoArticulo {
+        width: 300px; }
+      #notaPartido .divNota .cajaPie {
+        width: 300px;
+        font-size: 12px; }
+      #notaPartido .divNota .notaPeriodistica {
+        width: 300px; }
+      #notaPartido .divNota .videoResumen .title-franklin {
+        font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif; }
+      #notaPartido .divNota .videoResumen iframe {
+        width: 300px;
+        height: 200px; }
+  #cajaComentarios {
+    display: flex;
+    grid-area: cajaComentarios; }
+    #cajaComentarios .comentarios {
+      display: grid;
+      grid-template-rows: 30px 45px 50px; }
+      #cajaComentarios .comentarios .title-impact {
+        font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif; }
+      #cajaComentarios .comentarios form .area-texto {
+        width: 300px;
+        height: 200px; }
+  /*Artículo Racing*/
+  #notaPartido {
+    display: flex;
+    grid-area: notaPartido; }
+    #notaPartido #divNota2 {
+      display: grid;
+      grid-template-rows: 50px 180px 160px 150px 50px 1140px 800px; }
+      #notaPartido #divNota2 div .copeteNota {
+        width: 250px;
+        font-size: 11px;
+        padding-top: 10px;
+        padding-right: 18px;
+        padding-bottom: 10px;
+        padding-left: 18px; }
+      #notaPartido #divNota2 div .titular {
+        width: 310px;
+        font-size: 35px; }
+      #notaPartido #divNota2 #cajaSubtitulo {
+        width: 302px; }
+      #notaPartido #divNota2 .fotoArticulo {
+        width: 300px; }
+      #notaPartido #divNota2 .cajaPie {
+        width: 300px;
+        font-size: 12px; }
+      #notaPartido #divNota2 .notaPeriodistica {
+        width: 300px; }
+      #notaPartido #divNota2 .videoResumen .title-franklin {
+        font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif; }
+      #notaPartido #divNota2 .videoResumen iframe {
+        width: 300px;
+        height: 200px; }
+  #cajaComentarios {
+    display: flex;
+    grid-area: cajaComentarios; }
+    #cajaComentarios .comentarios {
+      display: grid;
+      grid-template-rows: 30px 45px 50px; }
+      #cajaComentarios .comentarios .title-impact {
+        font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif; }
+      #cajaComentarios .comentarios form .area-texto {
+        width: 300px;
+        height: 200px; }
+  /*Artículo Banfield*/
+  #notaPartido {
+    display: flex;
+    grid-area: notaPartido; }
+    #notaPartido #divNota3 {
+      display: grid;
+      grid-template-rows: 50px 135px 120px 155px 80px 1740px 700px; }
+      #notaPartido #divNota3 div .copeteNota2 {
+        width: 300px;
+        font-size: 11px;
+        padding-top: 10px;
+        padding-right: 18px;
+        padding-bottom: 10px;
+        padding-left: 18px; }
+      #notaPartido #divNota3 div .titular {
+        width: 310px;
+        font-size: 35px; }
+      #notaPartido #divNota3 #cajaSubtitulo {
+        width: 302px; }
+      #notaPartido #divNota3 .fotoArticulo {
+        width: 300px; }
+      #notaPartido #divNota3 .cajaPie {
+        width: 300px;
+        font-size: 12px; }
+      #notaPartido #divNota3 .notaPeriodistica {
+        width: 300px; }
+        #notaPartido #divNota3 .notaPeriodistica .title-franklin {
+          font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+          font-weight: bold; }
+      #notaPartido #divNota3 .videoResumen .title-franklin {
+        font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif; }
+      #notaPartido #divNota3 .videoResumen iframe {
+        width: 300px;
+        height: 200px; }
+  #cajaComentarios {
+    display: flex;
+    grid-area: cajaComentarios; }
+    #cajaComentarios .comentarios {
+      display: grid;
+      grid-template-rows: 30px 65px 50px; }
+      #cajaComentarios .comentarios .title-impact {
+        font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif; }
+      #cajaComentarios .comentarios form .area-texto {
+        width: 300px;
+        height: 30px; }
+  /*Footer*/
+  #piePagina {
+    grid-area: footer;
+    display: flex;
+    align-content: center;
+    flex-direction: row;
+    justify-items: flex-start;
+    width: 425px; }
+    #piePagina .contacto {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-evenly;
+      width: 500px;
+      height: 250px;
+      font-size: 20px;
+      text-align: center; }
+      #piePagina .contacto div .iconoRedes {
+        width: 25px;
+        height: 25px; }
+    #piePagina .columnaFooter {
+      display: none; } }
+
+/*ESTADISTICAS*/
+@media (min-width: 0px) and (max-width: 425px) {
+  #padreStats {
+    display: grid;
+    grid-template-areas: "cabecera navegador" ". tablaGrupo "                             "footer footer";
+    grid-template-rows: 100px 1250px 470px;
+    grid-template-columns: 10px 415px;
+    grid-row-gap: 50px; }
+  /*TABLAS*/
+  #tablaGrupo {
+    grid-area: tablaGrupo;
+    grid-template-rows: 90px 516px 516px; }
+    #tablaGrupo table tr .celda-grupo {
+      width: 274px; }
+    #tablaGrupo table tr .columnaPos, #tablaGrupo table tr .columnaEquipo, #tablaGrupo table tr .columnaPts, #tablaGrupo table tr .columnaJGEP {
+      width: 46px; }
+    #tablaGrupo table tr .columnaEquipo {
+      width: 178px; }
+    #tablaGrupo table tr .columnaPts {
+      width: 50px; }
+    #tablaGrupo table tr .columnaJGEP {
+      display: none; }
+    #tablaGrupo table tr .celdaPos, #tablaGrupo table tr .celdaEquipo, #tablaGrupo table tr .celdaPts, #tablaGrupo table tr .celdaJGEP, #tablaGrupo table tr .celdaPosGris, #tablaGrupo table tr .celdaEquipoGris, #tablaGrupo table tr .celdaPtsGris, #tablaGrupo table tr .celdaJGEPGris {
+      width: 46px; }
+    #tablaGrupo table tr .celdaEquipo {
+      width: 178px; }
+    #tablaGrupo table tr .celdaPts {
+      width: 50px; }
+    #tablaGrupo table tr .celdaJGEP {
+      display: none; }
+    #tablaGrupo table tr .celdaPosGris {
+      width: 46px; }
+    #tablaGrupo table tr .celdaEquipoGris {
+      width: 178px; }
+    #tablaGrupo table tr .celdaPtsGris {
+      width: 50px; }
+    #tablaGrupo table tr .celdaJGEPGris {
+      display: none; } }
+
+/*AGENDA*/
+@media (min-width: 0px) and (max-width: 425px) {
+  #padreAgenda {
+    display: grid;
+    grid-template-areas: "cabecera navegador " ". encabezadoAgenda " ". selector " ". cajaAgenda " "footer footer ";
+    grid-template-rows: 100px 630px 120px 1500px 470px;
+    grid-template-columns: 10px 310px;
+    grid-row-gap: 10px; }
+  #encabezadoAgenda {
+    width: 300px;
+    height: 30px;
+    line-height: 30px; }
+    #encabezadoAgenda .contAgenda div .tituloAgenda {
+      width: 300px; }
+    #encabezadoAgenda .contAgenda div .subtituloAgenda {
+      width: 300px; }
+  #selector {
+    grid-area: selector;
+    width: 300px;
+    height: 120px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    z-index: 2; }
+  #cajaAgenda {
+    width: 300px;
+    z-index: 1; }
+    #cajaAgenda div .eventosAgenda div table .horario {
+      display: block; }
+    #cajaAgenda div .eventosAgenda div table .celdaAgenda {
+      width: 350px;
+      transform: translateX(0px);
+      font-size: 12px; }
+      #cajaAgenda div .eventosAgenda div table .celdaAgenda .vs {
+        transform: translateX(-100px); } }
+
+/*FORMULARIOS*/
+@media (min-width: 0px) and (max-width: 425px) {
+  #padreForm {
+    display: grid;
+    grid-template-rows: 100px 600px 470px;
+    grid-template-columns: 10px 310px;
+    grid-template-areas: "cabecera navegador" ".  formularioSuscribe" "footer footer";
+    grid-row-gap: 10px; }
+  #formularioSuscribe {
+    grid-area: formularioSuscribe;
+    display: flex;
+    justify-content: flex-end;
+    padding-top: 50px; }
+    #formularioSuscribe #caja-form-principal {
+      display: grid;
+      grid-template-rows: 50px 300px;
+      padding-top: 15px; }
+  .fondo-form {
+    background-image: url(../img/fondo-formulario.jpg);
+    background-repeat: no-repeat;
+    background-size: 319%;
+    background-position: -170px 100px; } }

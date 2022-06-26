@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Todos los partidos de hoy del fútbol de Argentina, principales ligas y torneos del mundo, tenis, basquet y voley">
+    <meta name="keywords"  content="AGENDA, FUTBOL, PARTIDOS, TODOS, HOY, COPA ARGENTINA, COPA LIBERTADORES, COPA SUDAMERICANA, UEFA CHAMPIONS LEAGUE, ">
+    <!--RUTAS DE ESTILO-->
+    <link rel="stylesheet" href="../style/estilo.css">
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <title>Sportia, portal de noticias deportivas - Agenda</title>
+</head>
+<body>
+    <div id="padreAgenda">
+        <!--El logotipo funciona como botón de home-->
+        <header class="grid" id="cabecera">
+            <a href="../index.html"><img src="../img/sportia-icon.png" alt="pelota" class="logoSportia"></a></li>
+        </header>
+        <!--INICIO NAV-->
+        <nav id="navegador">
+            <div class="menuNav">
+                <ul class="nav">
+                    <li class="nav-item">
+                        <a class="nav-link text-decoration-none text-dark fs-5" href="../pages/estadisticas.html"><img src="../img/estadisticas.png" alt="" width="30" height="24" class="d-inline-block align-text-top stat-icon" ><span class="textoNav">Estadísticas</span> </a>
+                    </li>                
+                    <li class="nav-item">
+                        <a class="nav-link text-decoration-none text-dark fs-5" href="../pages/agenda.html"><img src="../img/agenda.png" alt="" width="30" height="30" class="d-inline-block align-text-top calendario-icon"><span class="textoNav">Agenda</span> </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-decoration-none text-dark fs-5" href="../pages/ingresar.html"><span class="textoNav">Ingresar</span> </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-decoration-none text-dark fs-5" href="../pages/suscribirme.html"><span class="suscribirme">SUSCRIBIRME</span> </a>
+                    </li>                
+                </ul>
+            </div>           
+        </nav>
+        <!--FIN NAV-->
+        <main id="agenda">
+            <section id="encabezadoAgenda" >
+            <div class="contAgenda">
+                <div>
+                    <div>
+                        <h1 class="tituloAgenda">Agenda deportiva: Partidos de hoy televisados</h1>
+                    </div>
+                    <br>
+                    <div>
+                        <h2 class="tituloAgenda">Agenda Deportiva hoy: Eventos deportivos y Partidos de la semana</h2>
+                    </div>
+                </div>
+                <br>
+                <div>
+                    <div class="subtituloAgenda"><p>Todos los <span class="negrita">partidos de hoy</span> del <span class="negrita">fútbol de Argentina (Selección Argentina, Liga Profesional de Fútbol, Primera Nacional, Primera División B, Copa Argentina y Ascenso)</span> , principales ligas <span class="negrita">(La Liga, Premier League, Serie A, Ligue 1 y Bundesliga)</span> y torneos del mundo <span class="negrita">(Copa Libertadores, Copa Sudamericana, Champions League, Eurocopa)</span>, tenis, básquet <span class="negrita">(Liga Nacional de Básquet)</span> y vóley <span class="negrita">(Liga Argentina de Vóley)</span> seguilos en vivo acá.</p></div> 
+                </div>
+                <br>
+            </div>
+            </section>
+            <section id="selector">
+            <div class="dropdown">
+                <a class="btn btn-secondary dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">
+                  DEPORTE
+                </a>              
+                <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink"> 
+                    <li><a class="dropdown-item" href="#">TODOS LOS DEPORTES</a></li>                 
+                  <li><a class="dropdown-item" href="#">Basquet</a></li>
+                  <li><a class="dropdown-item" href="#">Fútbol</a></li>
+                  <li><a class="dropdown-item" href="#">Rugby</a></li>
+                  <li><a class="dropdown-item" href="#">Tenis</a></li>
+                  <li><a class="dropdown-item" href="#">Voley</a></li>
+                </ul>
+            </div>
+            <div class="dropdown">
+                <a class="btn btn-secondary dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">
+                  COMPETENCIA
+                </a>              
+                <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                    <li><a class="dropdown-item" href="../pages/agenda.html">TODAS LAS COMPETICIONES</a></li>
+                  <li><a class="dropdown-item" href="../pages/agenda-copa-argentina.html">Copa Argentina</a></li>
+                  <li><a class="dropdown-item" href="../pages/agenda-copa-libertadores.html">Copa Libertadores</a></li>
+                  <li><a class="dropdown-item" href="../pages/agenda-copa-liga-profesional.html">Copa de la Liga Profesional de Fútbol</a></li>
+                  <li><a class="dropdown-item" href="../pages/agenda-copa-sudamericana.html">Copa Sudamericana</a></li>
+                  <li><a class="dropdown-item" href="../pages/agenda-champions-league.html">UEFA Champions League</a></li>
+                </ul>
+            </div>
+            <div class="dropdown">
+                <a class="btn btn-secondary dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">
+                    DIA
+                </a>              
+                <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                    <li><a class="dropdown-item" href="../pages/agenda.html">TODOS LOS DIAS</a></li>
+                  <li><a class="dropdown-item" href="#">Sólo hoy</a></li>
+                  <li><a class="dropdown-item" href="../pages/agenda-mañana.html">Mañana</a></li>
+                </ul>
+            </div>
+            </section>
+            <section id="cajaAgenda">
+            <div>
+                <!--INICIO AGENDA DEPORTIVA-->
+                <div class="eventosAgenda">
+                    <div>
+                        <h3 class="fs-6">COPA ARGENTINA</h3>  
+                        <table>
+                        <tr><!-- inicio de fila-->
+                        <td class="horario">18:00 Hs</td>  
+                        <td class="celdaAgenda"><span>Quilmes</span><span class="vs">VS.</span><span>San Martín (T)</span></td>                                      
+                        </tr><!-- cierre de fila-->
+                        <tr><!-- inicio de otra fila-->
+                            <td class="horario">20:35 Hs</td>   
+                            <td class="celdaAgenda"><span >Atlético Tucumán</span><span class="vs">VS.</span><span >Brown (Adrogué)</span></td>  
+                            </tr><!-- cierre de la segunda fila-->
+                        </table>  
+                    </div>     
+                    <br>  
+                    <div>
+                        <h3 class="fs-6">COPA LIBERTADORES</h3>                    
+                        <table >
+                            <tr><!-- inicio de fila-->
+                                <td class="horario">19:00 Hs</td>  
+                                <td class="celdaAgenda"><span >América-MG</span><span class="vs">VS.</span><span >Tolima</span></td>                   
+                            </tr><!-- cierre de fila-->
+                            <tr><!-- inicio de otra fila-->
+                                <td class="horario">21:00 Hs</td>
+                                <td class="celdaAgenda"><span >Emelec</span><span class="vs">VS.</span><span >Palmeiras</span></td>                     
+                            </tr><!-- cierre de la segunda fila-->
+                            <tr><!-- inicio de otra fila-->
+                                <td class="horario">21:00 Hs</td>  
+                                <td class="celdaAgenda"><span >Colo Colo</span><span class="vs">VS.</span ><span >River Plate</span></td>                   
+                            </tr><!-- cierre de la tercera fila-->
+                            <tr><!-- inicio de otra fila-->
+                                <td class="horario">23:00 Hs</td>      
+                                <td class="celdaAgenda"><span>The Strongest</span><span class="vs">VS.</span><span>Caracas</span></td>               
+                            </tr><!-- cierre de la cuarta fila-->
+                        </table> 
+                    </div>
+                    <br>
+                    <div>    
+                        <h3 class="fs-6">COPA SUDAMERICANA</h3>                          
+                        <table>
+                            <tr><!-- inicio de fila-->
+                                <td class="horario">19:15 Hs</td>    
+                                <td class="celdaAgenda"><span >Cuiabá</span><span class="vs">VS.</span><span >River Plate</span></td>                       
+                            </tr><!-- cierre de fila-->
+                            <tr><!-- inicio de otra fila-->
+                                <td class="horario">19:15 Hs</td>   
+                                <td class="celdaAgenda"><span >Guaireña</span><span class="vs">VS.</span><span >9 de Octubre</span></td>                  
+                            </tr><!-- cierre de la segunda fila-->
+                            <tr><!-- inicio de otra fila-->
+                                <td class="horario">21:30 Hs</td>  
+                                <td class="celdaAgenda"><span >U. Católica (E)</span><span class="vs">VS.</span><span >Banfield</span></td>                   
+                            </tr><!-- cierre de la tercera fila-->
+                            <tr><!-- inicio de otra fila-->
+                                <td class="horario">21:30 Hs</td>  
+                                <td class="celdaAgenda"><span >D. Antofagasta</span><span class="vs">VS.</span><span >Atlético Goianiense</span></td>                   
+                            </tr><!-- cierre de la cuarta fila-->
+                        </table>   
+                    </div>
+                    <br>
+                    <div>
+                        <h3 class="fs-6">UEFA CHAMPIONS LEAGUE</h3>                    
+                        <table>
+                            <tr><!-- inicio de fila-->
+                                <td class="horario">16:00 Hs</td> 
+                                <td class="celdaAgenda"><span >Liverpool</span><span class="vs">VS.</span><span>Villarreal</span></td>                    
+                            </tr><!-- cierre de fila-->
+                        </table>
+                    </div>  
+                    <br>   
+                    <div>
+                        <h3 class="fs-6">COPA DE LA LIGA PROFESIONAL DE FUTBOL</h3>
+                        <table>
+                            <tr><!-- inicio de fila-->
+                                <td class="horario">20:30 Hs</td> 
+                                <td class="celdaAgenda"><span >Newell's</span><span class="vs">VS.</span><span >San Lorenzo</span></td>                    
+                            </tr><!-- cierre de fila-->
+                        </table>
+                    </div> 
+                    <br>   
+                </div> 
+                <!--FIN AGENDA DEPORTIVA-->
+            </div>            
+            </section>             
+        </main>
+        <!--COMIENZO FOOTER-->
+        <footer id="piePagina">                       
+            <div class="contacto">
+                <div><h2><strong>Sportia</strong></h2></div>
+                <br>
+                <div>© 2022 Fernando Oyanarte</div>
+                <br>
+                <div>Seguinos</div>
+                <br>
+                <div>
+                    <img src="../img/facebook.png" alt="facebook-icon" class="iconoRedes">
+                    <img src="../img/twitter.png" alt="twitter-icon" class="iconoRedes">
+                    <img src="../img/igg.png" alt="igg-icon" class="iconoRedes">
+                    <img src="../img/youtube.png" alt="youtube-icon" class="iconoRedes">
+                </div>                    
+            </div>                     
+            <div class="columnaFooter">    
+                <div>
+                    <div><span class="negrita">FUTBOL ARGENTINO</span></div>  
+                    <br>                    
+                    <div><a href="" class= "decoration">Selección</a> </div>
+                    <div><a href="" class= "decoration">Primera División</a> </div>
+                    <div><a href="" class= "decoration">B Nacional</a> </div>
+                    <div><a href="" class= "decoration">Copa Argentina</a> </div>
+                    <div><a href="" class= "decoration">Primera B</a> </div>
+                    <div><a href="" class= "decoration">Primera C</a> </div>
+                    <div><a href="" class= "decoration">Primera D</a> </div>
+                    <div><a href="" class= "decoration">Estadísticas</a> </div>
+                </div> 
+                <div>                     
+                    <div><span class="negrita">FUTBOL INTERNACIONAL</span></div>
+                    <br>                                
+                    <div><a href="" class= "decoration">Copa Libertadores</a></div>
+                    <div><a href="" class= "decoration">Copa Sudamericana</a></div>
+                    <div><a href="" class= "decoration">América</a></div>
+                    <div><a href="" class= "decoration">España</a></div>
+                    <div><a href="" class= "decoration">Italia</a></div>
+                    <div><a href="" class= "decoration">Inglaterra</a></div>
+                    <div><a href="" class= "decoration"> Champions League</a></div>
+                    <div><a href="" class= "decoration">Europa League</a></div>
+                    <div><a href="" class= "decoration">Estadísticas</a></div>
+                </div> 
+                <div>
+                    <div><span class="negrita">MÁS DEPORTES</span></div> 
+                    <br>              
+                    <div><a href="" class= "decoration">Basquet</a></div>
+                    <div><a href="" class= "decoration">Rugby</a></div>
+                    <div><a href="" class= "decoration">Tenis</a></div>
+                    <div><a href="" class= "decoration">Polideportivo</a></div>
+                    <div><a href="" class= "decoration">Running</a></div>                         
+                </div>     
+           </div>
+        </footer>
+        <!--FIN FOOTER-->
+    </div>
+    <!-- JavaScript Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>  
+</body>
+</html>
