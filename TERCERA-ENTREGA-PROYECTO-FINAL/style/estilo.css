@@ -20,10 +20,10 @@
 /*INDEX*/
 #padreIndex {
   display: grid;
-  grid-template-rows: 100px 128px 516px 340px 465px;
+  grid-template-rows: 100px 128px 900px 340px 465px;
   grid-template-columns: 100px 350px 350px 350px 198px;
   grid-row-gap: 35px;
-  grid-template-areas: "cabecera navegador navegador navegador navegador"                         ". publicidad publicidad publicidad ."                         " . titularPrincipal titularPrincipal titularPrincipal ." " . titularSecundario none titularSecundario2 ." "footer footer footer footer footer"; }
+  grid-template-areas: "cabecera navegador navegador navegador navegador"                         ". publicidad publicidad publicidad ."                         " . titulares titulares titulares ." " . titulares titulares titulares ." "footer footer footer footer footer"; }
 
 /*ARTICULOS*/
 #padreArticulo {
@@ -156,98 +156,107 @@
     width: 1050px; }
 
 /*TITULARES INDEX*/
-#titularPrincipal {
-  grid-area: titularPrincipal; }
-  #titularPrincipal div .copete {
-    color: white;
-    text-shadow: 1px 1px black;
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 10px;
-    transform: translate(20px, 30px);
-    display: inline-block; }
-  #titularPrincipal div a .imagenPrincipal {
-    width: 1050px; }
-  #titularPrincipal div .decoration {
-    text-decoration: none;
-    color: black; }
-    #titularPrincipal div .decoration .tituloPrincipal {
+#titulares {
+  grid-area: titulares;
+  background-color: aqua; }
+  #titulares #titularPrincipal div {
+    transform: translateY(-29px); }
+    #titulares #titularPrincipal div .copete {
+      color: white;
+      text-shadow: 1px 1px black;
+      font-family: Arial, Helvetica, sans-serif;
+      font-size: 10px;
+      transform: translate(20px, 30px);
+      display: inline-block; }
+    #titulares #titularPrincipal div a .imagenPrincipal {
+      width: 1050px; }
+    #titulares #titularPrincipal div .decoration {
+      text-decoration: none;
+      color: black; }
+      #titulares #titularPrincipal div .decoration .tituloPrincipal {
+        width: 800px;
+        text-align: center;
+        font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+        font-size: 70px;
+        text-shadow: 1px 1px black;
+        color: white;
+        display: inline-block;
+        transform: translate(120px, -300px);
+        text-align: center; }
+        #titulares #titularPrincipal div .decoration .tituloPrincipal:hover {
+          text-decoration: underline; }
+    #titulares #titularPrincipal div .subtituloPrincipal {
+      transform: translate(120px, -280px);
+      left: 220px;
       width: 800px;
       text-align: center;
-      font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
-      font-size: 70px;
+      font-family: Arial, Helvetica, sans-serif;
+      font-size: 12px;
       text-shadow: 1px 1px black;
-      color: white;
-      display: inline-block;
-      transform: translate(120px, -300px);
-      text-align: center; }
-      #titularPrincipal div .decoration .tituloPrincipal:hover {
-        text-decoration: underline; }
-  #titularPrincipal div .subtituloPrincipal {
-    transform: translate(120px, -280px);
-    left: 220px;
-    width: 800px;
-    text-align: center;
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 12px;
-    text-shadow: 1px 1px black;
-    color: white; }
-
-#titularSecundario {
-  grid-area: titularSecundario;
-  display: grid;
-  justify-content: flex-start;
-  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif; }
-  #titularSecundario div a .imagenTitulo2 {
-    width: 348px;
-    transform: translate(-1px, 0px); }
-  #titularSecundario div .copete2 {
-    width: 300px;
-    color: white;
-    text-shadow: 1px 1px black;
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 10px;
-    transform: translate(4px, -199px); }
-  #titularSecundario div .decoration {
-    text-decoration: none;
-    color: black; }
-    #titularSecundario div .decoration .titulo2 {
+      color: white; }
+  #titulares #titularSecundario {
+    display: grid;
+    justify-content: flex-start;
+    font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif; }
+    #titulares #titularSecundario .cajaTitular {
+      background-color: burlywood;
+      width: 348px;
+      height: 340px;
+      transform: translateY(-213px); }
+      #titulares #titularSecundario .cajaTitular a .imagenTitulo2 {
+        width: 348px;
+        transform: translate(-1px, 0px); }
+      #titulares #titularSecundario .cajaTitular .copete2 {
+        width: 300px;
+        color: white;
+        text-shadow: 1px 1px black;
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 10px;
+        transform: translate(4px, -165px); }
+      #titulares #titularSecundario .cajaTitular .decoration {
+        text-decoration: none;
+        color: black; }
+        #titulares #titularSecundario .cajaTitular .decoration .titulo2 {
+          width: 350px;
+          height: 50px;
+          color: black;
+          transform: translate(0px, -20px);
+          text-align: left; }
+          #titulares #titularSecundario .cajaTitular .decoration .titulo2:hover {
+            text-decoration: underline; }
+  #titulares #titularSecundario2 {
+    display: grid;
+    justify-content: flex-start;
+    font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif; }
+    #titulares #titularSecundario2 .cajaTitular2 {
+      background-color: brown;
       width: 350px;
-      height: 50px;
-      color: black;
-      transform: translate(0px, -82px);
-      text-align: left; }
-      #titularSecundario div .decoration .titulo2:hover {
-        text-decoration: underline; }
-
-#titularSecundario2 {
-  grid-area: titularSecundario2;
-  display: grid;
-  justify-content: flex-start;
-  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif; }
-  #titularSecundario2 div a .imagenTitulo3 {
-    width: 350px;
-    transform: translate(0px, 0px); }
-  #titularSecundario2 div .copete3 {
-    color: white;
-    text-shadow: 1px 1px black;
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 10px;
-    transform: translate(4px, -170px); }
-  #titularSecundario2 div .decoration {
-    text-decoration: none;
-    color: black; }
-    #titularSecundario2 div .decoration .titulo3 {
-      width: 290px;
-      color: black;
-      transform: translate(0px, -20px); }
-      #titularSecundario2 div .decoration .titulo3:hover {
-        text-decoration: underline; }
-  #titularSecundario2 div .subtitulo3 {
-    width: 357px;
-    text-align: left;
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 16px;
-    transform: translate(0px, -26px); }
+      height: 340px;
+      transform: translate(700px, -554px); }
+      #titulares #titularSecundario2 .cajaTitular2 a .imagenTitulo3 {
+        width: 350px;
+        transform: translate(0px, 0px); }
+      #titulares #titularSecundario2 .cajaTitular2 .copete3 {
+        color: white;
+        text-shadow: 1px 1px black;
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 10px;
+        transform: translate(4px, -170px); }
+      #titulares #titularSecundario2 .cajaTitular2 .decoration {
+        text-decoration: none;
+        color: black; }
+        #titulares #titularSecundario2 .cajaTitular2 .decoration .titulo3 {
+          width: 290px;
+          color: black;
+          transform: translate(0px, -20px); }
+          #titulares #titularSecundario2 .cajaTitular2 .decoration .titulo3:hover {
+            text-decoration: underline; }
+      #titulares #titularSecundario2 .cajaTitular2 .subtitulo3 {
+        width: 357px;
+        text-align: left;
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 16px;
+        transform: translate(0px, -26px); }
 
 /*ARTICULO*/
 #notaPartido {
