@@ -128,7 +128,6 @@ $button_green: map-get($button, button_green );
 }
 
 @mixin cajaComentarios{
-    grid-area: cajaComentarios;
     .comentarios{
         display: grid;
         grid-template-rows: 30px 30px 50px ;

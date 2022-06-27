@@ -1,8 +1,6 @@
 /*ESTADISTICAS*/
 #tablaGrupo{
-    grid-area: tablaGrupo;
-    display: grid;
-    grid-template-rows: 100px 515px 392px;
+    grid-area: tablaGrupo;    
     div{
         .tituloEstadisticas{
             font-family: $font_impact;
