@@ -20,30 +20,30 @@
 /*INDEX*/
 #padreIndex {
   display: grid;
-  grid-template-rows: 100px 128px 900px 340px 465px;
-  grid-template-columns: 100px 350px 350px 350px 198px;
+  grid-template-rows: 100px 128px 952px 465px;
+  grid-template-columns: 100px 350px 350px 350px 100px;
   grid-row-gap: 35px;
-  grid-template-areas: "cabecera navegador navegador navegador navegador"                         ". publicidad publicidad publicidad ."                         " . titulares titulares titulares ." " . titulares titulares titulares ." "footer footer footer footer footer"; }
+  grid-template-areas: "cabecera navegador navegador navegador navegador"                         ". publicidad publicidad publicidad ."                         " . titulares titulares titulares ." "footer footer footer footer footer"; }
 
 /*ARTICULOS*/
 #padreArticulo {
   display: grid;
   grid-template-rows: 100px 3068px 470px;
-  grid-template-columns: 100px 920px 128px 200px;
+  grid-template-columns: 100px 920px 128px 100px;
   grid-row-gap: 50px;
   grid-template-areas: "cabecera navegador navegador navegador" ". articulo articulo ."                         "footer footer footer footer"; }
 
 #padreArticulo2 {
   display: grid;
   grid-template-rows: 100px 2124px 470px;
-  grid-template-columns: 100px 920px 128px 200px;
+  grid-template-columns: 100px 920px 128px 100px;
   grid-row-gap: 50px;
   grid-template-areas: "cabecera navegador navegador navegador" ". articulo articulo ."                         "footer footer footer footer"; }
 
 #padreArticulo3 {
   display: grid;
   grid-template-rows: 100px 2498px 470px;
-  grid-template-columns: 100px 920px 128px 200px;
+  grid-template-columns: 100px 920px 128px 100px;
   grid-row-gap: 50px;
   grid-template-areas: "cabecera navegador navegador navegador" ". articulo articulo ."                         "footer footer footer footer"; }
 
@@ -51,7 +51,7 @@
 #padreStats {
   display: grid;
   grid-template-rows: 100px 1200px 470px;
-  grid-template-columns: 100px 700px 420px 129px;
+  grid-template-columns: 100px 700px 420px 100px;
   grid-row-gap: 50px;
   grid-template-areas: "cabecera navegador navegador navegador" ". tablaGrupo tablaGrupo ." "footer footer footer footer"; }
 
@@ -59,15 +59,15 @@
 #padreAgenda {
   display: grid;
   grid-template-rows: 100px 1510px 470px;
-  grid-template-columns: 100px 800px 248px 200px;
+  grid-template-columns: 100px 800px 248px 100px;
   grid-row-gap: 50px;
-  grid-template-areas: "cabecera navegador  navegador navegador" " . agenda . ."                         "footer footer footer footer"; }
+  grid-template-areas: "cabecera navegador navegador navegador" " . agenda . ."                         "footer footer footer footer"; }
 
 /*FORMULARIOS*/
 #padreForm {
   display: grid;
   grid-template-rows: 100px 500px 470px;
-  grid-template-columns: 100px 800px 300px 149px;
+  grid-template-columns: 100px 800px 300px 100px;
   grid-row-gap: 10px;
   grid-template-areas: "cabecera navegador navegador navegador" ". . formulario ." "footer footer footer  footer"; }
 
@@ -157,8 +157,7 @@
 
 /*TITULARES INDEX*/
 #titulares {
-  grid-area: titulares;
-  background-color: aqua; }
+  grid-area: titulares; }
   #titulares #titularPrincipal div {
     transform: translateY(-29px); }
     #titulares #titularPrincipal div .copete {
@@ -199,7 +198,6 @@
     justify-content: flex-start;
     font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif; }
     #titulares #titularSecundario .cajaTitular {
-      background-color: burlywood;
       width: 348px;
       height: 340px;
       transform: translateY(-213px); }
@@ -229,7 +227,6 @@
     justify-content: flex-start;
     font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif; }
     #titulares #titularSecundario2 .cajaTitular2 {
-      background-color: brown;
       width: 350px;
       height: 340px;
       transform: translate(700px, -554px); }
@@ -260,8 +257,7 @@
 
 /*ARTICULO*/
 #articulo {
-  grid-area: articulo;
-  background-color: aqua; }
+  grid-area: articulo; }
   #articulo #notaPartido .divNota {
     display: grid;
     grid-template-rows: 50px 150px 80px 450px 60px 1700px 410px; }
@@ -457,11 +453,11 @@
     font-style: italic;
     font-size: 15px;
     line-height: 30px; }
-    #agenda #encabezadoAgenda .contAgenda div .tituloAgenda {
+    #agenda #encabezadoAgenda div .tituloAgenda {
       font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
       font-weight: bold;
       line-height: 30px; }
-    #agenda #encabezadoAgenda .contAgenda div .subtituloAgenda .negrita {
+    #agenda #encabezadoAgenda div .subtituloAgenda .negrita {
       font-weight: bold; }
   #agenda #selector {
     width: 360px;
@@ -573,7 +569,7 @@
 .fondo-form {
   background-image: url(../img/fondo-formulario.jpg);
   background-repeat: no-repeat;
-  background-size: 64%;
+  background-size: 65%;
   background-position: 0px 67px; }
 
 #formulario {
@@ -658,7 +654,8 @@
   flex-direction: row;
   justify-content: space-evenly;
   font-family: Arial, Helvetica, sans-serif;
-  padding-top: 50px; }
+  padding-top: 50px;
+  width: 1343px; }
   #piePagina .contacto div .iconoRedes {
     height: 30px;
     width: 30px;
@@ -696,9 +693,9 @@
 @media (min-width: 0px) and (max-width: 425px) {
   #padreIndex {
     display: grid;
-    grid-template-areas: "cabecera navegador  "  ". aside " ". titularPrincipal " ". titularSecundario " ". titularSecundario2 " "footer footer ";
+    grid-template-areas: "cabecera navegador  "  ". aside " ". titulares " ". titulares "                             "footer footer ";
     grid-template-columns: 10px 415px;
-    grid-template-rows: 100px 80px 360px 360px 360px 400px;
+    grid-template-rows: 100px 80px 720px 360px 400px;
     grid-row-gap: 15px;
     grid-column-gap: 10px; }
   /*Header*/
@@ -742,214 +739,226 @@
     grid-area: aside; }
     #publicidad .bannerPublicitario {
       width: 400px; }
-  /*Titulares*/
-  #titularPrincipal {
-    grid-area: titularPrincipal; }
-    #titularPrincipal div .copete {
-      width: 300px;
-      transform: translate(10px, 25px); }
-    #titularPrincipal div a .imagenPrincipal {
-      width: 400px; }
-    #titularPrincipal div .decoration .tituloPrincipal {
+  /*MAIN*/
+  #titulares {
+    grid-area: titulares;
+    width: 450px; }
+    #titulares #titularPrincipal div {
       width: 400px;
-      color: black;
-      transform: translateX(0px);
-      font-size: 25px;
-      text-shadow: none;
-      text-align: left; }
-    #titularPrincipal div .subtituloPrincipal {
+      transform: translateY(0px); }
+      #titulares #titularPrincipal div a .imagenPrincipal {
+        width: 400px;
+        transform: translateY(-29px);
+        position: relative;
+        z-index: 1; }
+      #titulares #titularPrincipal div .copete {
+        width: 300px;
+        transform: translateX(10px);
+        position: relative;
+        z-index: 2; }
+      #titulares #titularPrincipal div .decoration .tituloPrincipal {
+        width: 400px;
+        color: black;
+        transform: translate(0px, -30px);
+        font-size: 25px;
+        text-shadow: none;
+        text-align: left; }
+      #titulares #titularPrincipal div .subtituloPrincipal {
+        width: 400px;
+        font-size: 14px;
+        text-align: left;
+        color: black;
+        text-shadow: none;
+        transform: translate(0px, -30px);
+        line-height: 20px; }
+    #titulares #titularSecundario .cajaTitular {
       width: 400px;
-      font-size: 14px;
-      text-align: left;
-      color: black;
-      text-shadow: none;
-      transform: translate(0px, 5px);
-      line-height: 20px; }
-  #titularSecundario {
-    grid-area: titularSecundario; }
-    #titularSecundario div a .imagenTitulo2 {
-      width: 400px; }
-    #titularSecundario div .copete2 {
-      transform: translate(10px, -220px); }
-    #titularSecundario div .decoration .titulo2 {
+      transform: translateY(-10px); }
+      #titulares #titularSecundario .cajaTitular a .imagenTitulo2 {
+        width: 400px; }
+      #titulares #titularSecundario .cajaTitular .copete2 {
+        transform: translate(10px, -190px); }
+      #titulares #titularSecundario .cajaTitular .decoration .titulo2 {
+        width: 400px;
+        color: black;
+        transform: translateY(-20px);
+        font-size: 25px;
+        text-shadow: none; }
+    #titulares #titularSecundario2 .cajaTitular2 {
       width: 400px;
-      color: black;
-      transform: translateY(-75px);
-      font-size: 25px;
-      text-shadow: none; }
-  section#titularSecundario2 {
-    grid-area: titularSecundario2; }
-    section#titularSecundario2 div a .imagenTitulo3 {
-      display: inline-block;
-      position: absolute;
-      width: 400px; }
-    section#titularSecundario2 div .copete3 {
-      width: 400px;
-      transform: translate(10px, -72px); }
-    section#titularSecundario2 div .decoration .titulo3 {
-      width: 400px;
-      color: black;
-      transform: translateY(25px);
-      font-size: 25px;
-      text-shadow: none; }
-    section#titularSecundario2 div .subtitulo3 {
-      width: 400px;
-      font-size: 14px;
-      text-align: left;
-      color: black;
-      text-shadow: none;
-      transform: translateY(30px);
-      line-height: 20px; } }
+      height: 340px;
+      transform: translateY(0px); }
+      #titulares #titularSecundario2 .cajaTitular2 a .imagenTitulo3 {
+        display: inline-block;
+        position: absolute;
+        width: 400px; }
+      #titulares #titularSecundario2 .cajaTitular2 .copete3 {
+        width: 400px;
+        transform: translate(10px, 5px); }
+      #titulares #titularSecundario2 .cajaTitular2 .decoration .titulo3 {
+        width: 400px;
+        color: black;
+        transform: translateY(176px);
+        font-size: 25px;
+        text-shadow: none; }
+      #titulares #titularSecundario2 .cajaTitular2 .subtitulo3 {
+        width: 400px;
+        font-size: 14px;
+        text-align: left;
+        color: black;
+        text-shadow: none;
+        transform: translateY(180px);
+        line-height: 20px; } }
 
 /*ARTICULO*/
 @media (min-width: 0px) and (max-width: 425px) {
   #padreArticulo {
     display: grid;
-    grid-template-areas: "cabecera navegador"   ". notaPartido  "  ". cajaComentarios "  "footer footer  ";
+    grid-template-areas: "cabecera navegador"   ". articulo "  "footer footer  ";
     grid-template-columns: 10px 315px;
-    grid-template-rows: 100px 3500px 170px 400px;
+    grid-template-rows: 100px 3670px 400px;
     grid-row-gap: 10px; }
   #padreArticulo2 {
     display: grid;
-    grid-template-areas: "cabecera navegador" ". notaPartido  " ". cajaComentarios  " "footer footer  ";
+    grid-template-areas: "cabecera navegador" ". articulo  " "footer footer  ";
     grid-template-columns: 10px 315px;
-    grid-template-rows: 100px 2000px 170px 400px;
+    grid-template-rows: 100px 2170px 400px;
     grid-row-gap: 10px; }
   #padreArticulo3 {
     display: grid;
-    grid-template-areas: "cabecera navegador  " ". notaPartido " ". cajaComentarios " "footer footer ";
+    grid-template-areas: "cabecera navegador  " ". articulo " "footer footer ";
     grid-template-columns: 10px 315px;
-    grid-template-rows: 100px 2580px 170px 400px;
+    grid-template-rows: 100px 2650px 400px;
     grid-row-gap: 10px; }
   /*Articulo River*/
-  #notaPartido {
-    display: flex;
-    grid-area: notaPartido; }
-    #notaPartido .divNota {
-      display: grid;
-      grid-template-rows: 50px 140px 160px 150px 50px 2700px 800px; }
-      #notaPartido .divNota div .copeteNota {
-        width: 250px;
-        font-size: 11px;
-        padding-top: 10px;
-        padding-right: 18px;
-        padding-bottom: 10px;
-        padding-left: 18px; }
-      #notaPartido .divNota div .titular {
-        width: 310px;
-        font-size: 35px; }
-      #notaPartido .divNota #cajaSubtitulo {
-        width: 302px; }
-      #notaPartido .divNota .fotoArticulo {
-        width: 300px; }
-      #notaPartido .divNota .cajaPie {
-        width: 300px;
-        font-size: 12px; }
-      #notaPartido .divNota .notaPeriodistica {
-        width: 300px; }
-      #notaPartido .divNota .videoResumen .title-franklin {
-        font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif; }
-      #notaPartido .divNota .videoResumen iframe {
-        width: 300px;
-        height: 200px; }
-  #cajaComentarios {
-    display: flex;
-    grid-area: cajaComentarios; }
-    #cajaComentarios .comentarios {
-      display: grid;
-      grid-template-rows: 30px 45px 50px; }
-      #cajaComentarios .comentarios .title-impact {
-        font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif; }
-      #cajaComentarios .comentarios form .area-texto {
-        width: 300px;
-        height: 200px; }
+  #articulo {
+    grid-area: articulo; }
+    #articulo #notaPartido {
+      display: flex; }
+      #articulo #notaPartido .divNota {
+        display: grid;
+        grid-template-rows: 50px 140px 160px 150px 50px 2700px 260px; }
+        #articulo #notaPartido .divNota div .copeteNota {
+          width: 250px;
+          font-size: 11px;
+          padding-top: 10px;
+          padding-right: 18px;
+          padding-bottom: 10px;
+          padding-left: 18px; }
+        #articulo #notaPartido .divNota div .titular {
+          width: 310px;
+          font-size: 35px; }
+        #articulo #notaPartido .divNota #cajaSubtitulo {
+          width: 302px; }
+        #articulo #notaPartido .divNota .fotoArticulo {
+          width: 300px; }
+        #articulo #notaPartido .divNota .cajaPie {
+          width: 300px;
+          font-size: 12px; }
+        #articulo #notaPartido .divNota .notaPeriodistica {
+          width: 300px; }
+        #articulo #notaPartido .divNota .videoResumen .title-franklin {
+          font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif; }
+        #articulo #notaPartido .divNota .videoResumen iframe {
+          width: 300px;
+          height: 200px; }
+    #articulo #cajaComentarios {
+      display: flex; }
+      #articulo #cajaComentarios .comentarios {
+        display: grid;
+        grid-template-rows: 30px 45px 50px; }
+        #articulo #cajaComentarios .comentarios .title-impact {
+          font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif; }
+        #articulo #cajaComentarios .comentarios form .area-texto {
+          width: 300px;
+          height: 200px; }
   /*Artículo Racing*/
-  #notaPartido {
-    display: flex;
-    grid-area: notaPartido; }
-    #notaPartido #divNota2 {
-      display: grid;
-      grid-template-rows: 50px 180px 160px 150px 50px 1140px 800px; }
-      #notaPartido #divNota2 div .copeteNota {
-        width: 250px;
-        font-size: 11px;
-        padding-top: 10px;
-        padding-right: 18px;
-        padding-bottom: 10px;
-        padding-left: 18px; }
-      #notaPartido #divNota2 div .titular {
-        width: 310px;
-        font-size: 35px; }
-      #notaPartido #divNota2 #cajaSubtitulo {
-        width: 302px; }
-      #notaPartido #divNota2 .fotoArticulo {
-        width: 300px; }
-      #notaPartido #divNota2 .cajaPie {
-        width: 300px;
-        font-size: 12px; }
-      #notaPartido #divNota2 .notaPeriodistica {
-        width: 300px; }
-      #notaPartido #divNota2 .videoResumen .title-franklin {
-        font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif; }
-      #notaPartido #divNota2 .videoResumen iframe {
-        width: 300px;
-        height: 200px; }
-  #cajaComentarios {
-    display: flex;
-    grid-area: cajaComentarios; }
-    #cajaComentarios .comentarios {
-      display: grid;
-      grid-template-rows: 30px 45px 50px; }
-      #cajaComentarios .comentarios .title-impact {
-        font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif; }
-      #cajaComentarios .comentarios form .area-texto {
-        width: 300px;
-        height: 200px; }
+  #articulo {
+    grid-area: articulo; }
+    #articulo #notaPartido {
+      display: flex; }
+      #articulo #notaPartido #divNota2 {
+        display: grid;
+        grid-template-rows: 50px 180px 160px 150px 50px 1160px 260px; }
+        #articulo #notaPartido #divNota2 div .copeteNota {
+          width: 250px;
+          font-size: 11px;
+          padding-top: 10px;
+          padding-right: 18px;
+          padding-bottom: 10px;
+          padding-left: 18px; }
+        #articulo #notaPartido #divNota2 div .titular {
+          width: 310px;
+          font-size: 35px; }
+        #articulo #notaPartido #divNota2 #cajaSubtitulo {
+          width: 302px; }
+        #articulo #notaPartido #divNota2 .fotoArticulo {
+          width: 300px; }
+        #articulo #notaPartido #divNota2 .cajaPie {
+          width: 300px;
+          font-size: 12px; }
+        #articulo #notaPartido #divNota2 .notaPeriodistica {
+          width: 300px; }
+        #articulo #notaPartido #divNota2 .videoResumen .title-franklin {
+          font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif; }
+        #articulo #notaPartido #divNota2 .videoResumen iframe {
+          width: 300px;
+          height: 200px; }
+    #articulo #cajaComentarios {
+      display: flex; }
+      #articulo #cajaComentarios .comentarios {
+        display: grid;
+        grid-template-rows: 30px 45px 50px; }
+        #articulo #cajaComentarios .comentarios .title-impact {
+          font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif; }
+        #articulo #cajaComentarios .comentarios form .area-texto {
+          width: 300px;
+          height: 200px; }
   /*Artículo Banfield*/
-  #notaPartido {
-    display: flex;
-    grid-area: notaPartido; }
-    #notaPartido #divNota3 {
-      display: grid;
-      grid-template-rows: 50px 135px 120px 155px 80px 1740px 700px; }
-      #notaPartido #divNota3 div .copeteNota2 {
-        width: 300px;
-        font-size: 11px;
-        padding-top: 10px;
-        padding-right: 18px;
-        padding-bottom: 10px;
-        padding-left: 18px; }
-      #notaPartido #divNota3 div .titular {
-        width: 310px;
-        font-size: 35px; }
-      #notaPartido #divNota3 #cajaSubtitulo {
-        width: 302px; }
-      #notaPartido #divNota3 .fotoArticulo {
-        width: 300px; }
-      #notaPartido #divNota3 .cajaPie {
-        width: 300px;
-        font-size: 12px; }
-      #notaPartido #divNota3 .notaPeriodistica {
-        width: 300px; }
-        #notaPartido #divNota3 .notaPeriodistica .title-franklin {
-          font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
-          font-weight: bold; }
-      #notaPartido #divNota3 .videoResumen .title-franklin {
-        font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif; }
-      #notaPartido #divNota3 .videoResumen iframe {
-        width: 300px;
-        height: 200px; }
-  #cajaComentarios {
-    display: flex;
-    grid-area: cajaComentarios; }
-    #cajaComentarios .comentarios {
-      display: grid;
-      grid-template-rows: 30px 65px 50px; }
-      #cajaComentarios .comentarios .title-impact {
-        font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif; }
-      #cajaComentarios .comentarios form .area-texto {
-        width: 300px;
-        height: 30px; }
+  #articulo {
+    grid-area: articulo; }
+    #articulo #notaPartido {
+      display: flex; }
+      #articulo #notaPartido #divNota3 {
+        display: grid;
+        grid-template-rows: 50px 135px 120px 155px 80px 1690px 260px; }
+        #articulo #notaPartido #divNota3 div .copeteNota2 {
+          width: 300px;
+          font-size: 11px;
+          padding-top: 10px;
+          padding-right: 18px;
+          padding-bottom: 10px;
+          padding-left: 18px; }
+        #articulo #notaPartido #divNota3 div .titular {
+          width: 310px;
+          font-size: 35px; }
+        #articulo #notaPartido #divNota3 #cajaSubtitulo {
+          width: 302px; }
+        #articulo #notaPartido #divNota3 .fotoArticulo {
+          width: 300px; }
+        #articulo #notaPartido #divNota3 .cajaPie {
+          width: 300px;
+          font-size: 12px; }
+        #articulo #notaPartido #divNota3 .notaPeriodistica {
+          width: 300px; }
+          #articulo #notaPartido #divNota3 .notaPeriodistica .title-franklin {
+            font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+            font-weight: bold; }
+        #articulo #notaPartido #divNota3 .videoResumen .title-franklin {
+          font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif; }
+        #articulo #notaPartido #divNota3 .videoResumen iframe {
+          width: 300px;
+          height: 200px; }
+    #articulo #cajaComentarios {
+      display: flex; }
+      #articulo #cajaComentarios .comentarios {
+        display: grid;
+        grid-template-rows: 30px 65px 50px; }
+        #articulo #cajaComentarios .comentarios .title-impact {
+          font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif; }
+        #articulo #cajaComentarios .comentarios form .area-texto {
+          width: 300px;
+          height: 30px; }
   /*Footer*/
   #piePagina {
     grid-area: footer;
@@ -977,7 +986,7 @@
   #padreStats {
     display: grid;
     grid-template-areas: "cabecera navegador" ". tablaGrupo "                             "footer footer";
-    grid-template-rows: 100px 1250px 470px;
+    grid-template-rows: 100px 1200px 470px;
     grid-template-columns: 10px 415px;
     grid-row-gap: 50px; }
   /*TABLAS*/
@@ -1015,55 +1024,61 @@
 @media (min-width: 0px) and (max-width: 425px) {
   #padreAgenda {
     display: grid;
-    grid-template-areas: "cabecera navegador " ". encabezadoAgenda " ". selector " ". cajaAgenda " "footer footer ";
-    grid-template-rows: 100px 630px 120px 1500px 470px;
+    grid-template-areas: "cabecera navegador " ". agenda " "footer footer ";
+    grid-template-rows: 100px 2250px 470px;
     grid-template-columns: 10px 310px;
     grid-row-gap: 10px; }
-  #encabezadoAgenda {
-    width: 300px;
-    height: 30px;
-    line-height: 30px; }
-    #encabezadoAgenda .contAgenda div .tituloAgenda {
-      width: 300px; }
-    #encabezadoAgenda .contAgenda div .subtituloAgenda {
-      width: 300px; }
-  #selector {
-    grid-area: selector;
-    width: 300px;
-    height: 120px;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    z-index: 2; }
-  #cajaAgenda {
-    width: 300px;
-    z-index: 1; }
-    #cajaAgenda div .eventosAgenda div table .horario {
-      display: block; }
-    #cajaAgenda div .eventosAgenda div table .celdaAgenda {
-      width: 350px;
-      transform: translateX(0px);
-      font-size: 12px; }
-      #cajaAgenda div .eventosAgenda div table .celdaAgenda .vs {
-        transform: translateX(-100px); } }
+  #agenda {
+    grid-area: agenda;
+    width: 360px;
+    display: grid;
+    grid-template-rows: 580px 100px 40px 80px 1450px; }
+    #agenda #encabezadoAgenda {
+      width: 300px;
+      height: 30px;
+      line-height: 30px; }
+      #agenda #encabezadoAgenda div .tituloAgenda {
+        width: 300px; }
+      #agenda #encabezadoAgenda div .subtituloAgenda {
+        width: 300px; }
+    #agenda #selector {
+      width: 300px;
+      height: 120px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-around;
+      z-index: 2; }
+    #agenda #cajaAgenda {
+      width: 300px;
+      z-index: 1; }
+      #agenda #cajaAgenda .eventosAgenda div table .horario {
+        display: block; }
+      #agenda #cajaAgenda .eventosAgenda div table .celdaAgenda {
+        width: 350px;
+        transform: translateX(0px);
+        font-size: 12px; }
+        #agenda #cajaAgenda .eventosAgenda div table .celdaAgenda .vs {
+          transform: translateX(-100px); } }
 
 /*FORMULARIOS*/
 @media (min-width: 0px) and (max-width: 425px) {
   #padreForm {
     display: grid;
-    grid-template-rows: 100px 600px 470px;
+    grid-template-rows: 100px 500px 470px;
     grid-template-columns: 10px 310px;
-    grid-template-areas: "cabecera navegador" ".  formularioSuscribe" "footer footer";
+    grid-template-areas: "cabecera navegador" ".  formulario" "footer footer";
     grid-row-gap: 10px; }
-  #formularioSuscribe {
-    grid-area: formularioSuscribe;
-    display: flex;
-    justify-content: flex-end;
-    padding-top: 50px; }
-    #formularioSuscribe #caja-form-principal {
-      display: grid;
-      grid-template-rows: 50px 300px;
-      padding-top: 15px; }
+  #formulario {
+    grid-area: formulario; }
+    #formulario #formularioSuscribe {
+      display: flex;
+      justify-content: flex-end;
+      padding-top: 50px;
+      transform: translate(10px, -80px); }
+      #formulario #formularioSuscribe #caja-form-principal {
+        display: grid;
+        grid-template-rows: 50px 300px;
+        padding-top: 15px; }
   .fondo-form {
     background-image: url(../img/fondo-formulario.jpg);
     background-repeat: no-repeat;

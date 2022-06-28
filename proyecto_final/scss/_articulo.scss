@@ -1,7 +1,6 @@
 /*ARTICULO*/  
 #articulo{
     grid-area: articulo;
-    background-color: aqua;
     #notaPartido{        
         .divNota{
             display: grid;        
@@ -40,7 +39,6 @@
         @include cajaComentarios;
     }
 } 
-
 
 /**/
 #articulo{
@@ -84,7 +82,6 @@
         }
     }
 }
-
 
 /**/
 #articulo{

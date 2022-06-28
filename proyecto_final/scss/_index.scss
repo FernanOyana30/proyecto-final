@@ -1,7 +1,6 @@
 /*TITULARES INDEX*/
 #titulares{
-    grid-area: titulares;
-    background-color: aqua;
+    grid-area: titulares;    
     #titularPrincipal{        
         div{
             transform: translateY(-29px); 
@@ -50,7 +49,6 @@
         justify-content: flex-start;        
         font-family: $font_impact;
         .cajaTitular{
-            background-color: burlywood; 
             width: 348px;
             height: 340px; 
             transform: translateY(-213px);          
@@ -86,7 +84,6 @@
         justify-content: flex-start;
         font-family: $font_impact;
         .cajaTitular2{
-            background-color: brown;
             width: 350px;
             height: 340px; 
             transform: translate(700px, -554px);

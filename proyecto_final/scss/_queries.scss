@@ -21,13 +21,12 @@
         grid-template-areas: 
                             "cabecera navegador  " 
                             ". aside "
-                            ". titularPrincipal "
-                            ". titularSecundario "
-                            ". titularSecundario2 "
+                            ". titulares "
+                            ". titulares "                            
                             "footer footer " 
                             ;
         grid-template-columns: 10px 415px;
-        grid-template-rows: 100px 80px 360px 360px 360px 400px;
+        grid-template-rows: 100px 80px 720px 360px 400px;
         grid-row-gap: 15px;
         grid-column-gap: 10px;        
     }
@@ -92,104 +91,109 @@
             width: 400px;
         }
     }
-    /*Titulares*/
-    #titularPrincipal{        
-        grid-area: titularPrincipal; 
-        div{
-            .copete{
-                width: 300px;
-                transform: translate(10px, 25px);       
-            }
-            a{
-                .imagenPrincipal{
-                    width: 400px;
+    /*MAIN*/
+    #titulares{
+        grid-area: titulares; 
+        width: 450px;       
+        #titularPrincipal{                    
+            div{                
+                width: 400px;
+                transform: translateY(0px);                
+                a{
+                    .imagenPrincipal{
+                        width: 400px;
+                        transform: translateY(-29px);
+                        position: relative;
+                        z-index: 1;
+                    }
                 }
-            }
-            .decoration{
-                .tituloPrincipal{
+                .copete{
+                    width: 300px;                    
+                    transform: translateX(10px); 
+                    position: relative; 
+                    z-index: 2;     
+                }
+                .decoration{
+                    .tituloPrincipal{
+                        width: 400px;
+                        color: black;
+                        transform: translate(0px, -30px);
+                        font-size: 25px;
+                        text-shadow: none;
+                        text-align: left;
+                    }
+                }            
+                .subtituloPrincipal{        
                     width: 400px;
-                    color: black;
-                    transform: translateX(0px);
-                    font-size: 25px;
-                    text-shadow: none;
+                    font-size: 14px;
                     text-align: left;
-                }
-            }            
-            .subtituloPrincipal{        
-                width: 400px;
-                font-size: 14px;
-                text-align: left;
-                color: black;
-                text-shadow: none;
-                transform: translate(0px, 5px);
-                line-height: 20px;
-            }
-        }
-    }
-    #titularSecundario{        
-        grid-area: titularSecundario;  
-        div{
-            a{
-                .imagenTitulo2{
-                    width: 400px;      
-                }
-            }
-        }
-        div{
-            .copete2{
-                transform: translate(10px, -220px);
-            }
-        }
-        div{
-            .decoration{
-                .titulo2{
-                    width: 400px;
                     color: black;
-                    transform: translateY(-75px);
-                    font-size: 25px;
                     text-shadow: none;
+                    transform: translate(0px, -30px);
+                    line-height: 20px;
                 }
             }
         }
-    }
-    section#titularSecundario2{        
-        grid-area: titularSecundario2; 
-        div{
-            a{
-                .imagenTitulo3{
-                    display: inline-block;
-                    position: absolute;
-                    width: 400px;
-                }
-            }
-        }
-        div{
-            .copete3{
+        #titularSecundario{        
+            .cajaTitular{
                 width: 400px;
-                transform: translate(10px, -72px);
+                transform: translateY(-10px);
+                a{
+                    .imagenTitulo2{
+                        width: 400px;      
+                    }
+                }
+                .copete2{
+                    transform: translate(10px, -190px);
+                }
+                .decoration{
+                    .titulo2{
+                        width: 400px;
+                        color: black;
+                        transform: translateY(-20px);
+                        font-size: 25px;
+                        text-shadow: none;
+                    }
+                }
             }
         }
-        div{
-            .decoration{
-                .titulo3{
+        #titularSecundario2{      
+            .cajaTitular2{
+                width: 400px;
+                height: 340px;
+                transform: translateY(0px);
+                a{
+                    .imagenTitulo3{
+                        display: inline-block;
+                        position: absolute;
+                        width: 400px;
+                    }
+                }
+                .copete3{
                     width: 400px;
+                    transform: translate(10px, 5px);
+                }
+                .decoration{
+                    .titulo3{
+                        width: 400px;
+                        color: black;
+                        transform: translateY(176px);
+                        font-size: 25px;
+                        text-shadow: none;
+                    }
+                }
+                .subtitulo3{
+                    width: 400px;
+                    font-size: 14px;
+                    text-align: left;
                     color: black;
-                    transform: translateY(25px);
-                    font-size: 25px;
                     text-shadow: none;
+                    transform: translateY(180px);
+                    line-height: 20px;
                 }
-            }
-            .subtitulo3{
-                width: 400px;
-                font-size: 14px;
-                text-align: left;
-                color: black;
-                text-shadow: none;
-                transform: translateY(30px);
-                line-height: 20px;
-            }
-        } 
-    }        
+            } 
+        }   
+    }   
 }
 
 /*ARTICULO*/
@@ -197,235 +201,234 @@
     #padreArticulo{
         display: grid;
         grid-template-areas: "cabecera navegador"  
-                            ". notaPartido  " 
-                            ". cajaComentarios " 
+                            ". articulo " 
                             "footer footer  ";
         grid-template-columns: 10px 315px ;
-        grid-template-rows: 100px 3500px 170px 400px;
+        grid-template-rows: 100px 3670px 400px;
         grid-row-gap: 10px;
     }
     #padreArticulo2{
         display: grid;
         grid-template-areas:"cabecera navegador"
-                            ". notaPartido  "
-                            ". cajaComentarios  "
+                            ". articulo  "
                             "footer footer  ";
     grid-template-columns: 10px 315px ;
-    grid-template-rows: 100px 2000px 170px 400px;
+    grid-template-rows: 100px 2170px 400px;
     grid-row-gap: 10px;
     }
     #padreArticulo3{
         display: grid;
         grid-template-areas:"cabecera navegador  "
-                            ". notaPartido "
-                            ". cajaComentarios "
+                            ". articulo "
                             "footer footer ";
     grid-template-columns: 10px 315px ;
-    grid-template-rows: 100px 2580px 170px 400px;
+    grid-template-rows: 100px 2650px 400px;
     grid-row-gap: 10px;
     }
     /*Articulo River*/
-    #notaPartido{
-        display: flex;
-        grid-area: notaPartido;
-        .divNota{        
-            display: grid;
-            grid-template-rows: 50px 140px 160px 150px 50px 2700px 800px;
-            div{
-                .copeteNota{
-                    width: 250px;
-                    font-size: 11px;
-                    padding-top: 10px;
-                    padding-right: 18px;
-                    padding-bottom: 10px;
-                    padding-left: 18px;
+    #articulo{
+        grid-area: articulo;
+        #notaPartido{
+            display: flex;            
+            .divNota{        
+                display: grid;
+                grid-template-rows: 50px 140px 160px 150px 50px 2700px 260px;
+                div{
+                    .copeteNota{
+                        width: 250px;
+                        font-size: 11px;
+                        padding-top: 10px;
+                        padding-right: 18px;
+                        padding-bottom: 10px;
+                        padding-left: 18px;
+                    }
                 }
-            }
-            div{
-                .titular{
-                    width: 310px;
-                    font-size: 35px;
+                div{
+                    .titular{
+                        width: 310px;
+                        font-size: 35px;
+                    }
                 }
-            }
-            #cajaSubtitulo{
-                width: 302px;
-            }
-            .fotoArticulo{
-                width: 300px;
-            }
-            .cajaPie{
-                width: 300px;
-                font-size: 12px;
-            }            
-            .notaPeriodistica{
-                width: 300px;
-            }
-            .videoResumen{
-                .title-franklin{
-                    font-family: $font_franklin;
+                #cajaSubtitulo{
+                    width: 302px;
                 }
-                iframe{
+                .fotoArticulo{
                     width: 300px;
-                    height: 200px;
                 }
-            }            
-        }    
-    }
-    #cajaComentarios{
-        display: flex;
-        grid-area: cajaComentarios;
-        .comentarios{          
-            display: grid;
-            grid-template-rows: 30px 45px 50px ;
-            .title-impact{
-                font-family: $font_impact;
-            }
-            form{
-                .area-texto{
+                .cajaPie{
                     width: 300px;
-                    height: 200px;
-                }                
+                    font-size: 12px;
+                }            
+                .notaPeriodistica{
+                    width: 300px;
+                }
+                .videoResumen{
+                    .title-franklin{
+                        font-family: $font_franklin;
+                    }
+                    iframe{
+                        width: 300px;
+                        height: 200px;
+                    }
+                }            
+            }    
+        }
+        #cajaComentarios{
+            display: flex;
+            .comentarios{          
+                display: grid;
+                grid-template-rows: 30px 45px 50px ;
+                .title-impact{
+                    font-family: $font_impact;
+                }
+                form{
+                    .area-texto{
+                        width: 300px;
+                        height: 200px;
+                    }                
+                }
+            }
+        }
+    }   
+
+    /*Artículo Racing*/
+    #articulo{
+        grid-area: articulo;
+        #notaPartido{        
+            display: flex;
+            #divNota2{      
+                display: grid;
+                grid-template-rows: 50px 180px 160px 150px 50px 1160px 260px;        
+                div{
+                    .copeteNota{
+                        width: 250px;
+                        font-size: 11px;
+                        padding-top: 10px;
+                        padding-right: 18px;
+                        padding-bottom: 10px;
+                        padding-left: 18px;
+                    }
+                }
+                div{
+                    .titular{
+                        width: 310px;
+                        font-size: 35px;
+                    }
+                }
+                #cajaSubtitulo{
+                    width: 302px;
+                }
+                .fotoArticulo{
+                    width: 300px;
+                }
+                .cajaPie{
+                    width: 300px;
+                    font-size: 12px;
+                }            
+                .notaPeriodistica{
+                    width: 300px;
+                }
+                .videoResumen{   
+                    .title-franklin{
+                        font-family: $font_franklin;
+                    }
+                    iframe{
+                        width: 300px;
+                        height: 200px;
+                    }
+                }            
+            }    
+        }
+        #cajaComentarios{
+            display: flex;
+            .comentarios{          
+                display: grid;
+                grid-template-rows: 30px 45px 50px ;
+                .title-impact{
+                    font-family: $font_impact;
+                }
+                form{
+                    .area-texto{
+                        width: 300px;
+                        height: 200px;
+                    }                
+                }
             }
         }
     }
 
-    /*Artículo Racing*/
-    #notaPartido{        
-        display: flex;
-        grid-area: notaPartido;
-        #divNota2{      
-            display: grid;
-            grid-template-rows: 50px 180px 160px 150px 50px 1140px 800px;        
-            div{
-                .copeteNota{
-                    width: 250px;
-                    font-size: 11px;
-                    padding-top: 10px;
-                    padding-right: 18px;
-                    padding-bottom: 10px;
-                    padding-left: 18px;
-                }
-            }
-            div{
-                .titular{
-                    width: 310px;
-                    font-size: 35px;
-                }
-            }
-            #cajaSubtitulo{
-                width: 302px;
-            }
-            .fotoArticulo{
-                width: 300px;
-            }
-            .cajaPie{
-                width: 300px;
-                font-size: 12px;
-            }            
-            .notaPeriodistica{
-                width: 300px;
-            }
-            .videoResumen{   
-                .title-franklin{
-                    font-family: $font_franklin;
-                }
-                iframe{
-                    width: 300px;
-                    height: 200px;
-                }
-            }            
-        }    
-    }
-    #cajaComentarios{
-        display: flex;
-        grid-area: cajaComentarios;
-        .comentarios{          
-            display: grid;
-            grid-template-rows: 30px 45px 50px ;
-            .title-impact{
-                font-family: $font_impact;
-            }
-            form{
-                .area-texto{
-                    width: 300px;
-                    height: 200px;
-                }                
-            }
-        }
-    }
-    
-    
     /*Artículo Banfield*/
-    #notaPartido{
-        display: flex;
-        grid-area: notaPartido;
-        #divNota3{        
-            display: grid;
-            grid-template-rows: 50px 135px 120px 155px 80px 1740px 700px;
-            div{
-                .copeteNota2{
+    #articulo{
+        grid-area: articulo;
+        #notaPartido{
+            display: flex;
+            #divNota3{        
+                display: grid;
+                grid-template-rows: 50px 135px 120px 155px 80px 1690px 260px;
+                div{
+                    .copeteNota2{
+                        width: 300px;
+                        font-size: 11px;
+                        padding-top: 10px;
+                        padding-right: 18px;
+                        padding-bottom: 10px;
+                        padding-left: 18px;
+                    }
+                }
+                div{
+                    .titular{
+                        width: 310px;
+                        font-size: 35px;
+                    }
+                }
+                #cajaSubtitulo{
+                    width: 302px;
+                }
+                .fotoArticulo{
                     width: 300px;
-                    font-size: 11px;
-                    padding-top: 10px;
-                    padding-right: 18px;
-                    padding-bottom: 10px;
-                    padding-left: 18px;
                 }
-            }
-            div{
-                .titular{
-                    width: 310px;
-                    font-size: 35px;
-                }
-            }
-            #cajaSubtitulo{
-                width: 302px;
-            }
-            .fotoArticulo{
-                width: 300px;
-            }
-            .cajaPie{
-                width: 300px;
-                font-size: 12px;
-            }            
-            .notaPeriodistica{
-                width: 300px;
-                .title-franklin{
-                    font-family: $font_franklin;
-                    font-weight: bold;
-                }
-            }
-            .videoResumen{
-                .title-franklin{
-                    font-family: $font_franklin;
-                }
-                iframe{
+                .cajaPie{
                     width: 300px;
-                    height: 200px;
-                }
-            }            
-        }    
-    }
-    #cajaComentarios{
-        display: flex;
-        grid-area: cajaComentarios;
-        .comentarios{          
-            display: grid;
-            grid-template-rows: 30px 65px 50px;
-            .title-impact{
-                font-family: $font_impact;
-            }
-            form{
-                .area-texto{
+                    font-size: 12px;
+                }            
+                .notaPeriodistica{
                     width: 300px;
-                    height: 30px;
-                }                
+                    .title-franklin{
+                        font-family: $font_franklin;
+                        font-weight: bold;
+                    }
+                }
+                .videoResumen{
+                    .title-franklin{
+                        font-family: $font_franklin;
+                    }
+                    iframe{
+                        width: 300px;
+                        height: 200px;
+                    }
+                }            
+            }    
+        }
+        #cajaComentarios{
+            display: flex;
+            .comentarios{          
+                display: grid;
+                grid-template-rows: 30px 65px 50px;
+                .title-impact{
+                    font-family: $font_impact;
+                }
+                form{
+                    .area-texto{
+                        width: 300px;
+                        height: 30px;
+                    }                
+                }
             }
         }
-    }
+    }  
     
-     /*Footer*/
-     #piePagina{
+    /*Footer*/
+    #piePagina{
         grid-area: footer;
         display: flex;
         align-content: center;
@@ -461,7 +464,7 @@
         grid-template-areas:"cabecera navegador"
                             ". tablaGrupo "                            
                             "footer footer";
-        grid-template-rows: 100px 1250px 470px;
+        grid-template-rows: 100px 1200px 470px;
         grid-template-columns: 10px 415px;    
         grid-row-gap: 50px;
     }  
@@ -513,8 +516,7 @@
             
                 .celdaEquipoGris{
                     width: 178px;
-                }
-            
+                }            
                 .celdaPtsGris{
                     width: 50px;
                 }
@@ -531,42 +533,43 @@
     #padreAgenda{
         display: grid;
         grid-template-areas:"cabecera navegador "
-                            ". encabezadoAgenda "
-                            ". selector "
-                            ". cajaAgenda "
+                            ". agenda "
                             "footer footer ";
-        grid-template-rows: 100px 630px 120px 1500px 470px;
+        grid-template-rows: 100px 2250px 470px;
         grid-template-columns: 10px 310px;    
         grid-row-gap: 10px;
     }    
-    #encabezadoAgenda{
-        width: 300px;
-        height: 30px;
-        line-height: 30px;
-        .contAgenda{
+    #agenda{
+        grid-area: agenda;
+        width: 360px;
+        display: grid;
+        grid-template-rows: 580px 100px 40px 80px 1450px;
+        #encabezadoAgenda{
+            width: 300px;
+            height: 30px;
+            line-height: 30px;            
             div{
                 .tituloAgenda{
                     width: 300px;                    
                 }
+            }
+            div{
                 .subtituloAgenda{
                     width: 300px;                    
                 }
-            }
+            }            
         }
-    }
-    #selector{
-        grid-area: selector;
-        width: 300px;
-        height: 120px;
-        display: flex;
-        flex-direction: column;
-        justify-content: space-around;
-        z-index: 2;
-    }        
-    #cajaAgenda{
-        width: 300px;
-        z-index: 1;
-        div{
+        #selector{           
+            width: 300px;
+            height: 120px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+            z-index: 2;
+        }        
+        #cajaAgenda{
+            width: 300px;
+            z-index: 1;
             .eventosAgenda{
                 div{
                     table{
@@ -583,36 +586,37 @@
                         }
                     }
                 }
-            }            
-        }                               
-    }            
+            }                          
+        }
+    }                
 }
-     
-
 
 /*FORMULARIOS*/
 @media (min-width: 0px) and (max-width: 425px) {
     #padreForm{
         display: grid;
-        grid-template-rows: 100px 600px 470px;
+        grid-template-rows: 100px 500px 470px;
         grid-template-columns: 10px 310px;
         grid-template-areas:
                             "cabecera navegador"
-                            ".  formularioSuscribe"
+                            ".  formulario"
                             "footer footer";        
         grid-row-gap: 10px;}
 
-    #formularioSuscribe{
-        grid-area: formularioSuscribe;
-        display: flex;
-        justify-content: flex-end;
-        padding-top: 50px;
-        #caja-form-principal{   
-            display: grid;
-            grid-template-rows: 50px 300px;
-            padding-top: 15px;
+    #formulario{
+        grid-area: formulario;
+        #formularioSuscribe{        
+            display: flex;
+            justify-content: flex-end;
+            padding-top: 50px;
+            transform: translate(10px, -80px);
+            #caja-form-principal{   
+                display: grid;
+                grid-template-rows: 50px 300px;
+                padding-top: 15px;
+            }
         }
-    }    
+    }        
 
     .fondo-form{
         background-image: url(../img/fondo-formulario.jpg);
