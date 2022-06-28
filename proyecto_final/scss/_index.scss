@@ -51,7 +51,7 @@
         .cajaTitular{
             width: 348px;
             height: 340px; 
-            transform: translateY(-213px);          
+            transform: translateY(-214px);          
             a{
                 .imagenTitulo2{
                     width: 348px; 
@@ -61,7 +61,7 @@
             .copete2{
                 width: 300px;
                 @include copete_index;
-                transform: translate(4px, -165px);
+                transform: translate(4px, -167px);
             }            
             .decoration{
                 text-decoration: none;
