@@ -28,7 +28,7 @@
 /*ARTICULOS*/
 #padreArticulo{  
     display: grid;
-    grid-template-rows: 100px 3800px 470px;
+    grid-template-rows: 100px 4900px 470px;
     grid-template-columns: 100px 920px 128px 100px;
     grid-row-gap: 50px;
     grid-template-areas:
@@ -39,7 +39,7 @@
 
 #padreArticulo2{ 
     display: grid;   
-    grid-template-rows: 100px 2124px 470px;
+    grid-template-rows: 100px 3900px 470px;
     grid-template-columns: 100px 920px 128px 100px;
     grid-row-gap: 50px;    
     grid-template-areas:
@@ -50,7 +50,7 @@
 
 #padreArticulo3{
     display: grid;    
-    grid-template-rows: 100px 2498px 470px;
+    grid-template-rows: 100px 4350px 470px;
     grid-template-columns: 100px 920px 128px 100px;
     grid-row-gap: 50px;    
     grid-template-areas:

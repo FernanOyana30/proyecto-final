@@ -110,6 +110,75 @@ $button_green: map-get($button, button_green );
     color: $text_gray;
 }
 
+@mixin marcador{    
+        width: 900px;
+        height: 150px;
+        text-align: center;
+        display: grid;
+        grid-template-columns: 350px 200px 350px;
+        grid-template-rows: 150px ;                
+        justify-content: space-between; 
+        align-items: center;
+        background-color: rgb(49, 47, 47);                 
+        .equipo-local{
+            font-family: 'Times New Roman', Times, serif;
+            font-weight: bold;
+            color: $text_white;
+            text-align: center;
+            font-size: 30px;
+            display: flex;
+            flex-direction: row; 
+            transform: translateX(40px);                   
+            .escudo{
+                width: 70px;
+                height: 70px;
+            }
+        }
+        .resultado{
+            font-family: 'Times New Roman', Times, serif;
+            font-weight: bold;
+            color: $text_white;
+            text-align: center;
+            font-size: 50px;
+            background-color: orange;
+            height: 150px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .equipo-visitante{
+            font-family: 'Times New Roman', Times, serif;
+            font-weight: bold;
+            color: $text_white;
+            text-align: center;
+            font-size: 30px;
+            display: flex;
+            flex-direction: row;  
+            transform: translateX(40px);                  
+            .escudo{
+                width: 70px;
+                height: 70px;
+            }
+        }
+        span{
+            .goles-local{                        
+                width: 130px;
+                height: 50px;
+                transform: translate(45px, -65px);
+                color: $text_white;
+                font-size: 12px;
+            }
+            .goles-visitante{                        
+                width: 150px;
+                height: 50px;
+                transform: translate(640px, -130px);
+                color: $text_white;                        
+                font-size: 12px;
+            }
+        }
+    }
+
+
 @mixin nota{
     width: 500px;
     font-family: $font_georgia;

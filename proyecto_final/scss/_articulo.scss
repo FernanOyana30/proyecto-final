@@ -4,7 +4,7 @@
     #notaPartido{        
         .divNota{
             display: grid;        
-            grid-template-rows: 50px 150px 80px 450px 50px 160px 80px 2000px 410px;
+            grid-template-rows: 50px 150px 80px 450px 80px 160px 80px 2000px 410px 850px 450px;
             div{
                 .copeteNota{
                     @include copete;
@@ -26,76 +26,7 @@
                 @include pieFoto;
             }
             .marcador-partido{
-                width: 900px;
-                height: 150px;
-                text-align: center;
-                display: grid;
-                grid-template-columns: 350px 200px 350px;
-                grid-template-rows: 150px ;                
-                justify-content: space-between; 
-                align-items: center;   
-                         
-                background-color: rgb(49, 47, 47);                 
-                .equipo-local{
-                    font-family: 'Times New Roman', Times, serif;
-                    font-weight: bold;
-                    color: $text_white;
-                    text-align: center;
-                    font-size: 30px;
-                    display: flex;
-                    flex-direction: row; 
-                    transform: translateX(40px);                   
-                    .escudo{
-                        width: 70px;
-                        height: 70px;
-                    }
-                }
-                .resultado{
-                    font-family: 'Times New Roman', Times, serif;
-                    font-weight: bold;
-                    color: $text_white;
-                    text-align: center;
-                    font-size: 50px;
-                    background-color: orange;
-                    height: 150px;
-                    display: flex;
-                    justify-content: center;
-                    align-items: center;
-                }
-                .equipo-visitante{
-                    font-family: 'Times New Roman', Times, serif;
-                    font-weight: bold;
-                    color: $text_white;
-                    text-align: center;
-                    font-size: 30px;
-                    display: flex;
-                    flex-direction: row;  
-                    transform: translateX(40px);                  
-                    .escudo{
-                        width: 70px;
-                        height: 70px;
-                    }
-                }
-                span{
-                    .goles-local{                        
-                        width: 150px;
-                        transform: translate(40px, -60px);
-                        color: $text_white;
-                        font-size: 12px;
-                        
-                        
-                    }
-                    .goles-visitante{                        
-                        width: 150px;
-                        height: 50px;
-                        transform: translate(660px, -100px);
-                        color: $text_white;
-                        
-                        font-size: 12px;
-                    }
-                }
-                
-                
+                @include marcador;
             }
 
             .notaPeriodistica{
@@ -105,6 +36,14 @@
                 .resumenPartido{
                     @include videoResumen;
                 }
+            }
+            .alineaciones{
+                .alineacion-visitante{
+                    transform: translate(270px, -794px);
+                }
+            }
+            .cronologia{
+                overflow: scroll;
             }
         }
     }
@@ -119,7 +58,7 @@
     #notaPartido{        
         #divNota2{        
             display: grid;        
-            grid-template-rows: 50px 150px 80px 450px 60px 756px 410px;
+            grid-template-rows: 50px 150px 80px 450px 80px 160px 80px 880px 410px 960px 450px;
             div{
                 .copeteNota{  
                     @include copete;            
@@ -141,6 +80,32 @@
             .cajaPie{
                 @include pieFoto;
             }
+            .marcador-partido{
+                @include marcador;
+                .equipo-local{
+                    font-family: 'Times New Roman', Times, serif;
+                    font-weight: bold;
+                    color: $text_white;
+                    text-align: center;
+                    font-size: 30px;
+                    display: flex;
+                    flex-direction: row; 
+                    transform: translateX(120px);                   
+                    .escudo{
+                        width: 70px;
+                        height: 70px;
+                    }
+                }
+                span{
+                    .goles-local{                        
+                        width: 130px;
+                        height: 50px;
+                        transform: translate(120px, -65px);
+                        color: $text_white;
+                        font-size: 12px;
+                    }
+                }
+            }
             .notaPeriodistica{
                 @include nota; 
             }
@@ -148,6 +113,14 @@
                 .resumenPartido{
                     @include videoResumen;
                 }
+            }
+            .alineaciones{
+                .alineacion-visitante{
+                    transform: translate(270px, -941px);
+                }
+            }
+            .cronologia{
+                overflow: scroll;
             }
         }        
         #cajaComentarios{
@@ -162,7 +135,7 @@
     #notaPartido{        
         #divNota3{
             display: grid;        
-            grid-template-rows: 50px 150px 80px 450px 60px 1130px 410px;
+            grid-template-rows: 50px 150px 80px 450px 80px 160px 80px 1330px 410px 950px 450px;
             div{
                 .copeteNota2{
                     @include copete;
@@ -184,6 +157,10 @@
             .cajaPie{
                 @include pieFoto;
             }
+            .marcador-partido{
+                @include marcador;                
+                    
+            }
             .notaPeriodistica{
                 @include nota; 
                 .title-franklin{
@@ -193,6 +170,14 @@
             }
             .VideoResumen{
                 @include videoResumen;  
+            }
+            .alineaciones{
+                .alineacion-visitante{
+                    transform: translate(270px, -932px);
+                }
+            }
+            .cronologia{
+                overflow: scroll;
             }
         }    
         #cajaComentarios{
