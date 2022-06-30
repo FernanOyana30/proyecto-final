@@ -352,7 +352,6 @@
       font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
       font-size: 22px; }
     #articulo #notaPartido .divNota .alineaciones {
-      background-color: aqua;
       width: 900px;
       height: 1100px;
       display: flex;
@@ -869,7 +868,6 @@
           width: 300px;
           height: 200px; }
         #articulo #notaPartido .divNota .alineaciones {
-          background-color: aqua;
           width: 300px;
           height: auto; }
         #articulo #notaPartido .divNota .cronologia {
