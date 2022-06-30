@@ -28,23 +28,9 @@
 /*ARTICULOS*/
 #padreArticulo {
   display: grid;
-  grid-template-rows: 100px 4900px 470px;
+  grid-template-rows: 100px auto 470px;
   grid-template-columns: 100px 920px 128px 100px;
-  grid-row-gap: 50px;
-  grid-template-areas: "cabecera navegador navegador navegador" ". articulo articulo ."                         "footer footer footer footer"; }
-
-#padreArticulo2 {
-  display: grid;
-  grid-template-rows: 100px 3900px 470px;
-  grid-template-columns: 100px 920px 128px 100px;
-  grid-row-gap: 50px;
-  grid-template-areas: "cabecera navegador navegador navegador" ". articulo articulo ."                         "footer footer footer footer"; }
-
-#padreArticulo3 {
-  display: grid;
-  grid-template-rows: 100px 4350px 470px;
-  grid-template-columns: 100px 920px 128px 100px;
-  grid-row-gap: 50px;
+  grid-row-gap: 90px;
   grid-template-areas: "cabecera navegador navegador navegador" ". articulo articulo ."                         "footer footer footer footer"; }
 
 /*ESTADISTICAS*/
@@ -112,7 +98,7 @@
   align-items: center;
   position: fixed;
   top: 0px;
-  left: 100px;
+  left: 99px;
   border-bottom: inset 3px gray;
   z-index: 3; }
   #navegador .menuNav {
@@ -260,7 +246,7 @@
   grid-area: articulo; }
   #articulo #notaPartido .divNota {
     display: grid;
-    grid-template-rows: 50px 150px 80px 450px 80px 160px 80px 2000px 410px 850px 450px; }
+    grid-template-rows: 50px 150px 80px 450px 80px 160px 80px auto 410px 50px auto 450px; }
     #articulo #notaPartido .divNota div .copeteNota {
       background-color: yellowgreen;
       color: white;
@@ -274,7 +260,7 @@
       padding-right: 18px;
       padding-bottom: 10px;
       padding-left: 18px;
-      width: 284px; }
+      width: 350px; }
     #articulo #notaPartido .divNota div .titular {
       width: 800px;
       height: 120px;
@@ -365,10 +351,19 @@
     #articulo #notaPartido .divNota .videoResumen .resumenPartido {
       font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
       font-size: 22px; }
-    #articulo #notaPartido .divNota .alineaciones .alineacion-visitante {
-      transform: translate(270px, -794px); }
+    #articulo #notaPartido .divNota .alineaciones {
+      background-color: aqua;
+      width: 900px;
+      height: 1100px;
+      display: flex;
+      flex-direction: column;
+      flex-wrap: wrap;
+      justify-content: flex-start;
+      align-items: stretch; }
+      #articulo #notaPartido .divNota .alineaciones .alineacion-visitante {
+        transform: translateY(-24px); }
     #articulo #notaPartido .divNota .cronologia {
-      overflow: scroll; }
+      overflow: auto; }
   #articulo #cajaComentarios .comentarios {
     display: grid;
     grid-template-rows: 30px 30px 50px; }
@@ -376,273 +371,6 @@
       font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
       font-size: 22px; }
   #articulo #cajaComentarios form .botonForm:hover {
-    background-color: #b4f03d; }
-
-/**/
-#articulo {
-  grid-area: articulo; }
-  #articulo #notaPartido #divNota2 {
-    display: grid;
-    grid-template-rows: 50px 150px 80px 450px 80px 160px 80px 880px 410px 960px 450px; }
-    #articulo #notaPartido #divNota2 div .copeteNota {
-      background-color: yellowgreen;
-      color: white;
-      text-shadow: 1px 1px black;
-      border: ridge 1px 1px gray;
-      font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
-      font-size: 14px;
-      font-weight: bold;
-      text-align: center;
-      padding-top: 10px;
-      padding-right: 18px;
-      padding-bottom: 10px;
-      padding-left: 18px;
-      width: 284px; }
-    #articulo #notaPartido #divNota2 div .titular {
-      width: 800px;
-      height: 120px;
-      font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
-      font-size: 50px;
-      line-height: normal; }
-    #articulo #notaPartido #divNota2 #cajaSubtitulo {
-      width: 900px;
-      height: 50px; }
-      #articulo #notaPartido #divNota2 #cajaSubtitulo .subtitulo {
-        color: #504f4f;
-        font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
-        font-size: 19px; }
-    #articulo #notaPartido #divNota2 .fotoArticulo {
-      width: 900px; }
-    #articulo #notaPartido #divNota2 .cajaPie {
-      width: 700px;
-      margin-right: 100px;
-      padding-right: 10px;
-      font-family: Arial, Helvetica, sans-serif;
-      font-weight: bold;
-      font-size: 14px;
-      color: #504f4f; }
-    #articulo #notaPartido #divNota2 .marcador-partido {
-      width: 900px;
-      height: 150px;
-      text-align: center;
-      display: grid;
-      grid-template-columns: 350px 200px 350px;
-      grid-template-rows: 150px;
-      justify-content: space-between;
-      align-items: center;
-      background-color: #312f2f; }
-      #articulo #notaPartido #divNota2 .marcador-partido .equipo-local {
-        font-family: 'Times New Roman', Times, serif;
-        font-weight: bold;
-        color: white;
-        text-align: center;
-        font-size: 30px;
-        display: flex;
-        flex-direction: row;
-        transform: translateX(40px); }
-        #articulo #notaPartido #divNota2 .marcador-partido .equipo-local .escudo {
-          width: 70px;
-          height: 70px; }
-      #articulo #notaPartido #divNota2 .marcador-partido .resultado {
-        font-family: 'Times New Roman', Times, serif;
-        font-weight: bold;
-        color: white;
-        text-align: center;
-        font-size: 50px;
-        background-color: orange;
-        height: 150px;
-        display: flex;
-        justify-content: center;
-        align-items: center; }
-      #articulo #notaPartido #divNota2 .marcador-partido .equipo-visitante {
-        font-family: 'Times New Roman', Times, serif;
-        font-weight: bold;
-        color: white;
-        text-align: center;
-        font-size: 30px;
-        display: flex;
-        flex-direction: row;
-        transform: translateX(40px); }
-        #articulo #notaPartido #divNota2 .marcador-partido .equipo-visitante .escudo {
-          width: 70px;
-          height: 70px; }
-      #articulo #notaPartido #divNota2 .marcador-partido span .goles-local {
-        width: 130px;
-        height: 50px;
-        transform: translate(45px, -65px);
-        color: white;
-        font-size: 12px; }
-      #articulo #notaPartido #divNota2 .marcador-partido span .goles-visitante {
-        width: 150px;
-        height: 50px;
-        transform: translate(640px, -130px);
-        color: white;
-        font-size: 12px; }
-      #articulo #notaPartido #divNota2 .marcador-partido .equipo-local {
-        font-family: 'Times New Roman', Times, serif;
-        font-weight: bold;
-        color: white;
-        text-align: center;
-        font-size: 30px;
-        display: flex;
-        flex-direction: row;
-        transform: translateX(120px); }
-        #articulo #notaPartido #divNota2 .marcador-partido .equipo-local .escudo {
-          width: 70px;
-          height: 70px; }
-      #articulo #notaPartido #divNota2 .marcador-partido span .goles-local {
-        width: 130px;
-        height: 50px;
-        transform: translate(120px, -65px);
-        color: white;
-        font-size: 12px; }
-    #articulo #notaPartido #divNota2 .notaPeriodistica {
-      width: 500px;
-      font-family: Georgia, "Times New Roman", Times, serif;
-      font-size: 16px;
-      line-height: 30px; }
-      #articulo #notaPartido #divNota2 .notaPeriodistica p .negrita {
-        font-weight: bold; }
-    #articulo #notaPartido #divNota2 .VideoResumen .resumenPartido {
-      font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
-      font-size: 22px; }
-    #articulo #notaPartido #divNota2 .alineaciones .alineacion-visitante {
-      transform: translate(270px, -941px); }
-    #articulo #notaPartido #divNota2 .cronologia {
-      overflow: scroll; }
-  #articulo #notaPartido #cajaComentarios .comentarios {
-    display: grid;
-    grid-template-rows: 30px 30px 50px; }
-    #articulo #notaPartido #cajaComentarios .comentarios .resumenPartido {
-      font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
-      font-size: 22px; }
-  #articulo #notaPartido #cajaComentarios form .botonForm:hover {
-    background-color: #b4f03d; }
-
-/**/
-#articulo {
-  grid-area: articulo; }
-  #articulo #notaPartido #divNota3 {
-    display: grid;
-    grid-template-rows: 50px 150px 80px 450px 80px 160px 80px 1330px 410px 950px 450px; }
-    #articulo #notaPartido #divNota3 div .copeteNota2 {
-      background-color: yellowgreen;
-      color: white;
-      text-shadow: 1px 1px black;
-      border: ridge 1px 1px gray;
-      font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
-      font-size: 14px;
-      font-weight: bold;
-      text-align: center;
-      padding-top: 10px;
-      padding-right: 18px;
-      padding-bottom: 10px;
-      padding-left: 18px;
-      width: 340px; }
-    #articulo #notaPartido #divNota3 div .titular {
-      width: 800px;
-      height: 120px;
-      font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
-      font-size: 50px;
-      line-height: normal; }
-    #articulo #notaPartido #divNota3 #cajaSubtitulo {
-      width: 900px;
-      height: 50px; }
-      #articulo #notaPartido #divNota3 #cajaSubtitulo .subtitulo {
-        color: #504f4f;
-        font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
-        font-size: 19px; }
-    #articulo #notaPartido #divNota3 .fotoArticulo {
-      width: 900px; }
-    #articulo #notaPartido #divNota3 .cajaPie {
-      width: 700px;
-      margin-right: 100px;
-      padding-right: 10px;
-      font-family: Arial, Helvetica, sans-serif;
-      font-weight: bold;
-      font-size: 14px;
-      color: #504f4f; }
-    #articulo #notaPartido #divNota3 .marcador-partido {
-      width: 900px;
-      height: 150px;
-      text-align: center;
-      display: grid;
-      grid-template-columns: 350px 200px 350px;
-      grid-template-rows: 150px;
-      justify-content: space-between;
-      align-items: center;
-      background-color: #312f2f; }
-      #articulo #notaPartido #divNota3 .marcador-partido .equipo-local {
-        font-family: 'Times New Roman', Times, serif;
-        font-weight: bold;
-        color: white;
-        text-align: center;
-        font-size: 30px;
-        display: flex;
-        flex-direction: row;
-        transform: translateX(40px); }
-        #articulo #notaPartido #divNota3 .marcador-partido .equipo-local .escudo {
-          width: 70px;
-          height: 70px; }
-      #articulo #notaPartido #divNota3 .marcador-partido .resultado {
-        font-family: 'Times New Roman', Times, serif;
-        font-weight: bold;
-        color: white;
-        text-align: center;
-        font-size: 50px;
-        background-color: orange;
-        height: 150px;
-        display: flex;
-        justify-content: center;
-        align-items: center; }
-      #articulo #notaPartido #divNota3 .marcador-partido .equipo-visitante {
-        font-family: 'Times New Roman', Times, serif;
-        font-weight: bold;
-        color: white;
-        text-align: center;
-        font-size: 30px;
-        display: flex;
-        flex-direction: row;
-        transform: translateX(40px); }
-        #articulo #notaPartido #divNota3 .marcador-partido .equipo-visitante .escudo {
-          width: 70px;
-          height: 70px; }
-      #articulo #notaPartido #divNota3 .marcador-partido span .goles-local {
-        width: 130px;
-        height: 50px;
-        transform: translate(45px, -65px);
-        color: white;
-        font-size: 12px; }
-      #articulo #notaPartido #divNota3 .marcador-partido span .goles-visitante {
-        width: 150px;
-        height: 50px;
-        transform: translate(640px, -130px);
-        color: white;
-        font-size: 12px; }
-    #articulo #notaPartido #divNota3 .notaPeriodistica {
-      width: 500px;
-      font-family: Georgia, "Times New Roman", Times, serif;
-      font-size: 16px;
-      line-height: 30px; }
-      #articulo #notaPartido #divNota3 .notaPeriodistica p .negrita {
-        font-weight: bold; }
-      #articulo #notaPartido #divNota3 .notaPeriodistica .title-franklin {
-        font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
-        font-weight: bold; }
-    #articulo #notaPartido #divNota3 .VideoResumen {
-      font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
-      font-size: 22px; }
-    #articulo #notaPartido #divNota3 .alineaciones .alineacion-visitante {
-      transform: translate(270px, -932px); }
-    #articulo #notaPartido #divNota3 .cronologia {
-      overflow: scroll; }
-  #articulo #notaPartido #cajaComentarios .comentarios {
-    display: grid;
-    grid-template-rows: 30px 30px 50px; }
-    #articulo #notaPartido #cajaComentarios .comentarios .resumenPartido {
-      font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
-      font-size: 22px; }
-  #articulo #notaPartido #cajaComentarios form .botonForm:hover {
     background-color: #b4f03d; }
 
 /*AGENDA*/
@@ -1016,46 +744,123 @@
   #padreArticulo {
     display: grid;
     grid-template-areas: "cabecera navegador"   ". articulo "  "footer footer  ";
-    grid-template-columns: 10px 315px;
-    grid-template-rows: 100px 3670px 400px;
-    grid-row-gap: 10px; }
-  #padreArticulo2 {
-    display: grid;
-    grid-template-areas: "cabecera navegador" ". articulo  " "footer footer  ";
-    grid-template-columns: 10px 315px;
-    grid-template-rows: 100px 2170px 400px;
-    grid-row-gap: 10px; }
-  #padreArticulo3 {
-    display: grid;
-    grid-template-areas: "cabecera navegador  " ". articulo " "footer footer ";
-    grid-template-columns: 10px 315px;
-    grid-template-rows: 100px 2650px 400px;
-    grid-row-gap: 10px; }
-  /*Articulo River*/
+    grid-template-columns: 10px 415px;
+    grid-template-rows: 100px auto 400px;
+    grid-row-gap: 40px; }
+  /*Articulo*/
   #articulo {
     grid-area: articulo; }
     #articulo #notaPartido {
       display: flex; }
       #articulo #notaPartido .divNota {
         display: grid;
-        grid-template-rows: 50px 140px 160px 150px 50px 2700px 260px; }
+        grid-template-rows: 50px auto 140px 200px 50px 110px 85px auto 260px 50px auto 250px; }
         #articulo #notaPartido .divNota div .copeteNota {
-          width: 250px;
+          width: 275px;
           font-size: 11px;
           padding-top: 10px;
           padding-right: 18px;
           padding-bottom: 10px;
           padding-left: 18px; }
         #articulo #notaPartido .divNota div .titular {
-          width: 310px;
+          width: 410px;
           font-size: 35px; }
         #articulo #notaPartido .divNota #cajaSubtitulo {
-          width: 302px; }
+          width: 402px; }
         #articulo #notaPartido .divNota .fotoArticulo {
-          width: 300px; }
+          width: 400px; }
         #articulo #notaPartido .divNota .cajaPie {
-          width: 300px;
+          width: 400px;
           font-size: 12px; }
+        #articulo #notaPartido .divNota .marcador-partido {
+          width: 900px;
+          height: 150px;
+          text-align: center;
+          display: grid;
+          grid-template-columns: 350px 200px 350px;
+          grid-template-rows: 150px;
+          justify-content: space-between;
+          align-items: center;
+          background-color: #312f2f;
+          width: 400px;
+          height: 100px;
+          grid-template-columns: 350px 200px 350px; }
+          #articulo #notaPartido .divNota .marcador-partido .equipo-local {
+            font-family: 'Times New Roman', Times, serif;
+            font-weight: bold;
+            color: white;
+            text-align: center;
+            font-size: 30px;
+            display: flex;
+            flex-direction: row;
+            transform: translateX(40px); }
+            #articulo #notaPartido .divNota .marcador-partido .equipo-local .escudo {
+              width: 70px;
+              height: 70px; }
+          #articulo #notaPartido .divNota .marcador-partido .resultado {
+            font-family: 'Times New Roman', Times, serif;
+            font-weight: bold;
+            color: white;
+            text-align: center;
+            font-size: 50px;
+            background-color: orange;
+            height: 150px;
+            display: flex;
+            justify-content: center;
+            align-items: center; }
+          #articulo #notaPartido .divNota .marcador-partido .equipo-visitante {
+            font-family: 'Times New Roman', Times, serif;
+            font-weight: bold;
+            color: white;
+            text-align: center;
+            font-size: 30px;
+            display: flex;
+            flex-direction: row;
+            transform: translateX(40px); }
+            #articulo #notaPartido .divNota .marcador-partido .equipo-visitante .escudo {
+              width: 70px;
+              height: 70px; }
+          #articulo #notaPartido .divNota .marcador-partido span .goles-local {
+            width: 130px;
+            height: 50px;
+            transform: translate(45px, -65px);
+            color: white;
+            font-size: 12px; }
+          #articulo #notaPartido .divNota .marcador-partido span .goles-visitante {
+            width: 150px;
+            height: 50px;
+            transform: translate(640px, -130px);
+            color: white;
+            font-size: 12px; }
+          #articulo #notaPartido .divNota .marcador-partido .equipo-local {
+            transform: translate(5px, -20px);
+            width: 140px;
+            font-size: 15px; }
+            #articulo #notaPartido .divNota .marcador-partido .equipo-local .escudo {
+              width: 60px;
+              height: 60px; }
+          #articulo #notaPartido .divNota .marcador-partido .resultado {
+            transform: translate(-200px, -25px);
+            width: 100px;
+            height: 100px;
+            font-size: 35px; }
+          #articulo #notaPartido .divNota .marcador-partido .equipo-visitante {
+            transform: translate(-300px, -20px);
+            width: 140px;
+            font-size: 15px; }
+            #articulo #notaPartido .divNota .marcador-partido .equipo-visitante .escudo {
+              width: 60px;
+              height: 60px; }
+          #articulo #notaPartido .divNota .marcador-partido span .goles-local {
+            background-color: black;
+            transform: translate(5px, -65px);
+            display: none; }
+          #articulo #notaPartido .divNota .marcador-partido span .goles-visitante {
+            background-color: black;
+            transform: translate(250px, -131px);
+            display: none; }
+        #articulo #notaPartido .divNota #fecha-nota {
+          width: 400px; }
         #articulo #notaPartido .divNota .notaPeriodistica {
           width: 300px; }
         #articulo #notaPartido .divNota .videoResumen .title-franklin {
@@ -1063,103 +868,22 @@
         #articulo #notaPartido .divNota .videoResumen iframe {
           width: 300px;
           height: 200px; }
+        #articulo #notaPartido .divNota .alineaciones {
+          background-color: aqua;
+          width: 300px;
+          height: auto; }
+        #articulo #notaPartido .divNota .cronologia {
+          overflow: auto; }
     #articulo #cajaComentarios {
       display: flex; }
       #articulo #cajaComentarios .comentarios {
         display: grid;
-        grid-template-rows: 30px 45px 50px; }
+        grid-template-rows: 30px 50px 100px; }
         #articulo #cajaComentarios .comentarios .title-impact {
           font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif; }
         #articulo #cajaComentarios .comentarios form .area-texto {
           width: 300px;
-          height: 200px; }
-  /*Artículo Racing*/
-  #articulo {
-    grid-area: articulo; }
-    #articulo #notaPartido {
-      display: flex; }
-      #articulo #notaPartido #divNota2 {
-        display: grid;
-        grid-template-rows: 50px 180px 160px 150px 50px 1160px 260px; }
-        #articulo #notaPartido #divNota2 div .copeteNota {
-          width: 250px;
-          font-size: 11px;
-          padding-top: 10px;
-          padding-right: 18px;
-          padding-bottom: 10px;
-          padding-left: 18px; }
-        #articulo #notaPartido #divNota2 div .titular {
-          width: 310px;
-          font-size: 35px; }
-        #articulo #notaPartido #divNota2 #cajaSubtitulo {
-          width: 302px; }
-        #articulo #notaPartido #divNota2 .fotoArticulo {
-          width: 300px; }
-        #articulo #notaPartido #divNota2 .cajaPie {
-          width: 300px;
-          font-size: 12px; }
-        #articulo #notaPartido #divNota2 .notaPeriodistica {
-          width: 300px; }
-        #articulo #notaPartido #divNota2 .videoResumen .title-franklin {
-          font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif; }
-        #articulo #notaPartido #divNota2 .videoResumen iframe {
-          width: 300px;
-          height: 200px; }
-    #articulo #cajaComentarios {
-      display: flex; }
-      #articulo #cajaComentarios .comentarios {
-        display: grid;
-        grid-template-rows: 30px 45px 50px; }
-        #articulo #cajaComentarios .comentarios .title-impact {
-          font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif; }
-        #articulo #cajaComentarios .comentarios form .area-texto {
-          width: 300px;
-          height: 200px; }
-  /*Artículo Banfield*/
-  #articulo {
-    grid-area: articulo; }
-    #articulo #notaPartido {
-      display: flex; }
-      #articulo #notaPartido #divNota3 {
-        display: grid;
-        grid-template-rows: 50px 135px 120px 155px 80px 1690px 260px; }
-        #articulo #notaPartido #divNota3 div .copeteNota2 {
-          width: 300px;
-          font-size: 11px;
-          padding-top: 10px;
-          padding-right: 18px;
-          padding-bottom: 10px;
-          padding-left: 18px; }
-        #articulo #notaPartido #divNota3 div .titular {
-          width: 310px;
-          font-size: 35px; }
-        #articulo #notaPartido #divNota3 #cajaSubtitulo {
-          width: 302px; }
-        #articulo #notaPartido #divNota3 .fotoArticulo {
-          width: 300px; }
-        #articulo #notaPartido #divNota3 .cajaPie {
-          width: 300px;
-          font-size: 12px; }
-        #articulo #notaPartido #divNota3 .notaPeriodistica {
-          width: 300px; }
-          #articulo #notaPartido #divNota3 .notaPeriodistica .title-franklin {
-            font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
-            font-weight: bold; }
-        #articulo #notaPartido #divNota3 .videoResumen .title-franklin {
-          font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif; }
-        #articulo #notaPartido #divNota3 .videoResumen iframe {
-          width: 300px;
-          height: 200px; }
-    #articulo #cajaComentarios {
-      display: flex; }
-      #articulo #cajaComentarios .comentarios {
-        display: grid;
-        grid-template-rows: 30px 65px 50px; }
-        #articulo #cajaComentarios .comentarios .title-impact {
-          font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif; }
-        #articulo #cajaComentarios .comentarios form .area-texto {
-          width: 300px;
-          height: 30px; }
+          height: 50px; }
   /*Footer*/
   #piePagina {
     grid-area: footer;

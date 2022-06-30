@@ -14,7 +14,7 @@
     <link rel="icon" href="../img/sportia-favicon.ico">
 </head>
 <body>
-    <div id="padreArticulo3">
+    <div id="padreArticulo">
         <!--El logotipo funciona como botón de home-->   
         <header id="cabecera">                            
             <a href="../index.html"><img src="../img/sportia-logo.png" alt="pelota" class="logoSportia"></a></li>
@@ -43,9 +43,9 @@
         <main id="articulo">
             <!--INICIO ARTICULO PERIODISTICO-->
             <section id="notaPartido">
-                <div id="divNota3">
+                <div class="divNota">
                     <div>
-                        <h5 class="copeteNota2">SUDAMERICANA / U. CATOLICA (E) 2 - BANFIELD 0</h5>
+                        <h5 class="copeteNota">SUDAMERICANA / U. CATOLICA (E) 2 - BANFIELD 0</h5>
                     </div>
                     <div>
                         <h1 class="titular">Banfield y una dura derrota que lo complica</h1>
@@ -61,7 +61,7 @@
                         <span class="equipo-local"><p>U. Católica (E)</p><img class="escudo" src="../img/ucatolica-escudo.png" alt=""></span ><span class="resultado"><p >2 vs 0</p></span><span class="equipo-visitante"><img class="escudo" src="../img/banfield-escudo.png" alt=""><p >BANFIELD</p></span>
                         <span><p class="goles-local">Ismael Díaz 6' ST  Cristian Martínez 9' ST</p></span>
                     </div>
-                    <p class="fw-bold fs-6">CONMEBOL Sudamericana / Grupo C / Fecha 5 / 27 de Abril - 21:30h. / Augusto Alfredo Menendez / Estadio Olímpico Atahualpa</p> 
+                    <p id="fecha-nota" class="fw-bold fs-6">CONMEBOL Sudamericana / Grupo C / Fecha 5 / 27 de Abril - 21:30h. / Augusto Alfredo Menendez / Estadio Olímpico Atahualpa</p> 
                     <div class="notaPeriodistica">                           
                         <p>Fue una ráfaga fatal para Banfield. El equipo argentino perdió el partido en un lapso de apenas 60 segundos. <span class="negrita">Los mazazos propinados por el panameño Ismael Díaz y el colombiano Cristian Martínez Borja fueron dos impactos de los que el Taladro nunca logró reponerse.</span> El primer golpe de Universidad Católica de Ecuador llegó a los siete minutos del segundo tiempo y el segundo apenas dos minutos más tarde. La derrota complicó y mucho al conjunto de Diego Dabove, que quedó último en el Grupo G.</p>    
                         <br>
@@ -80,9 +80,9 @@
                         <h2 class="title-franklin fs-4">Resumen del partido</h2>
                         <iframe width="624" height="351" src="https://www.youtube.com/embed/-H56Aj2ga_Y" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                     </div>
-                    <div class="alineaciones">
-                        <h3 class="fs-5 fw-bold">Alineaciones</h3>
-                        <table class="alineacion-local table table-striped w-25 fs-6">
+                    <h3 class="fs-5 fw-bold">Alineaciones</h3>
+                    <div class="alineaciones">                        
+                        <table class="table table-striped w-25 fs-6">
                             <tr class="bg-secondary">
                                 <th></th>
                                 <th class="text-light">U. Católica (E)</th>
@@ -184,8 +184,8 @@
                                 <td>DT</td>
                             </tr><!-- cierre de la segunda fila-->
                         </table>
-                        <br>
-                        <table class="alineacion-visitante table table-striped w-25 fs-6">
+                        
+                        <table class="table table-striped w-25 fs-6">
                             <tr class="bg-secondary">
                                 <th></th>
                                 <th class="text-light">Banfield</th>
@@ -288,7 +288,7 @@
                             </tr><!-- cierre de la segunda fila-->
                         </table>
                     </div>
-                    <div class="cronologia w-50">
+                    <div class="cronologia w-75">
                         <table class="table table-striped w-100 fs-6">
                             <tr class="bg-secondary">
                                 <th class="text-light">Cronología</th>
@@ -403,7 +403,8 @@
                         </table>
                     </div>                                  
                 </div>           
-            </section>      
+            </section> 
+            <br>     
             <!--INICIO COMENTARIOS-->
             <section id="cajaComentarios">
                 <div class="comentarios">

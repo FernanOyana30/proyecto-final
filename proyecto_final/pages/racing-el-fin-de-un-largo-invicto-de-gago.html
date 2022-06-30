@@ -14,7 +14,7 @@
     <link rel="icon" href="../img/sportia-favicon.ico">
 </head>
 <body>   
-    <div id="padreArticulo2">
+    <div id="padreArticulo">
         <!--El logotipo funciona como botón de home-->   
         <header id="cabecera">                            
             <a href="../index.html"><img src="../img/sportia-logo.png" alt="pelota" class="logoSportia"></a></li>
@@ -43,7 +43,7 @@
         <main id="articulo">
             <!--INICIO ARTICULO PERIODISTICO-->
             <section id="notaPartido">
-                <div id="divNota2">
+                <div class="divNota">
                     <div>
                         <h5 class="copeteNota">SUDAMERICANA / MELGAR - RACING</h5>
                     </div>
@@ -61,7 +61,7 @@
                         <span class="equipo-local"><p>MELGAR</p><img class="escudo" src="../img/melgar-escudo.png" alt=""></span ><span class="resultado"><p>3 vs 1</p></span><span class="equipo-visitante"><img class="escudo" src="../img/racing-escudo.png" alt=""><p >RACING</p></span>
                         <span><p class="goles-local">Luis Ibérico 21' PT, 7' ST Bernardo Cuesta 21' ST</p><p class="goles-visitante">Javier Correa 42' ST</p></span>
                     </div> 
-                    <p class="fw-bold fs-6" font-size="12px">CONMEBOL Sudamericana / Grupo B / Fecha 3 / 27 de Abril - 19:15h. / Dilio Rodríguez / Estadio Monumental de la UNSA</p>
+                    <p id="fecha-nota" class="fw-bold fs-6" font-size="12px">CONMEBOL Sudamericana / Grupo B / Fecha 3 / 27 de Abril - 19:15h. / Dilio Rodríguez / Estadio Monumental de la UNSA</p>
                     <div class="notaPeriodistica">
                         <p><span class="negrita"> En el Estadio Monumental de Arequipa se terminó el invicto del Racing de Fernando Gago en 2022. La Academia cayó 3-1 ante Melgar</span> por la tercera fecha del grupo B de la <span class="negrita"> Copa Sudamericana.</span> El equipo de Pintita, además también se quedó sin el liderazgo de su zona y actualmente está afuera de los octavos de final...</p>    
                         <br>
@@ -75,10 +75,10 @@
                     <div class="videoResumen">
                         <h2 class="title-franklin fs-4">Resumen del partido</h2>
                         <iframe width="624" height="351" src="https://www.youtube.com/embed/bEQlOvKB3t4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen ></iframe>
-                    </div>   
-                    <div class="alineaciones">
-                        <h3 class="fs-5 fw-bold">Alineaciones</h3>
-                        <table class="alineacion-titular table table-striped w-25 fs-6">
+                    </div>  
+                    <h3 class="fs-5 fw-bold">Alineaciones</h3> 
+                    <div class="alineaciones">                        
+                        <table class="table table-striped w-25 fs-6">
                             <tr class="bg-secondary">
                                 <th></th>
                                 <th class="text-light">Melgar</th>
@@ -176,7 +176,7 @@
                             </tr><!-- cierre de la segunda fila-->
                         </table>
                         <br>
-                        <table class="alineacion-visitante table table-striped w-25 fs-6">
+                        <table class="table table-striped w-25 fs-6">
                             <tr class="bg-secondary">
                                 <th></th>
                                 <th class="text-light">Racing Club</th>
@@ -279,7 +279,7 @@
                             </tr><!-- cierre de la segunda fila-->
                         </table>
                     </div> 
-                    <div class="cronologia w-50">
+                    <div class="cronologia w-75">
                         <table class="table table-striped w-100 fs-6">
                             <tr class="bg-secondary">
                                 <th class="text-light">Cronología</th>
@@ -404,7 +404,8 @@
                         </table>
                     </div>            
                 </div> 
-            </section>   
+            </section>  
+            <br> 
             <!--INICIO COMENTARIOS-->
             <section id="cajaComentarios"> 
                 <div class="comentarios">

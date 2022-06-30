@@ -4,11 +4,10 @@
     #notaPartido{        
         .divNota{
             display: grid;        
-            grid-template-rows: 50px 150px 80px 450px 80px 160px 80px 2000px 410px 850px 450px;
+            grid-template-rows: 50px 150px 80px 450px 80px 160px 80px auto 410px 50px auto 450px;
             div{
                 .copeteNota{
-                    @include copete;
-                    width: 284px;
+                    @include copete;                    
                 }
             }
             div{
@@ -28,7 +27,6 @@
             .marcador-partido{
                 @include marcador;
             }
-
             .notaPeriodistica{
                 @include nota; 
             }
@@ -38,12 +36,21 @@
                 }
             }
             .alineaciones{
+                background-color: aqua;
+                width: 900px;
+                height: 1100px;
+                display: flex;
+                flex-direction: column;
+                flex-wrap: wrap;
+                justify-content: flex-start;
+                align-items: stretch;
                 .alineacion-visitante{
-                    transform: translate(270px, -794px);
+                    transform: translateY(-24px);
                 }
+                
             }
             .cronologia{
-                overflow: scroll;
+                overflow: auto;
             }
         }
     }
@@ -51,138 +58,3 @@
         @include cajaComentarios;
     }
 } 
-
-/**/
-#articulo{
-    grid-area: articulo;
-    #notaPartido{        
-        #divNota2{        
-            display: grid;        
-            grid-template-rows: 50px 150px 80px 450px 80px 160px 80px 880px 410px 960px 450px;
-            div{
-                .copeteNota{  
-                    @include copete;            
-                    width: 284px;
-                }
-            }
-            div{
-                .titular{
-                    @include titular;
-                }
-            }        
-            #cajaSubtitulo{
-                @include subtitulo;
-            }
-            
-            .fotoArticulo{
-                width: 900px;
-            }
-            .cajaPie{
-                @include pieFoto;
-            }
-            .marcador-partido{
-                @include marcador;
-                .equipo-local{
-                    font-family: 'Times New Roman', Times, serif;
-                    font-weight: bold;
-                    color: $text_white;
-                    text-align: center;
-                    font-size: 30px;
-                    display: flex;
-                    flex-direction: row; 
-                    transform: translateX(120px);                   
-                    .escudo{
-                        width: 70px;
-                        height: 70px;
-                    }
-                }
-                span{
-                    .goles-local{                        
-                        width: 130px;
-                        height: 50px;
-                        transform: translate(120px, -65px);
-                        color: $text_white;
-                        font-size: 12px;
-                    }
-                }
-            }
-            .notaPeriodistica{
-                @include nota; 
-            }
-            .VideoResumen{
-                .resumenPartido{
-                    @include videoResumen;
-                }
-            }
-            .alineaciones{
-                .alineacion-visitante{
-                    transform: translate(270px, -941px);
-                }
-            }
-            .cronologia{
-                overflow: scroll;
-            }
-        }        
-        #cajaComentarios{
-            @include cajaComentarios;
-        }
-    }
-}
-
-/**/
-#articulo{
-    grid-area: articulo;
-    #notaPartido{        
-        #divNota3{
-            display: grid;        
-            grid-template-rows: 50px 150px 80px 450px 80px 160px 80px 1330px 410px 950px 450px;
-            div{
-                .copeteNota2{
-                    @include copete;
-                    width: 340px;
-                }
-            }
-            div{
-                .titular{
-                    @include titular;
-                }
-            }
-            #cajaSubtitulo{
-                @include subtitulo;               
-            }
-            
-            .fotoArticulo{
-                width: 900px;
-            }
-            .cajaPie{
-                @include pieFoto;
-            }
-            .marcador-partido{
-                @include marcador;                
-                    
-            }
-            .notaPeriodistica{
-                @include nota; 
-                .title-franklin{
-                    font-family: $font_franklin;
-                    font-weight: bold;
-                }
-            }
-            .VideoResumen{
-                @include videoResumen;  
-            }
-            .alineaciones{
-                .alineacion-visitante{
-                    transform: translate(270px, -932px);
-                }
-            }
-            .cronologia{
-                overflow: scroll;
-            }
-        }    
-        #cajaComentarios{
-            @include cajaComentarios;
-        }
-    }
-}
-

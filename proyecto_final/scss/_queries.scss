@@ -203,39 +203,22 @@
         grid-template-areas: "cabecera navegador"  
                             ". articulo " 
                             "footer footer  ";
-        grid-template-columns: 10px 315px ;
-        grid-template-rows: 100px 3670px 400px;
-        grid-row-gap: 10px;
+        grid-template-columns: 10px 415px ;
+        grid-template-rows: 100px auto 400px;
+        grid-row-gap: 40px;
     }
-    #padreArticulo2{
-        display: grid;
-        grid-template-areas:"cabecera navegador"
-                            ". articulo  "
-                            "footer footer  ";
-    grid-template-columns: 10px 315px ;
-    grid-template-rows: 100px 2170px 400px;
-    grid-row-gap: 10px;
-    }
-    #padreArticulo3{
-        display: grid;
-        grid-template-areas:"cabecera navegador  "
-                            ". articulo "
-                            "footer footer ";
-    grid-template-columns: 10px 315px ;
-    grid-template-rows: 100px 2650px 400px;
-    grid-row-gap: 10px;
-    }
-    /*Articulo River*/
+    
+    /*Articulo*/
     #articulo{
         grid-area: articulo;
         #notaPartido{
             display: flex;            
             .divNota{        
                 display: grid;
-                grid-template-rows: 50px 140px 160px 150px 50px 2700px 260px;
+                grid-template-rows: 50px auto 140px 200px 50px 110px 85px auto 260px 50px auto 250px;
                 div{
                     .copeteNota{
-                        width: 250px;
+                        width: 275px;
                         font-size: 11px;
                         padding-top: 10px;
                         padding-right: 18px;
@@ -245,20 +228,65 @@
                 }
                 div{
                     .titular{
-                        width: 310px;
+                        width: 410px;
                         font-size: 35px;
                     }
                 }
                 #cajaSubtitulo{
-                    width: 302px;
+                    width: 402px;
                 }
                 .fotoArticulo{
-                    width: 300px;
+                    width: 400px;
                 }
                 .cajaPie{
-                    width: 300px;
+                    width: 400px;
                     font-size: 12px;
-                }            
+                }         
+                .marcador-partido{
+                    @include marcador;
+                    width: 400px;
+                    height: 100px;
+                    grid-template-columns: 350px 200px 350px;
+                    .equipo-local{
+                        transform: translate(5px, -20px);
+                        width: 140px;
+                        font-size: 15px;
+                        .escudo{
+                            width: 60px;
+                            height: 60px;
+                        }
+                    }
+                    .resultado{
+                        transform: translate(-200px, -25px);
+                        width: 100px;
+                        height: 100px;
+                        font-size: 35px;
+                    }
+                    .equipo-visitante{
+                        transform: translate(-300px, -20px);
+                        width: 140px;
+                        font-size: 15px;
+                        .escudo{
+                            width: 60px;
+                            height: 60px;
+                        }
+                    }
+                    span{   
+                        .goles-local{
+                            background-color: black;
+                            transform: translate(5px, -65px);
+                            display: none;
+                        }                     
+                        .goles-visitante{
+                            background-color: black;
+                            transform: translate(250px, -131px);
+                            display: none;
+                        }
+                    }
+                }  
+                #fecha-nota{
+                    width: 400px;
+                } 
                 .notaPeriodistica{
                     width: 300px;
                 }
@@ -270,163 +298,36 @@
                         width: 300px;
                         height: 200px;
                     }
-                }            
+                }  
+                .alineaciones{
+                    background-color: aqua;
+                    width: 300px;
+                    height: auto;
+                    
+                }
+                .cronologia{
+                    overflow: auto;                    
+                }          
             }    
         }
         #cajaComentarios{
             display: flex;
             .comentarios{          
                 display: grid;
-                grid-template-rows: 30px 45px 50px ;
+                grid-template-rows: 30px 50px 100px ;
                 .title-impact{
                     font-family: $font_impact;
                 }
                 form{
                     .area-texto{
                         width: 300px;
-                        height: 200px;
-                    }                
-                }
-            }
-        }
-    }   
-
-    /*Artículo Racing*/
-    #articulo{
-        grid-area: articulo;
-        #notaPartido{        
-            display: flex;
-            #divNota2{      
-                display: grid;
-                grid-template-rows: 50px 180px 160px 150px 50px 1160px 260px;        
-                div{
-                    .copeteNota{
-                        width: 250px;
-                        font-size: 11px;
-                        padding-top: 10px;
-                        padding-right: 18px;
-                        padding-bottom: 10px;
-                        padding-left: 18px;
-                    }
-                }
-                div{
-                    .titular{
-                        width: 310px;
-                        font-size: 35px;
-                    }
-                }
-                #cajaSubtitulo{
-                    width: 302px;
-                }
-                .fotoArticulo{
-                    width: 300px;
-                }
-                .cajaPie{
-                    width: 300px;
-                    font-size: 12px;
-                }            
-                .notaPeriodistica{
-                    width: 300px;
-                }
-                .videoResumen{   
-                    .title-franklin{
-                        font-family: $font_franklin;
-                    }
-                    iframe{
-                        width: 300px;
-                        height: 200px;
-                    }
-                }            
-            }    
-        }
-        #cajaComentarios{
-            display: flex;
-            .comentarios{          
-                display: grid;
-                grid-template-rows: 30px 45px 50px ;
-                .title-impact{
-                    font-family: $font_impact;
-                }
-                form{
-                    .area-texto{
-                        width: 300px;
-                        height: 200px;
-                    }                
-                }
-            }
-        }
-    }
-
-    /*Artículo Banfield*/
-    #articulo{
-        grid-area: articulo;
-        #notaPartido{
-            display: flex;
-            #divNota3{        
-                display: grid;
-                grid-template-rows: 50px 135px 120px 155px 80px 1690px 260px;
-                div{
-                    .copeteNota2{
-                        width: 300px;
-                        font-size: 11px;
-                        padding-top: 10px;
-                        padding-right: 18px;
-                        padding-bottom: 10px;
-                        padding-left: 18px;
-                    }
-                }
-                div{
-                    .titular{
-                        width: 310px;
-                        font-size: 35px;
-                    }
-                }
-                #cajaSubtitulo{
-                    width: 302px;
-                }
-                .fotoArticulo{
-                    width: 300px;
-                }
-                .cajaPie{
-                    width: 300px;
-                    font-size: 12px;
-                }            
-                .notaPeriodistica{
-                    width: 300px;
-                    .title-franklin{
-                        font-family: $font_franklin;
-                        font-weight: bold;
-                    }
-                }
-                .videoResumen{
-                    .title-franklin{
-                        font-family: $font_franklin;
-                    }
-                    iframe{
-                        width: 300px;
-                        height: 200px;
-                    }
-                }            
-            }    
-        }
-        #cajaComentarios{
-            display: flex;
-            .comentarios{          
-                display: grid;
-                grid-template-rows: 30px 65px 50px;
-                .title-impact{
-                    font-family: $font_impact;
-                }
-                form{
-                    .area-texto{
-                        width: 300px;
-                        height: 30px;
+                        height: 50px;
                     }                
                 }
             }
         }
     }  
-    
+
     /*Footer*/
     #piePagina{
         grid-area: footer;

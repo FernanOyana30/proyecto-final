@@ -28,35 +28,13 @@
 /*ARTICULOS*/
 #padreArticulo{  
     display: grid;
-    grid-template-rows: 100px 4900px 470px;
+    grid-template-rows: 100px auto 470px;
     grid-template-columns: 100px 920px 128px 100px;
-    grid-row-gap: 50px;
+    grid-row-gap: 90px;
     grid-template-areas:
                         "cabecera navegador navegador navegador"
                         ". articulo articulo ."                        
                         "footer footer footer footer";    
-}
-
-#padreArticulo2{ 
-    display: grid;   
-    grid-template-rows: 100px 3900px 470px;
-    grid-template-columns: 100px 920px 128px 100px;
-    grid-row-gap: 50px;    
-    grid-template-areas:
-                        "cabecera navegador navegador navegador"
-                        ". articulo articulo ."                        
-                        "footer footer footer footer";
-}
-
-#padreArticulo3{
-    display: grid;    
-    grid-template-rows: 100px 4350px 470px;
-    grid-template-columns: 100px 920px 128px 100px;
-    grid-row-gap: 50px;    
-    grid-template-areas:
-                        "cabecera navegador navegador navegador"
-                        ". articulo articulo ."                        
-                        "footer footer footer footer";
 }
 
 /*ESTADISTICAS*/
