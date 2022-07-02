@@ -1,0 +1,622 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Consultá las estadísticas de los torneos más recientes. Copa de la Liga Profesional Argentina.">
+    <meta name="keywords"  content="ESTADISTICAS, LIGA PROFESIONAL ARGENTINA, TABLA DE POSICIONES, GRUPO A, GRUPO B, PUNTOS, GANADOS, EMPATADOS, PERDIDOS, DIFERENCIA DE GOL">
+    <title>Sportia, portal de noticias deportivas - Estadísticas</title>
+    <!--RUTAS DE ESTILO-->
+    <link rel="stylesheet" href="../style/estilo.css">
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <link rel="icon" href="../img/sportia-favicon.ico">
+</head>
+<body>    
+    <div id="padreStats">
+        <!--El logotipo funciona como botón de home-->
+        <header id="cabecera">
+            <a href="../index.html"><img src="../img/sportia-logo.png" alt="pelota" class="logoSportia"></a></li>
+        </header>
+        <!--INICIO NAV-->
+        <nav id="navegador">
+            <div class="menuNav">
+                <ul class="nav">
+                    <li class="nav-item">
+                        <a class="nav-link text-decoration-none text-dark fs-5" href="../pages/estadisticas.html"><img src="../img/estadisticas.png" alt="" width="30" height="24" class="d-inline-block align-text-top stat-icon" ><span class="textoNav">Estadísticas</span> </a>
+                    </li>                
+                    <li class="nav-item">
+                        <a class="nav-link text-decoration-none text-dark fs-5" href="../pages/agenda.html"><img src="../img/agenda.png" alt="" width="30" height="30" class="d-inline-block align-text-top calendario-icon"><span class="textoNav">Agenda</span> </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-decoration-none text-dark fs-5" href="../pages/ingresar.html"><span class="textoNav">Ingresar</span> </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-decoration-none text-dark fs-5" href="../pages/suscribirme.html"><span class="suscribirme">SUSCRIBIRME</span> </a>
+                    </li>                
+                </ul>
+            </div>           
+        </nav>
+        <!--FIN NAV-->
+        <!--INICIO TABLAS-->
+        <main id="tablaGrupo">
+            <section>
+                <div>
+                    <h2 class="tituloEstadisticas">Estadisticas</h2>
+                </div>
+                <div>
+                    <div class="accordion accordion-flush" id="accordionFlushExample">
+                        <div class="accordion-item">
+                          <h2 class="accordion-header" id="flush-headingOne">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+                              Fútbol de Argentina
+                            </button>
+                          </h2>
+                          <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
+                            <div class="accordion-body">
+                                <ul class="list-group">
+                                    <li class="list-group-item"><a href="">Liga Profesional Argentina (Copa)</a></li>
+                                    <li class="list-group-item"><a href="">Primera Nacional</a></li>
+                                    <li class="list-group-item"><a href="">Primera B</a></li>
+                                    <li class="list-group-item"><a href="">Primera C</a></li>
+                                    <li class="list-group-item"><a href="">Copa Argentina</a></li>
+                                </ul>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="flush-headingTwo">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+                                  Fútbol de Europa
+                                </button>
+                            </h2>
+                            <div id="flush-collapseTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo" data-bs-parent="#accordionFlushExample">
+                                <div class="accordion-body">
+                                    <ul class="list-group">
+                                        <li class="list-group-item"><a href="">UEFA Champions League</a></li>
+                                        <li class="list-group-item"><a href="">UEFA Europa League</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="flush-headingThree">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+                                    Fútbol de América
+                                </button>
+                            </h2>
+                            <div id="flush-collapseThree" class="accordion-collapse collapse" aria-labelledby="flush-headingThree" data-bs-parent="#accordionFlushExample">
+                                <div class="accordion-body">
+                                    <ul class="list-group">
+                                        <li class="list-group-item"><a href="">Copa Libertadores</a></li>
+                                        <li class="list-group-item"><a href="">Copa Sudamericana</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <br>
+                <br>
+                <div>
+                    <p class="nombreTorneo">UEFA Europa League</p>
+                    <br>
+                    <!--INICIO TABLA GRUPO A-->
+                    <table>
+                        <tr>
+                            <th class="celda-grupo">Grupo A</th>
+                        </tr>
+                        <tr><!-- inicio de fila-->
+                            <th class="columnaPos">Pos. </th>
+                            <th class="columnaEquipo"> </th>
+                            <th class="columnaPts">Pts.</th>
+                            <th class="columnaJGEP">PJ</th>
+                            <th class="columnaJGEP">G</th>
+                            <th class="columnaJGEP">E</th>
+                            <th class="columnaJGEP">P</th>
+                            <th class="columnaJGEP">DG</th>            
+                        </tr><!-- cierre de fila-->
+                        <tr><!-- inicio de otra fila-->
+                            <th class="celdaPos">1</th>
+                            <td class="celdaEquipo"></td>
+                            <td class="celdaPts"></td>
+                            <td class="celdaJGEP"></td>
+                            <td class="celdaJGEP"></td>
+                            <td class="celdaJGEP"></td>
+                            <td class="celdaJGEP"></td>
+                            <td class="celdaJGEP"></td>
+                        </tr><!-- cierre 2° fila-->
+                        <tr><!-- inicio de otra fila-->
+                            <th class="celdaPosGris">2</th>
+                            <td class="celdaEquipoGris"></td>
+                            <td class="celdaPtsGris"></td>
+                            <td class="celdaJGEPGris"></td>
+                            <td class="celdaJGEPGris"></td>
+                            <td class="celdaJGEPGris"></td>
+                            <td class="celdaJGEPGris"></td>
+                            <td class="celdaJGEPGris"></td>
+                        </tr><!-- cierre 3° fila-->
+                        <tr><!-- inicio de otra fila-->
+                            <th class="celdaPos">3</th>
+                            <td class="celdaEquipo"></td>
+                            <td class="celdaPts"></td>
+                            <td class="celdaJGEP"></td>
+                            <td class="celdaJGEP"></td>
+                            <td class="celdaJGEP"></td>
+                            <td class="celdaJGEP"></td>
+                            <td class="celdaJGEP"></td>
+                        </tr><!-- cierre 4° fila-->
+                        <tr><!-- inicio de otra fila-->
+                            <th class="celdaPosGris">4</th>
+                            <td class="celdaEquipoGris"></td>
+                            <td class="celdaPtsGris"></td>
+                            <td class="celdaJGEPGris"></td>
+                            <td class="celdaJGEPGris"></td>
+                            <td class="celdaJGEPGris"></td>
+                            <td class="celdaJGEPGris"></td>
+                            <td class="celdaJGEPGris"></td>
+                        </tr><!-- cierre 5° fila-->
+                    </table>
+                    <!--FIN TABLA GRUPO A-->
+                    <!--INICIO TABLA GRUPO B-->
+                    <table>
+                        <tr>
+                            <th class="celda-grupo">Grupo B</th>
+                        </tr>
+                        <tr><!-- inicio de fila-->
+                            <th class="columnaPos">Pos. </th>
+                            <th class="columnaEquipo"> </th>
+                            <th class="columnaPts">Pts.</th>
+                            <th class="columnaJGEP">PJ</th>
+                            <th class="columnaJGEP">G</th>
+                            <th class="columnaJGEP">E</th>
+                            <th class="columnaJGEP">P</th>
+                            <th class="columnaJGEP">DG</th>            
+                        </tr><!-- cierre de fila-->
+                        <tr><!-- inicio de otra fila-->
+                            <th class="celdaPos">1</th>
+                            <td class="celdaEquipo"></td>
+                            <td class="celdaPts"></td>
+                            <td class="celdaJGEP"></td>
+                            <td class="celdaJGEP"></td>
+                            <td class="celdaJGEP"></td>
+                            <td class="celdaJGEP"></td>
+                            <td class="celdaJGEP"></td>
+                        </tr><!-- cierre 2° fila-->
+                        <tr><!-- inicio de otra fila-->
+                            <th class="celdaPosGris">2</th>
+                            <td class="celdaEquipoGris"></td>
+                            <td class="celdaPtsGris"></td>
+                            <td class="celdaJGEPGris"></td>
+                            <td class="celdaJGEPGris"></td>
+                            <td class="celdaJGEPGris"></td>
+                            <td class="celdaJGEPGris"></td>
+                            <td class="celdaJGEPGris"></td>
+                        </tr><!-- cierre 3° fila-->
+                        <tr><!-- inicio de otra fila-->
+                            <th class="celdaPos">3</th>
+                            <td class="celdaEquipo"></td>
+                            <td class="celdaPts"></td>
+                            <td class="celdaJGEP"></td>
+                            <td class="celdaJGEP"></td>
+                            <td class="celdaJGEP"></td>
+                            <td class="celdaJGEP"></td>
+                            <td class="celdaJGEP"></td>
+                        </tr><!-- cierre 4° fila-->
+                        <tr><!-- inicio de otra fila-->
+                            <th class="celdaPosGris">4</th>
+                            <td class="celdaEquipoGris"></td>
+                            <td class="celdaPtsGris"></td>
+                            <td class="celdaJGEPGris"></td>
+                            <td class="celdaJGEPGris"></td>
+                            <td class="celdaJGEPGris"></td>
+                            <td class="celdaJGEPGris"></td>
+                            <td class="celdaJGEPGris"></td>
+                        </tr><!-- cierre 5° fila-->
+                    </table>
+                    <!--FIN TABLA GRUPO B-->
+                    <!--INICIO TABLA GRUPO C-->
+                    <table>
+                        <tr>
+                            <th class="celda-grupo">Grupo C</th>
+                        </tr>
+                        <tr><!-- inicio de fila-->
+                            <th class="columnaPos">Pos. </th>
+                            <th class="columnaEquipo"> </th>
+                            <th class="columnaPts">Pts.</th>
+                            <th class="columnaJGEP">PJ</th>
+                            <th class="columnaJGEP">G</th>
+                            <th class="columnaJGEP">E</th>
+                            <th class="columnaJGEP">P</th>
+                            <th class="columnaJGEP">DG</th>            
+                        </tr><!-- cierre de fila-->
+                        <tr><!-- inicio de otra fila-->
+                            <th class="celdaPos">1</th>
+                            <td class="celdaEquipo"></td>
+                            <td class="celdaPts"></td>
+                            <td class="celdaJGEP"></td>
+                            <td class="celdaJGEP"></td>
+                            <td class="celdaJGEP"></td>
+                            <td class="celdaJGEP"></td>
+                            <td class="celdaJGEP"></td>
+                        </tr><!-- cierre 2° fila-->
+                        <tr><!-- inicio de otra fila-->
+                            <th class="celdaPosGris">2</th>
+                            <td class="celdaEquipoGris"></td>
+                            <td class="celdaPtsGris"></td>
+                            <td class="celdaJGEPGris"></td>
+                            <td class="celdaJGEPGris"></td>
+                            <td class="celdaJGEPGris"></td>
+                            <td class="celdaJGEPGris"></td>
+                            <td class="celdaJGEPGris"></td>
+                        </tr><!-- cierre 3° fila-->
+                        <tr><!-- inicio de otra fila-->
+                            <th class="celdaPos">3</th>
+                            <td class="celdaEquipo"></td>
+                            <td class="celdaPts"></td>
+                            <td class="celdaJGEP"></td>
+                            <td class="celdaJGEP"></td>
+                            <td class="celdaJGEP"></td>
+                            <td class="celdaJGEP"></td>
+                            <td class="celdaJGEP"></td>
+                        </tr><!-- cierre 4° fila-->
+                        <tr><!-- inicio de otra fila-->
+                            <th class="celdaPosGris">4</th>
+                            <td class="celdaEquipoGris"></td>
+                            <td class="celdaPtsGris"></td>
+                            <td class="celdaJGEPGris"></td>
+                            <td class="celdaJGEPGris"></td>
+                            <td class="celdaJGEPGris"></td>
+                            <td class="celdaJGEPGris"></td>
+                            <td class="celdaJGEPGris"></td>
+                        </tr><!-- cierre 5° fila-->
+                    </table>
+                    <!--FIN TABLA GRUPO C-->
+                    <!--INICIO TABLA GRUPO D-->
+                    <table>
+                        <tr>
+                            <th class="celda-grupo">Grupo D</th>
+                        </tr>
+                        <tr><!-- inicio de fila-->
+                            <th class="columnaPos">Pos. </th>
+                            <th class="columnaEquipo"> </th>
+                            <th class="columnaPts">Pts.</th>
+                            <th class="columnaJGEP">PJ</th>
+                            <th class="columnaJGEP">G</th>
+                            <th class="columnaJGEP">E</th>
+                            <th class="columnaJGEP">P</th>
+                            <th class="columnaJGEP">DG</th>            
+                        </tr><!-- cierre de fila-->
+                        <tr><!-- inicio de otra fila-->
+                            <th class="celdaPos">1</th>
+                            <td class="celdaEquipo"></td>
+                            <td class="celdaPts"></td>
+                            <td class="celdaJGEP"></td>
+                            <td class="celdaJGEP"></td>
+                            <td class="celdaJGEP"></td>
+                            <td class="celdaJGEP"></td>
+                            <td class="celdaJGEP"></td>
+                        </tr><!-- cierre 2° fila-->
+                        <tr><!-- inicio de otra fila-->
+                            <th class="celdaPosGris">2</th>
+                            <td class="celdaEquipoGris"></td>
+                            <td class="celdaPtsGris"></td>
+                            <td class="celdaJGEPGris"></td>
+                            <td class="celdaJGEPGris"></td>
+                            <td class="celdaJGEPGris"></td>
+                            <td class="celdaJGEPGris"></td>
+                            <td class="celdaJGEPGris"></td>
+                        </tr><!-- cierre 3° fila-->
+                        <tr><!-- inicio de otra fila-->
+                            <th class="celdaPos">3</th>
+                            <td class="celdaEquipo"></td>
+                            <td class="celdaPts"></td>
+                            <td class="celdaJGEP"></td>
+                            <td class="celdaJGEP"></td>
+                            <td class="celdaJGEP"></td>
+                            <td class="celdaJGEP"></td>
+                            <td class="celdaJGEP"></td>
+                        </tr><!-- cierre 4° fila-->
+                        <tr><!-- inicio de otra fila-->
+                            <th class="celdaPosGris">4</th>
+                            <td class="celdaEquipoGris"></td>
+                            <td class="celdaPtsGris"></td>
+                            <td class="celdaJGEPGris"></td>
+                            <td class="celdaJGEPGris"></td>
+                            <td class="celdaJGEPGris"></td>
+                            <td class="celdaJGEPGris"></td>
+                            <td class="celdaJGEPGris"></td>
+                        </tr><!-- cierre 5° fila-->
+                    </table>
+                    <!--FIN TABLA GRUPO D-->
+                    <!--INICIO TABLA GRUPO E-->
+                    <table>
+                        <tr>
+                            <th class="celda-grupo">Grupo E</th>
+                        </tr>
+                        <tr><!-- inicio de fila-->
+                            <th class="columnaPos">Pos. </th>
+                            <th class="columnaEquipo"> </th>
+                            <th class="columnaPts">Pts.</th>
+                            <th class="columnaJGEP">PJ</th>
+                            <th class="columnaJGEP">G</th>
+                            <th class="columnaJGEP">E</th>
+                            <th class="columnaJGEP">P</th>
+                            <th class="columnaJGEP">DG</th>            
+                        </tr><!-- cierre de fila-->
+                        <tr><!-- inicio de otra fila-->
+                            <th class="celdaPos">1</th>
+                            <td class="celdaEquipo"></td>
+                            <td class="celdaPts"></td>
+                            <td class="celdaJGEP"></td>
+                            <td class="celdaJGEP"></td>
+                            <td class="celdaJGEP"></td>
+                            <td class="celdaJGEP"></td>
+                            <td class="celdaJGEP"></td>
+                        </tr><!-- cierre 2° fila-->
+                        <tr><!-- inicio de otra fila-->
+                            <th class="celdaPosGris">2</th>
+                            <td class="celdaEquipoGris"></td>
+                            <td class="celdaPtsGris"></td>
+                            <td class="celdaJGEPGris"></td>
+                            <td class="celdaJGEPGris"></td>
+                            <td class="celdaJGEPGris"></td>
+                            <td class="celdaJGEPGris"></td>
+                            <td class="celdaJGEPGris"></td>
+                        </tr><!-- cierre 3° fila-->
+                        <tr><!-- inicio de otra fila-->
+                            <th class="celdaPos">3</th>
+                            <td class="celdaEquipo">NEW</td>
+                            <td class="celdaPts"></td>
+                            <td class="celdaJGEP"></td>
+                            <td class="celdaJGEP"></td>
+                            <td class="celdaJGEP"></td>
+                            <td class="celdaJGEP"></td>
+                            <td class="celdaJGEP"></td>
+                        </tr><!-- cierre 4° fila-->
+                        <tr><!-- inicio de otra fila-->
+                            <th class="celdaPosGris">4</th>
+                            <td class="celdaEquipoGris"></td>
+                            <td class="celdaPtsGris"></td>
+                            <td class="celdaJGEPGris"></td>
+                            <td class="celdaJGEPGris"></td>
+                            <td class="celdaJGEPGris"></td>
+                            <td class="celdaJGEPGris"></td>
+                            <td class="celdaJGEPGris"></td>
+                        </tr><!-- cierre 5° fila-->
+                    </table>
+                    <!--FIN TABLA GRUPO E-->
+                    <!--INICIO TABLA GRUPO F-->
+                    <table>
+                        <tr>
+                            <th class="celda-grupo">Grupo F</th>
+                        </tr>
+                        <tr><!-- inicio de fila-->
+                            <th class="columnaPos">Pos. </th>
+                            <th class="columnaEquipo"> </th>
+                            <th class="columnaPts">Pts.</th>
+                            <th class="columnaJGEP">PJ</th>
+                            <th class="columnaJGEP">G</th>
+                            <th class="columnaJGEP">E</th>
+                            <th class="columnaJGEP">P</th>
+                            <th class="columnaJGEP">DG</th>            
+                        </tr><!-- cierre de fila-->
+                        <tr><!-- inicio de otra fila-->
+                            <th class="celdaPos">1</th>
+                            <td class="celdaEquipo"></td>
+                            <td class="celdaPts"></td>
+                            <td class="celdaJGEP"></td>
+                            <td class="celdaJGEP"></td>
+                            <td class="celdaJGEP"></td>
+                            <td class="celdaJGEP"></td>
+                            <td class="celdaJGEP"></td>
+                        </tr><!-- cierre 2° fila-->
+                        <tr><!-- inicio de otra fila-->
+                            <th class="celdaPosGris">2</th>
+                            <td class="celdaEquipoGris"></td>
+                            <td class="celdaPtsGris"></td>
+                            <td class="celdaJGEPGris"></td>
+                            <td class="celdaJGEPGris"></td>
+                            <td class="celdaJGEPGris"></td>
+                            <td class="celdaJGEPGris"></td>
+                            <td class="celdaJGEPGris"></td>
+                        </tr><!-- cierre 3° fila-->
+                        <tr><!-- inicio de otra fila-->
+                            <th class="celdaPos">3</th>
+                            <td class="celdaEquipo"></td>
+                            <td class="celdaPts"></td>
+                            <td class="celdaJGEP"></td>
+                            <td class="celdaJGEP"></td>
+                            <td class="celdaJGEP"></td>
+                            <td class="celdaJGEP"></td>
+                            <td class="celdaJGEP"></td>
+                        </tr><!-- cierre 4° fila-->
+                        <tr><!-- inicio de otra fila-->
+                            <th class="celdaPosGris">4</th>
+                            <td class="celdaEquipoGris"></td>
+                            <td class="celdaPtsGris"></td>
+                            <td class="celdaJGEPGris"></td>
+                            <td class="celdaJGEPGris"></td>
+                            <td class="celdaJGEPGris"></td>
+                            <td class="celdaJGEPGris"></td>
+                            <td class="celdaJGEPGris"></td>
+                        </tr><!-- cierre 5° fila-->
+                    </table>
+                    <!--FIN TABLA GRUPO F-->
+                    <!--INICIO TABLA GRUPO G-->
+                    <table>
+                        <tr>
+                            <th class="celda-grupo">Grupo G</th>
+                        </tr>
+                        <tr><!-- inicio de fila-->
+                            <th class="columnaPos">Pos. </th>
+                            <th class="columnaEquipo"> </th>
+                            <th class="columnaPts">Pts.</th>
+                            <th class="columnaJGEP">PJ</th>
+                            <th class="columnaJGEP">G</th>
+                            <th class="columnaJGEP">E</th>
+                            <th class="columnaJGEP">P</th>
+                            <th class="columnaJGEP">DG</th>            
+                        </tr><!-- cierre de fila-->
+                        <tr><!-- inicio de otra fila-->
+                            <th class="celdaPos">1</th>
+                            <td class="celdaEquipo"></td>
+                            <td class="celdaPts"></td>
+                            <td class="celdaJGEP"></td>
+                            <td class="celdaJGEP"></td>
+                            <td class="celdaJGEP"></td>
+                            <td class="celdaJGEP"></td>
+                            <td class="celdaJGEP"></td>
+                        </tr><!-- cierre 2° fila-->
+                        <tr><!-- inicio de otra fila-->
+                            <th class="celdaPosGris">2</th>
+                            <td class="celdaEquipoGris"></td>
+                            <td class="celdaPtsGris"></td>
+                            <td class="celdaJGEPGris"></td>
+                            <td class="celdaJGEPGris"></td>
+                            <td class="celdaJGEPGris"></td>
+                            <td class="celdaJGEPGris"></td>
+                            <td class="celdaJGEPGris"></td>
+                        </tr><!-- cierre 3° fila-->
+                        <tr><!-- inicio de otra fila-->
+                            <th class="celdaPos">3</th>
+                            <td class="celdaEquipo"></td>
+                            <td class="celdaPts"></td>
+                            <td class="celdaJGEP"></td>
+                            <td class="celdaJGEP"></td>
+                            <td class="celdaJGEP"></td>
+                            <td class="celdaJGEP"></td>
+                            <td class="celdaJGEP"></td>
+                        </tr><!-- cierre 4° fila-->
+                        <tr><!-- inicio de otra fila-->
+                            <th class="celdaPosGris">4</th>
+                            <td class="celdaEquipoGris"></td>
+                            <td class="celdaPtsGris"></td>
+                            <td class="celdaJGEPGris"></td>
+                            <td class="celdaJGEPGris"></td>
+                            <td class="celdaJGEPGris"></td>
+                            <td class="celdaJGEPGris"></td>
+                            <td class="celdaJGEPGris"></td>
+                        </tr><!-- cierre 5° fila-->
+                    </table>
+                    <!--FIN TABLA GRUPO G-->
+                    <!--INICIO TABLA GRUPO H-->
+                    <table>
+                        <tr>
+                            <th class="celda-grupo">Grupo H</th>
+                        </tr>
+                        <tr><!-- inicio de fila-->
+                            <th class="columnaPos">Pos. </th>
+                            <th class="columnaEquipo"> </th>
+                            <th class="columnaPts">Pts.</th>
+                            <th class="columnaJGEP">PJ</th>
+                            <th class="columnaJGEP">G</th>
+                            <th class="columnaJGEP">E</th>
+                            <th class="columnaJGEP">P</th>
+                            <th class="columnaJGEP">DG</th>            
+                        </tr><!-- cierre de fila-->
+                        <tr><!-- inicio de otra fila-->
+                            <th class="celdaPos">1</th>
+                            <td class="celdaEquipo"></td>
+                            <td class="celdaPts"></td>
+                            <td class="celdaJGEP"></td>
+                            <td class="celdaJGEP"></td>
+                            <td class="celdaJGEP"></td>
+                            <td class="celdaJGEP"></td>
+                            <td class="celdaJGEP"></td>
+                        </tr><!-- cierre 2° fila-->
+                        <tr><!-- inicio de otra fila-->
+                            <th class="celdaPosGris">2</th>
+                            <td class="celdaEquipoGris"></td>
+                            <td class="celdaPtsGris"></td>
+                            <td class="celdaJGEPGris"></td>
+                            <td class="celdaJGEPGris"></td>
+                            <td class="celdaJGEPGris"></td>
+                            <td class="celdaJGEPGris"></td>
+                            <td class="celdaJGEPGris"></td>
+                        </tr><!-- cierre 3° fila-->
+                        <tr><!-- inicio de otra fila-->
+                            <th class="celdaPos">3</th>
+                            <td class="celdaEquipo"></td>
+                            <td class="celdaPts"></td>
+                            <td class="celdaJGEP"></td>
+                            <td class="celdaJGEP"></td>
+                            <td class="celdaJGEP"></td>
+                            <td class="celdaJGEP"></td>
+                            <td class="celdaJGEP"></td>
+                        </tr><!-- cierre 4° fila-->
+                        <tr><!-- inicio de otra fila-->
+                            <th class="celdaPosGris">4</th>
+                            <td class="celdaEquipoGris"></td>
+                            <td class="celdaPtsGris"></td>
+                            <td class="celdaJGEPGris"></td>
+                            <td class="celdaJGEPGris"></td>
+                            <td class="celdaJGEPGris"></td>
+                            <td class="celdaJGEPGris"></td>
+                            <td class="celdaJGEPGris"></td>
+                        </tr><!-- cierre 5° fila-->
+                    </table>
+                    <!--FIN TABLA GRUPO H-->                    
+                </div>                                
+            </section>      
+        </main>
+        <!--INICIO FOOTER-->
+        <footer id="piePagina">                   
+            <div class="contacto">
+                <div><h2><strong>Sportia</strong></h2></div>
+                <br>
+                <div>© 2022 Fernando Oyanarte</div>
+                <br>
+                <div>Seguinos</div>
+                <br>
+                <div>
+                    <a href="https://www.facebook.com/"><img src="../img/facebook-icon.png" alt="facebook-icon" class="iconoRedes"></a>
+                    <a href="https://www.twitter.com/"><img src="../img/twitter-icon.png" alt="twitter-icon" class="iconoRedes"></a>
+                    <a href="https://www.instagram.com/"><img src="../img/igg-icon.png" alt="igg-icon" class="iconoRedes"></a>
+                    <a href="https://www.youtube.com/"><img src="../img/youtube-icon.png" alt="youtube-icon" class="iconoRedes"></a>
+                </div>                    
+            </div>                       
+            <div class="columnaFooter">    
+                <div>
+                    <div><span class="negrita">FUTBOL ARGENTINO</span></div>  
+                    <br>                    
+                    <div><a href="" class= "decoration">Selección</a> </div>
+                    <div><a href="" class= "decoration">Primera División</a> </div>
+                    <div><a href="" class= "decoration">B Nacional</a> </div>
+                    <div><a href="" class= "decoration">Copa Argentina</a> </div>
+                    <div><a href="" class= "decoration">Primera B</a> </div>
+                    <div><a href="" class= "decoration">Primera C</a> </div>
+                    <div><a href="" class= "decoration">Primera D</a> </div>
+                    <div><a href="../pages/estadisticas.html" class= "decoration">Estadísticas</a> </div>
+                </div> 
+                <div>                     
+                    <div><span class="negrita">FUTBOL INTERNACIONAL</span></div>
+                    <br>                                
+                    <div><a href="" class= "decoration">Copa Libertadores</a></div>
+                    <div><a href="" class= "decoration">Copa Sudamericana</a></div>
+                    <div><a href="" class= "decoration">América</a></div>
+                    <div><a href="" class= "decoration">España</a></div>
+                    <div><a href="" class= "decoration">Italia</a></div>
+                    <div><a href="" class= "decoration">Inglaterra</a></div>
+                    <div><a href="" class= "decoration"> Champions League</a></div>
+                    <div><a href="" class= "decoration">Europa League</a></div>
+                    <div><a href="../pages/estadisticas.html" class= "decoration">Estadísticas</a></div>
+                </div> 
+                <div>
+                    <div><span class="negrita">MÁS DEPORTES</span></div> 
+                    <br>              
+                    <div><a href="" class= "decoration">Basquet</a></div>
+                    <div><a href="" class= "decoration">Rugby</a></div>
+                    <div><a href="" class= "decoration">Tenis</a></div>
+                    <div><a href="" class= "decoration">Polideportivo</a></div>
+                    <div><a href="" class= "decoration">Running</a></div>                         
+                </div>     
+           </div>
+        </footer>
+        <!--FIN FOOTER-->
+    </div>
+    <!-- JavaScript Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+</body>
+</html>
