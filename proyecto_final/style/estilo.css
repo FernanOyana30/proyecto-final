@@ -433,7 +433,7 @@
     font-weight: normal; }
   #tablaGrupo table tr .celda-grupo {
     background-color: yellowgreen;
-    width: 730px;
+    width: 774px;
     height: 32px;
     font-size: 15px;
     font-weight: bold;
@@ -443,14 +443,14 @@
     padding-left: 6px; }
   #tablaGrupo table tr .columnaPos, #tablaGrupo table tr .columnaEquipo, #tablaGrupo table tr .columnaPts, #tablaGrupo table tr .columnaJGEP {
     background-color: #cec9c9;
-    width: 50px;
+    width: 100px;
     text-align: left;
     display: inline-block;
     padding-top: 4px;
     padding-bottom: 4px;
     padding-left: 6px; }
   #tablaGrupo table tr .columnaEquipo {
-    width: 231px;
+    width: 175px;
     height: 32px;
     text-align: center;
     padding-top: 7px; }
@@ -460,7 +460,7 @@
     width: 57px;
     text-align: center; }
   #tablaGrupo table tr .celdaPos, #tablaGrupo table tr .celdaEquipo, #tablaGrupo table tr .celdaPts, #tablaGrupo table tr .celdaJGEP, #tablaGrupo table tr .celdaPosGris, #tablaGrupo table tr .celdaEquipoGris, #tablaGrupo table tr .celdaPtsGris, #tablaGrupo table tr .celdaJGEPGris {
-    width: 50px;
+    width: 100px;
     height: 32px;
     text-align: left;
     display: inline-block;
@@ -468,8 +468,11 @@
     padding-bottom: 4px;
     padding-left: 6px; }
   #tablaGrupo table tr .celdaEquipo {
-    width: 231px;
-    text-align: center; }
+    width: 175px;
+    text-align: left; }
+    #tablaGrupo table tr .celdaEquipo .escudo-equipo {
+      width: 20px;
+      transform: translateX(-15px); }
   #tablaGrupo table tr .celdaPts {
     text-align: center; }
   #tablaGrupo table tr .celdaJGEP {
@@ -479,8 +482,11 @@
     background-color: #e7e5e5; }
   #tablaGrupo table tr .celdaEquipoGris {
     background-color: #e7e5e5;
-    width: 231px;
-    text-align: center; }
+    width: 175px;
+    text-align: left; }
+    #tablaGrupo table tr .celdaEquipoGris .escudo-equipo {
+      width: 20px;
+      transform: translateX(-15px); }
   #tablaGrupo table tr .celdaPtsGris {
     background-color: #e7e5e5;
     text-align: center; }
@@ -520,13 +526,19 @@
   padding-right: 10px;
   padding-bottom: 4px;
   font-size: 12px; }
+  #tablaFixture tr .celdaEquipo1 .escudo-equipo, #tablaFixture tr .celdaEquipo2 .escudo-equipo {
+    width: 20px;
+    transform: translateX(15px); }
 
 #tablaFixture tr .celdaResultado {
-  width: 200px;
+  width: 100px;
   text-align: center; }
 
 #tablaFixture tr .celdaEquipo2 {
   text-align: left; }
+  #tablaFixture tr .celdaEquipo2 .escudo-equipo {
+    width: 20px;
+    transform: translateX(-15px); }
 
 /*FORMULARIOS*/
 #navegador {
@@ -950,7 +962,7 @@
   #padreStats {
     display: grid;
     grid-template-areas: "cabecera navegador" ". tablaGrupo "                             "footer footer";
-    grid-template-rows: 100px 1200px 470px;
+    grid-template-rows: 100px auto 470px;
     grid-template-columns: 10px 415px;
     grid-row-gap: 50px; }
   /*TABLAS*/

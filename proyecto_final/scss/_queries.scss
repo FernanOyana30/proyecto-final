@@ -364,7 +364,7 @@
         grid-template-areas:"cabecera navegador"
                             ". tablaGrupo "                            
                             "footer footer";
-        grid-template-rows: 100px 1200px 470px;
+        grid-template-rows: 100px auto 470px;
         grid-template-columns: 10px 415px;    
         grid-row-gap: 50px;
     }  

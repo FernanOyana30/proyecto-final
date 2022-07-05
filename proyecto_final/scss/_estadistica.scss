@@ -14,7 +14,7 @@
         tr{
             .celda-grupo{
                 background-color: $bg_yg;
-                width: 730px;
+                width: 774px;
                 height: 32px;
                 font-size: 15px;
                 font-weight: bold;
@@ -27,7 +27,7 @@
         tr{
             .columnaPos{
                 background-color: $bg_light_gray;
-                width: 50px;
+                width: 100px;
                 text-align: left;
                 display: inline-block;
                 padding-top: 4px;
@@ -36,10 +36,11 @@
             }
             .columnaEquipo{
                 @extend .columnaPos;
-                width: 231px;
+                width: 175px;
                 height: 32px;    
                 text-align: center;                
-                padding-top: 7px;                
+                padding-top: 7px; 
+             
             }
             .columnaPts{
                 @extend .columnaPos;                
@@ -53,7 +54,7 @@
         }
         tr{
             .celdaPos{
-                width: 50px;
+                width: 100px;
                 height: 32px;
                 text-align: left;
                 display: inline-block;
@@ -63,8 +64,12 @@
             }
             .celdaEquipo{
                 @extend .celdaPos;
-                width: 231px;
-                text-align: center;
+                width: 175px;
+                text-align: left;
+                .escudo-equipo{
+                    width: 20px;
+                    transform: translateX(-15px);                    
+                } 
             }
             .celdaPts{
                 @extend .celdaPos;
@@ -85,8 +90,13 @@
             .celdaEquipoGris{
                 @extend .celdaPos;
                 background-color: $bg_light;   
-                width: 231px;
-                text-align: center;
+                width: 175px;
+                text-align: left;
+                .escudo-equipo{
+                    width: 20px;
+                    transform: translateX(-15px);
+                    
+                } 
             }
             .celdaPtsGris{
                 @extend .celdaPos;
@@ -141,17 +151,22 @@
                 padding-right: 10px;
                 padding-bottom: 4px;
                 font-size: 12px;
-                
+                .escudo-equipo{
+                    width: 20px;
+                    transform: translateX(15px);
+                }                
             }
             .celdaResultado{                
-                width: 200px;
+                width: 100px;
                 text-align: center;
             }
             .celdaEquipo2{
-                @extend .celdaEquipo1;
-                
+                @extend .celdaEquipo1;                
                 text-align: left;
-                
+                .escudo-equipo{
+                    width: 20px;
+                    transform: translateX(-15px);
+                }
             }
         }
     }
