@@ -44,7 +44,7 @@
 /*AGENDA*/
 #padreAgenda {
   display: grid;
-  grid-template-rows: 100px 1510px 470px;
+  grid-template-rows: 100px auto 470px;
   grid-template-columns: 100px 800px 248px 100px;
   grid-row-gap: 50px;
   grid-template-areas: "cabecera navegador navegador navegador" " . agenda . ."                         "footer footer footer footer"; }
@@ -427,7 +427,8 @@
 #tablaGrupo {
   grid-area: tablaGrupo; }
   #tablaGrupo div .tituloEstadisticas {
-    font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif; }
+    font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+    width: 30px; }
   #tablaGrupo div .nombreTorneo {
     font-family: Arial, Helvetica, sans-serif;
     font-weight: normal; }
@@ -1041,7 +1042,7 @@
   #padreAgenda {
     display: grid;
     grid-template-areas: "cabecera navegador " ". agenda " "footer footer ";
-    grid-template-rows: 100px 2250px 470px;
+    grid-template-rows: 100px auto 470px;
     grid-template-columns: 10px 310px;
     grid-row-gap: 10px; }
   #agenda {

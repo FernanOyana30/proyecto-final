@@ -493,7 +493,7 @@
         grid-template-areas:"cabecera navegador "
                             ". agenda "
                             "footer footer ";
-        grid-template-rows: 100px 2250px 470px;
+        grid-template-rows: 100px auto 470px;
         grid-template-columns: 10px 310px;    
         grid-row-gap: 10px;
     }    

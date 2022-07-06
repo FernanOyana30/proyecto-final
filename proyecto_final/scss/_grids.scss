@@ -52,7 +52,7 @@
 /*AGENDA*/
 #padreAgenda{
     display: grid;    
-    grid-template-rows: 100px 1510px 470px;
+    grid-template-rows: 100px auto 470px;
     grid-template-columns: 100px 800px 248px 100px;    
     grid-row-gap: 50px;
     grid-template-areas:
