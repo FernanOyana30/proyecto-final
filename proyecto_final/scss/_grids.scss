@@ -37,6 +37,18 @@
                         "footer footer footer footer";    
 }
 
+/**/ 
+#padreSecciones{
+    display: grid;
+    grid-template-rows: 100px auto 465px;
+    grid-template-columns: 100px 350px 350px 350px 100px;
+    grid-row-gap: 35px;
+    grid-template-areas:
+                        "cabecera navegador navegador navegador navegador"                        
+                        " . seccionTitulares seccionTitulares seccionTitulares ."
+                        "footer footer footer footer footer";
+}
+
 /*ESTADISTICAS*/
 #padreStats{
     display: grid;    

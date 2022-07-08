@@ -4,7 +4,7 @@
     #notaPartido{        
         .divNota{
             display: grid;        
-            grid-template-rows: 50px 150px 80px 450px 80px 160px 80px auto 410px auto auto 450px;
+            grid-template-rows: 50px auto 80px 450px 80px 160px 80px auto 410px auto auto 450px;
             div{
                 .copeteNota{
                     @include copete;                    

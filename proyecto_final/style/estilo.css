@@ -33,6 +33,14 @@
   grid-row-gap: 90px;
   grid-template-areas: "cabecera navegador navegador navegador" ". articulo articulo ."                         "footer footer footer footer"; }
 
+/**/
+#padreSecciones {
+  display: grid;
+  grid-template-rows: 100px auto 465px;
+  grid-template-columns: 100px 350px 350px 350px 100px;
+  grid-row-gap: 35px;
+  grid-template-areas: "cabecera navegador navegador navegador navegador"                         " . seccionTitulares seccionTitulares seccionTitulares ." "footer footer footer footer footer"; }
+
 /*ESTADISTICAS*/
 #padreStats {
   display: grid;
@@ -246,7 +254,7 @@
   grid-area: articulo; }
   #articulo #notaPartido .divNota {
     display: grid;
-    grid-template-rows: 50px 150px 80px 450px 80px 160px 80px auto 410px auto auto 450px; }
+    grid-template-rows: 50px auto 80px 450px 80px 160px 80px auto 410px auto auto 450px; }
     #articulo #notaPartido .divNota div .copeteNota {
       background-color: yellowgreen;
       color: white;
@@ -540,6 +548,73 @@
   #tablaFixture tr .celdaEquipo2 .escudo-equipo {
     width: 20px;
     transform: translateX(-15px); }
+
+#seccionTitulares {
+  grid-area: seccionTitulares;
+  background-color: aqua; }
+  #seccionTitulares .tituloSecciones {
+    font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif; }
+  #seccionTitulares #titularSecundario {
+    display: grid;
+    justify-content: flex-start;
+    font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif; }
+    #seccionTitulares #titularSecundario .cajaTitular {
+      width: 348px;
+      height: 340px;
+      transform: translateY(0px); }
+      #seccionTitulares #titularSecundario .cajaTitular a .imagenTitulo2 {
+        width: 348px;
+        transform: translate(-1px, 0px); }
+      #seccionTitulares #titularSecundario .cajaTitular .copete2 {
+        width: 300px;
+        color: white;
+        text-shadow: 1px 1px black;
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 10px;
+        transform: translate(4px, -167px); }
+      #seccionTitulares #titularSecundario .cajaTitular .decoration {
+        text-decoration: none;
+        color: black; }
+        #seccionTitulares #titularSecundario .cajaTitular .decoration .titulo2 {
+          width: 350px;
+          height: 50px;
+          color: black;
+          transform: translate(0px, -20px);
+          text-align: left; }
+          #seccionTitulares #titularSecundario .cajaTitular .decoration .titulo2:hover {
+            text-decoration: underline; }
+  #seccionTitulares #titularSecundario2 {
+    display: grid;
+    justify-content: flex-start;
+    font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif; }
+    #seccionTitulares #titularSecundario2 .cajaTitular2 {
+      width: 350px;
+      height: 340px;
+      transform: translate(700px, -340px); }
+      #seccionTitulares #titularSecundario2 .cajaTitular2 a .imagenTitulo3 {
+        width: 350px;
+        transform: translate(0px, 0px); }
+      #seccionTitulares #titularSecundario2 .cajaTitular2 .copete3 {
+        color: white;
+        text-shadow: 1px 1px black;
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 10px;
+        transform: translate(4px, -170px); }
+      #seccionTitulares #titularSecundario2 .cajaTitular2 .decoration {
+        text-decoration: none;
+        color: black; }
+        #seccionTitulares #titularSecundario2 .cajaTitular2 .decoration .titulo3 {
+          width: 290px;
+          color: black;
+          transform: translate(0px, -20px); }
+          #seccionTitulares #titularSecundario2 .cajaTitular2 .decoration .titulo3:hover {
+            text-decoration: underline; }
+      #seccionTitulares #titularSecundario2 .cajaTitular2 .subtitulo3 {
+        width: 357px;
+        text-align: left;
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 16px;
+        transform: translate(0px, -26px); }
 
 /*FORMULARIOS*/
 #navegador {
