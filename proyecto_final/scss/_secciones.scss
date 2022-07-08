@@ -37,6 +37,13 @@
                     }
                 }
             }
+            .subtitulo3{
+                width: 357px;
+                text-align: left;    
+                font-family: $font_arial;
+                font-size: 16px;   
+                transform: translate(0px, 5px);
+            }
         }
     }
     #titularSecundario2{        
@@ -62,6 +69,45 @@
                 color: $text_black;
                 .titulo3{
                     width: 290px;
+                    color: $text_black;    
+                    transform: translate(0px, -20px);
+                    &:hover{
+                        text-decoration: underline;
+                    }
+                }
+            }
+            .subtitulo3{
+                width: 357px;
+                text-align: left;    
+                font-family: $font_arial;
+                font-size: 16px;   
+                transform: translate(0px, -26px);
+            }
+        }
+    }
+    #titularSecundario3{        
+        display: grid;
+        justify-content: flex-start;
+        font-family: $font_impact;
+        .cajaTitular3{
+            width: 350px;
+            height: 340px; 
+            transform: translate(0px, -310px);
+            a{
+                .imagenTitulo4{
+                    width: 350px;   
+                    transform: translate(0px, 0px)
+                }
+            }       
+            .copete4{
+                @include copete_index;
+                transform: translate(4px, -170px);
+            }
+            .decoration{
+                text-decoration: none;
+                color: $text_black;
+                .titulo4{
+                    width: 320px;
                     color: $text_black;    
                     transform: translate(0px, -20px);
                     &:hover{

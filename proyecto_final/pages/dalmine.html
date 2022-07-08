@@ -4,9 +4,9 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Todos los partidos de la Copa de la Liga Profesional de Fútbol. Partidos de hoy 27 de abril de 2022.">
-    <meta name="keywords"  content="AGENDA, FUTBOL, NACIONAL, PARTIDOS, COPA LIGA PROFESIONAL, NEWELL'S OLD BOYS, SAN LORENZO">
-    <title>Sportia, portal de noticias deportivas - Agenda</title>
+    <meta name="description" content="Todo sobre el partido Colo Colo vs. River Plate por la fase de grupos de la Copa Libertadores de América">
+    <meta name="keywords"  content="COPA LIBERTADORES, RIVER PLATE, COLO COLO, FASE DE GRUPOS, GALLARDO, SUAREZ, GOLES">
+    <title>Sportia, portal de noticias deportivas - Colo Colo, River Plate</title>
     <!--RUTAS DE ESTILO-->
     <link rel="stylesheet" href="../style/estilo.css">
     <!-- CSS only -->
@@ -14,12 +14,12 @@
     <link rel="icon" href="../img/sportia-favicon.ico">
 </head>
 <body>
-    <div id="padreAgenda">
-        <!--El logotipo funciona como botón de home-->
-        <header class="grid" id="cabecera">
+    <div id="padreArticulo"> 
+        <!--El logotipo funciona como botón de home-->   
+        <header id="cabecera" >  
             <a href="../index.html"><img src="../img/sportia-logo.png" alt="pelota" class="logoSportia"></a></li>
         </header>
-        <!--INICIO NAV-->
+        <!--INICIO NAV--> 
         <nav id="navegador">
             <div class="menuNav">
                 <ul class="nav">
@@ -38,83 +38,63 @@
                 </ul>
             </div>           
         </nav>
-        <!--FIN NAV-->
-        <main id="agenda">
-            <section id="encabezadoAgenda">                
-                <div>
-                    <div>
-                        <h1 class="tituloAgenda">Agenda deportiva: Partidos de hoy televisados</h1>
+        <!--FIN NAV-->        
+        <main id="articulo">
+            <!--INICIO ARTICULO PERIODISTICO-->
+            <section id="notaPartido" >
+                <div class="divNota">
+                    <div >
+                        <h5 class="copeteNota">B NACIONAL / VILLA DÁLMINE</h5>
                     </div>
-                    <br>
                     <div>
-                        <h2 class="tituloAgenda">Agenda Deportiva hoy: Eventos deportivos y Partidos de la semana</h2>
+                        <h1 class="titular" style="font-size: 55px;">Dálmine y su problema con las rojas</h1>
                     </div>
-                </div>
-                <br>
-                <div>
-                    <div class="subtituloAgenda"><p>Todos los <span class="negrita">partidos de hoy</span> del <span class="negrita">fútbol de Argentina (Selección Argentina, Liga Profesional de Fútbol, Primera Nacional, Primera División B, Copa Argentina y Ascenso)</span> , principales ligas <span class="negrita">(La Liga, Premier League, Serie A, Ligue 1 y Bundesliga)</span> y torneos del mundo <span class="negrita">(Copa Libertadores, Copa Sudamericana, Champions League, Eurocopa)</span>, tenis, básquet <span class="negrita">(Liga Nacional de Básquet)</span> y vóley <span class="negrita">(Liga Argentina de Vóley)</span>.</p></div> 
-                </div>
-                <br>                
-            </section>
-            <section id="selector">
-                <div class="dropdown">
-                    <a class="btn btn-secondary dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">
-                      DEPORTE
-                    </a>              
-                    <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">  
-                        <li><a class="dropdown-item" href="#">TODOS LOS DEPORTES</a></li>                
-                        <li><a class="dropdown-item" href="#">Basquet</a></li>
-                        <li><a class="dropdown-item" href="#">Fútbol</a></li>
-                        <li><a class="dropdown-item" href="#">Rugby</a></li>
-                        <li><a class="dropdown-item" href="#">Tenis</a></li>
-                        <li><a class="dropdown-item" href="#">Voley</a></li>
-                    </ul>
-                </div>
-                <div class="dropdown">
-                    <a class="btn btn-secondary dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">
-                      COMPETENCIA
-                    </a>              
-                    <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
-                        <li><a class="dropdown-item" href="../pages/agenda.html">TODAS LAS COMPETICIONES</a></li>
-                        <li><a class="dropdown-item" href="../pages/agenda-copa-argentina.html">Copa Argentina</a></li>
-                        <li><a class="dropdown-item" href="../pages/agenda-copa-libertadores.html">Copa Libertadores</a></li>
-                        <li><a class="dropdown-item" href="#">Copa de la Liga Profesional de Fútbol</a></li>
-                        <li><a class="dropdown-item" href="../pages/agenda-copa-sudamericana.html">Copa Sudamericana</a></li>
-                        <li><a class="dropdown-item" href="../pages/agenda-champions-league.html">UEFA Champions League</a></li>
-                        <li><a class="dropdown-item" href="../pages/agenda-europa-league-mañana.html">UEFA Europa League</a></li>
-                    </ul>
-                </div>
-                <div class="dropdown">
-                    <a class="btn btn-secondary dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">
-                        DIA
-                    </a>              
-                    <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
-                        <li><a class="dropdown-item" href="#">TODOS LOS DIAS</a></li>
-                      <li><a class="dropdown-item" href="#">Sólo hoy</a></li>
-                      <li><a class="dropdown-item" href="#">Mañana</a></li>
-                    </ul>
-                </div>
+                    <div id="cajaSubtitulo">
+                        <p class="subtitulo">El Viola y un problema: En 12 fechas jugadas tuvo seis expulsados, uno cada dos partidos.</p>
+                    </div>  
+                    <img class="fotoArticulo" src="../img/dalmine.jpg" alt="villa dálmine">
+                    <div class= "cajaPie">
+                        <p>Ramiro López expulsando por doble amarilla a Gabriel Pusula. (Foto: Captura de TV)</p>
+                    </div>  
+                      
+                    <p id="fecha-nota" class="fw-bold fs-6">27 de Abril - 19:53h. / Sportia B Nacional</p>
+                    <div class="notaPeriodistica">
+                        <p>Villa Dálmine no comenzó del todo bien en el campeonato, perdió cuatro, empató siete y ganó solamente un partido y como si no fuera poco a los problemas futbolísticos que tiene, también se le suman otros problemas en el rearmado del equipo debido a expulsados.</p>
+                        <br>    
+                        <p>Eso es porque en estas 12 fechas ya disputadas lleva seis jugadores que fueron expulsados. Algunos son más importantes que otros pero, esto da un promedio de uno cada dos partidos en cuanto a los futbolistas que ven la roja y eso es algo que preocupa en el Viola.</p>
+                        <br>
+                        <p><span class="negrita">Fecha 1:</span> Las expulsiones no se hicieron esperar porque en la primera fecha ya cayó el primero. Federico Mazul, el lateral derecho de Dálmine fue quien debutó en esta materia gracias a la doble amarilla que le propinó el árbitro Fabricio Llobet en la derrota ante Brown de Puerto Madryn.</p>
+                        <br>
+                        <p><span class="negrita">Fecha 2:</span> Esta vez contra Atlético de Rafaela, en el empate 1-1 y cuando todo parecía que se salvaba de otro expulsado, llegó Facundo Gómez para traerle otro problema en el rearmado del equipo porque recibió la roja directa de Nelson Sosa.</p>
+                        <br>
+                        <p><span class="negrita">Fecha 9:</span> Luego de varias fechas sin malas noticias y solamente preocupándose por lo futbolístico, en la derrota ante Gimnasia de Mendoza volvieron las expulsiones y como si uno no fuera suficiente, en aquella oportunidad fueron dos. El primero fue Lautaro Tello que vio la roja a los 4’ del primer tiempo después de ser amonestado un minuto antes. El segundo se fue expulsado a los 40’ del segundo tiempo, se trata de Valentín Albano que también recibió doble amarilla y vio la roja.</p>
+                        <br>
+                        <p><span class="negrita">Fecha 11:</span> Volvió a descansar de las rojas pero solo una fecha porque en el empate ante Güemes el que recibió la expulsión fue quien disputó el encuentro en el lateral derecho, Agustín Alberione, también por doble amarilla.</p>
+                        <br>
+                        <p><span class="negrita">Fecha 12:</span> En el partido del fin de semana parecía que el partido no se llevaba ninguna expulsión para el equipo de Carlos Pereyra. Pero una jugada inoportuna de Gabriel Pusula a los 47’ del segundo tiempo fue meritoria de amarilla y al ya haber recibido la primera en el inicio de la segunda mitad, debió irse a las duchas antes del final.</p>
+                        <br>
+                        <p>Además del rendimiento futbolístico, el entrenador Carlos Pereyra, deberá mejorar el aspecto mental de los jugadores porque lleva un expulsado cada dos fechas y es un promedio que preocupa.</p>
+                    </div> 
+                    <!--FIN ARTICULO PERIODISTICO-->
             </section>
             <br>
-            <section id="cajaAgenda">            
-                <!--INICIO AGENDA DEPORTIVA-->
-                <div class="eventosAgenda">
-                    <div>
-                        <h3 class="fs-6">COPA DE LA LIGA PROFESIONAL DE FUTBOL</h3>
-                        <table>
-                            <tr><!-- inicio de fila-->
-                                <td class="horario">20:30 Hs</td> 
-                                <td class="celdaAgenda"><span >Newell's</span><span class="vs">VS.</span><span >San Lorenzo</span></td>                    
-                            </tr><!-- cierre de fila-->
-                        </table>
-                    </div> 
-                    <br>        
-                </div> 
-                <!--FIN AGENDA DEPORTIVA-->
-            </section>             
-        </main>
+            <!--INICIO COMENTARIOS-->    
+            <section id="cajaComentarios">
+                <div class="comentarios" >
+                    <h3 class="title-impact fs-4">COMENTARIOS</h3> 
+                    <P>Comentar las notas de Sportia es exclusivo para usuarios logueados.</P>
+                    <form action="#">
+                        <textarea name="" id="" cols="60" rows="3" class="area-texto"></textarea>
+                        <br>
+                        <input type="submit" value="Cancelar" class="botonForm">
+                        <input type="submit" value="Publicar" class="botonForm">
+                    </form> 
+                </div>
+            </section>      
+            <!--FIN COMENTARIOS-->
+        </main>   
         <!--INICIO FOOTER-->
-        <footer id="piePagina">                       
+        <footer id="piePagina">                        
             <div class="contacto">
                 <div><h2><strong>Sportia</strong></h2></div>
                 <br>
@@ -164,11 +144,11 @@
                     <div><a href="" class= "decoration">Polideportivo</a></div>
                     <div><a href="" class= "decoration">Running</a></div>                         
                 </div>     
-           </div>
+           </div> 
         </footer>
-        <!--FIN FOOTER-->
+        <!--FIN FOOTER-->   
     </div>
     <!-- JavaScript Bundle with Popper -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>  
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>     
 </body>
 </html>
