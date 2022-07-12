@@ -31,9 +31,9 @@
   grid-template-rows: 100px auto 470px;
   grid-template-columns: 100px 920px 128px 100px;
   grid-row-gap: 90px;
-  grid-template-areas: "cabecera navegador navegador navegador" ". articulo articulo ."                         "footer footer footer footer"; }
+  grid-template-areas: "cabecera navegador navegador navegador" ". articulo articulo ."                                                 "footer footer footer footer"; }
 
-/**/
+/*SECCIONES*/
 #padreSecciones {
   display: grid;
   grid-template-rows: 100px auto 465px;
@@ -270,11 +270,11 @@
       padding-left: 18px;
       width: 350px; }
     #articulo #notaPartido .divNota div .titular {
-      width: 800px;
+      width: 840px;
       height: 120px;
       font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
       font-size: 48px;
-      line-height: normal; }
+      line-height: 60px; }
     #articulo #notaPartido .divNota #cajaSubtitulo {
       width: 900px;
       height: 50px; }
@@ -298,7 +298,7 @@
       text-align: center;
       display: grid;
       grid-template-columns: 350px 200px 350px;
-      grid-template-rows: 150px;
+      grid-template-rows: 140px;
       justify-content: space-between;
       align-items: center;
       background-color: #312f2f; }
@@ -306,12 +306,12 @@
         font-family: 'Times New Roman', Times, serif;
         font-weight: bold;
         color: white;
-        text-align: center;
         font-size: 30px;
         display: flex;
         flex-direction: row;
-        transform: translateX(40px); }
-        #articulo #notaPartido .divNota .marcador-partido .equipo-local .escudo {
+        justify-content: flex-end;
+        width: 320px; }
+        #articulo #notaPartido .divNota .marcador-partido .equipo-local p .escudoLocal {
           width: 70px;
           height: 70px; }
       #articulo #notaPartido .divNota .marcador-partido .resultado {
@@ -324,7 +324,8 @@
         height: 150px;
         display: flex;
         justify-content: center;
-        align-items: center; }
+        align-items: center;
+        transform: translateY(5px); }
       #articulo #notaPartido .divNota .marcador-partido .equipo-visitante {
         font-family: 'Times New Roman', Times, serif;
         font-weight: bold;
@@ -333,14 +334,16 @@
         font-size: 30px;
         display: flex;
         flex-direction: row;
-        transform: translateX(40px); }
+        justify-content: flex-start;
+        width: 320px;
+        transform: translateX(30px); }
         #articulo #notaPartido .divNota .marcador-partido .equipo-visitante .escudo {
           width: 70px;
           height: 70px; }
       #articulo #notaPartido .divNota .marcador-partido span .goles-local {
-        width: 130px;
+        width: 145px;
         height: 50px;
-        transform: translate(45px, -65px);
+        transform: translate(110px, -60px);
         color: white;
         font-size: 12px; }
       #articulo #notaPartido .divNota .marcador-partido span .goles-visitante {
@@ -373,12 +376,344 @@
       overflow: auto; }
   #articulo #cajaComentarios .comentarios {
     display: grid;
-    grid-template-rows: 30px 30px 50px; }
+    grid-template-rows: 30px 30px 150px; }
     #articulo #cajaComentarios .comentarios .resumenPartido {
       font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
       font-size: 22px; }
   #articulo #cajaComentarios form .botonForm:hover {
     background-color: #b4f03d; }
+  #articulo #noticiasRelacionadas {
+    height: 550px;
+    display: grid;
+    grid-template-rows: 400px 400px; }
+    #articulo #noticiasRelacionadas .contenedor-noticias .title-impact {
+      font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif; }
+    #articulo #noticiasRelacionadas .contenedor-noticias .noticiaRelacionada {
+      width: 301px;
+      height: 240px;
+      border: solid 1px gray;
+      transform: translateY(0px); }
+      #articulo #noticiasRelacionadas .contenedor-noticias .noticiaRelacionada a .imagen-noticia {
+        width: 300px;
+        transform: translate(-1px, 0px); }
+      #articulo #noticiasRelacionadas .contenedor-noticias .noticiaRelacionada .decoration {
+        text-decoration: none;
+        color: black; }
+        #articulo #noticiasRelacionadas .contenedor-noticias .noticiaRelacionada .decoration .titulo3 {
+          padding-top: 8px;
+          padding-left: 5px;
+          width: 300px;
+          color: black;
+          font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+          transform: translate(0px, -1px);
+          text-align: left;
+          font-size: 22px; }
+          #articulo #noticiasRelacionadas .contenedor-noticias .noticiaRelacionada .decoration .titulo3:hover {
+            text-decoration: underline; }
+    #articulo #noticiasRelacionadas .contenedor-noticias .noticiaRelacionada2 {
+      width: 302px;
+      height: 240px;
+      border: solid 1px gray;
+      transform: translate(350px, -240px); }
+      #articulo #noticiasRelacionadas .contenedor-noticias .noticiaRelacionada2 a .imagen-noticia2 {
+        width: 300px;
+        transform: translate(0px, 0px); }
+      #articulo #noticiasRelacionadas .contenedor-noticias .noticiaRelacionada2 .decoration {
+        text-decoration: none;
+        color: black; }
+        #articulo #noticiasRelacionadas .contenedor-noticias .noticiaRelacionada2 .decoration .titulo3 {
+          padding-top: 8px;
+          padding-left: 5px;
+          width: 300px;
+          color: black;
+          font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+          transform: translate(0px, 0px); }
+          #articulo #noticiasRelacionadas .contenedor-noticias .noticiaRelacionada2 .decoration .titulo3:hover {
+            text-decoration: underline; }
+    #articulo #noticiasRelacionadas .contenedor-noticias .noticiaRelacionada3 {
+      width: 302px;
+      height: 240px;
+      border: solid 1px gray;
+      transform: translate(698px, -480px); }
+      #articulo #noticiasRelacionadas .contenedor-noticias .noticiaRelacionada3 a .imagen-noticia3 {
+        width: 300px;
+        transform: translate(0px, 0px); }
+      #articulo #noticiasRelacionadas .contenedor-noticias .noticiaRelacionada3 .decoration {
+        text-decoration: none;
+        color: black; }
+        #articulo #noticiasRelacionadas .contenedor-noticias .noticiaRelacionada3 .decoration .titulo2 {
+          padding-top: 8px;
+          padding-left: 5px;
+          width: 300px;
+          color: black;
+          font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+          transform: translate(0px, 0px); }
+          #articulo #noticiasRelacionadas .contenedor-noticias .noticiaRelacionada3 .decoration .titulo2:hover {
+            text-decoration: underline; }
+    #articulo #noticiasRelacionadas .contenedor-noticias .noticiaRelacionada4 {
+      width: 302px;
+      height: 240px;
+      border: solid 1px gray;
+      transform: translate(0px, -460px); }
+      #articulo #noticiasRelacionadas .contenedor-noticias .noticiaRelacionada4 a .imagen-noticia4 {
+        width: 300px;
+        transform: translate(0px, 0px); }
+      #articulo #noticiasRelacionadas .contenedor-noticias .noticiaRelacionada4 .decoration {
+        text-decoration: none;
+        color: black; }
+        #articulo #noticiasRelacionadas .contenedor-noticias .noticiaRelacionada4 .decoration .titulo2 {
+          padding-top: 8px;
+          padding-left: 4px;
+          width: 310px;
+          font-size: 18px;
+          color: black;
+          font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+          transform: translate(0px, 0px); }
+          #articulo #noticiasRelacionadas .contenedor-noticias .noticiaRelacionada4 .decoration .titulo2:hover {
+            text-decoration: underline; }
+    #articulo #noticiasRelacionadas .contenedor-noticias .noticiaRelacionada5 {
+      width: 302px;
+      height: 240px;
+      border: solid 1px gray;
+      transform: translate(350px, -700px); }
+      #articulo #noticiasRelacionadas .contenedor-noticias .noticiaRelacionada5 a .imagen-noticia5 {
+        width: 300px;
+        transform: translate(0px, 0px); }
+      #articulo #noticiasRelacionadas .contenedor-noticias .noticiaRelacionada5 .decoration {
+        text-decoration: none;
+        color: black; }
+        #articulo #noticiasRelacionadas .contenedor-noticias .noticiaRelacionada5 .decoration .titulo2 {
+          padding-top: 8px;
+          padding-left: 4px;
+          width: 310px;
+          font-size: 17px;
+          color: black;
+          font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+          transform: translate(0px, 0px); }
+          #articulo #noticiasRelacionadas .contenedor-noticias .noticiaRelacionada5 .decoration .titulo2:hover {
+            text-decoration: underline; }
+    #articulo #noticiasRelacionadas .contenedor-noticias .noticiaRelacionada6 {
+      width: 302px;
+      height: 240px;
+      border: solid 1px gray;
+      transform: translate(698px, -940px); }
+      #articulo #noticiasRelacionadas .contenedor-noticias .noticiaRelacionada6 a .imagen-noticia6 {
+        width: 300px;
+        transform: translate(0px, 0px); }
+      #articulo #noticiasRelacionadas .contenedor-noticias .noticiaRelacionada6 .decoration {
+        text-decoration: none;
+        color: black; }
+        #articulo #noticiasRelacionadas .contenedor-noticias .noticiaRelacionada6 .decoration .titulo2 {
+          padding-top: 8px;
+          padding-left: 4px;
+          width: 310px;
+          font-size: 16px;
+          color: black;
+          font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+          transform: translate(0px, 0px); }
+          #articulo #noticiasRelacionadas .contenedor-noticias .noticiaRelacionada6 .decoration .titulo2:hover {
+            text-decoration: underline; }
+
+#articulo {
+  grid-area: articulo; }
+  #articulo #notaPartido .divNota2 {
+    display: grid;
+    grid-template-rows: 50px auto 80px 460px 60px auto; }
+    #articulo #notaPartido .divNota2 div .copeteNota {
+      background-color: yellowgreen;
+      color: white;
+      text-shadow: 1px 1px black;
+      border: ridge 1px 1px gray;
+      font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+      font-size: 14px;
+      font-weight: bold;
+      text-align: center;
+      padding-top: 10px;
+      padding-right: 18px;
+      padding-bottom: 10px;
+      padding-left: 18px;
+      width: 350px;
+      width: 300px; }
+    #articulo #notaPartido .divNota2 div .copeteNota2 {
+      background-color: yellowgreen;
+      color: white;
+      text-shadow: 1px 1px black;
+      border: ridge 1px 1px gray;
+      font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+      font-size: 14px;
+      font-weight: bold;
+      text-align: center;
+      padding-top: 10px;
+      padding-right: 18px;
+      padding-bottom: 10px;
+      padding-left: 18px;
+      width: 350px;
+      width: 180px; }
+    #articulo #notaPartido .divNota2 div .titular {
+      width: 840px;
+      height: 120px;
+      font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+      font-size: 48px;
+      line-height: 60px;
+      font-size: 54px;
+      width: 900px;
+      line-height: 50px; }
+    #articulo #notaPartido .divNota2 #cajaSubtitulo {
+      width: 900px;
+      height: 50px; }
+      #articulo #notaPartido .divNota2 #cajaSubtitulo .subtitulo {
+        color: #504f4f;
+        font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+        font-size: 19px; }
+    #articulo #notaPartido .divNota2 .fotoArticulo {
+      width: 900px; }
+    #articulo #notaPartido .divNota2 .notaPeriodistica {
+      width: 500px;
+      font-family: Georgia, "Times New Roman", Times, serif;
+      font-size: 16px;
+      line-height: 30px;
+      width: 650px; }
+      #articulo #notaPartido .divNota2 .notaPeriodistica p .negrita {
+        font-weight: bold; }
+  #articulo #cajaComentarios .comentarios {
+    display: grid;
+    grid-template-rows: 30px 30px 150px; }
+    #articulo #cajaComentarios .comentarios .resumenPartido {
+      font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+      font-size: 22px; }
+  #articulo #cajaComentarios form .botonForm:hover {
+    background-color: #b4f03d; }
+  #articulo #noticiasRelacionadas {
+    height: 550px;
+    display: grid;
+    grid-template-rows: 400px 400px; }
+    #articulo #noticiasRelacionadas .contenedor-noticias .title-impact {
+      font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif; }
+    #articulo #noticiasRelacionadas .contenedor-noticias .noticiaRelacionada {
+      width: 301px;
+      height: 240px;
+      border: solid 1px gray;
+      transform: translateY(0px); }
+      #articulo #noticiasRelacionadas .contenedor-noticias .noticiaRelacionada a .imagen-noticia {
+        width: 300px;
+        transform: translate(-1px, 0px); }
+      #articulo #noticiasRelacionadas .contenedor-noticias .noticiaRelacionada .decoration {
+        text-decoration: none;
+        color: black; }
+        #articulo #noticiasRelacionadas .contenedor-noticias .noticiaRelacionada .decoration .titulo3 {
+          padding-top: 8px;
+          padding-left: 5px;
+          width: 300px;
+          color: black;
+          font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+          transform: translate(0px, -1px);
+          text-align: left;
+          font-size: 22px; }
+          #articulo #noticiasRelacionadas .contenedor-noticias .noticiaRelacionada .decoration .titulo3:hover {
+            text-decoration: underline; }
+    #articulo #noticiasRelacionadas .contenedor-noticias .noticiaRelacionada2 {
+      width: 302px;
+      height: 240px;
+      border: solid 1px gray;
+      transform: translate(350px, -240px); }
+      #articulo #noticiasRelacionadas .contenedor-noticias .noticiaRelacionada2 a .imagen-noticia2 {
+        width: 300px;
+        transform: translate(0px, 0px); }
+      #articulo #noticiasRelacionadas .contenedor-noticias .noticiaRelacionada2 .decoration {
+        text-decoration: none;
+        color: black; }
+        #articulo #noticiasRelacionadas .contenedor-noticias .noticiaRelacionada2 .decoration .titulo3 {
+          padding-top: 8px;
+          padding-left: 5px;
+          width: 300px;
+          color: black;
+          font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+          transform: translate(0px, 0px); }
+          #articulo #noticiasRelacionadas .contenedor-noticias .noticiaRelacionada2 .decoration .titulo3:hover {
+            text-decoration: underline; }
+    #articulo #noticiasRelacionadas .contenedor-noticias .noticiaRelacionada3 {
+      width: 302px;
+      height: 240px;
+      border: solid 1px gray;
+      transform: translate(698px, -480px); }
+      #articulo #noticiasRelacionadas .contenedor-noticias .noticiaRelacionada3 a .imagen-noticia3 {
+        width: 300px;
+        transform: translate(0px, 0px); }
+      #articulo #noticiasRelacionadas .contenedor-noticias .noticiaRelacionada3 .decoration {
+        text-decoration: none;
+        color: black; }
+        #articulo #noticiasRelacionadas .contenedor-noticias .noticiaRelacionada3 .decoration .titulo2 {
+          padding-top: 8px;
+          padding-left: 5px;
+          width: 300px;
+          color: black;
+          font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+          transform: translate(0px, 0px); }
+          #articulo #noticiasRelacionadas .contenedor-noticias .noticiaRelacionada3 .decoration .titulo2:hover {
+            text-decoration: underline; }
+    #articulo #noticiasRelacionadas .contenedor-noticias .noticiaRelacionada4 {
+      width: 302px;
+      height: 240px;
+      border: solid 1px gray;
+      transform: translate(0px, -460px); }
+      #articulo #noticiasRelacionadas .contenedor-noticias .noticiaRelacionada4 a .imagen-noticia4 {
+        width: 300px;
+        transform: translate(0px, 0px); }
+      #articulo #noticiasRelacionadas .contenedor-noticias .noticiaRelacionada4 .decoration {
+        text-decoration: none;
+        color: black; }
+        #articulo #noticiasRelacionadas .contenedor-noticias .noticiaRelacionada4 .decoration .titulo2 {
+          padding-top: 8px;
+          padding-left: 4px;
+          width: 310px;
+          font-size: 18px;
+          color: black;
+          font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+          transform: translate(0px, 0px); }
+          #articulo #noticiasRelacionadas .contenedor-noticias .noticiaRelacionada4 .decoration .titulo2:hover {
+            text-decoration: underline; }
+    #articulo #noticiasRelacionadas .contenedor-noticias .noticiaRelacionada5 {
+      width: 302px;
+      height: 240px;
+      border: solid 1px gray;
+      transform: translate(350px, -700px); }
+      #articulo #noticiasRelacionadas .contenedor-noticias .noticiaRelacionada5 a .imagen-noticia5 {
+        width: 300px;
+        transform: translate(0px, 0px); }
+      #articulo #noticiasRelacionadas .contenedor-noticias .noticiaRelacionada5 .decoration {
+        text-decoration: none;
+        color: black; }
+        #articulo #noticiasRelacionadas .contenedor-noticias .noticiaRelacionada5 .decoration .titulo2 {
+          padding-top: 8px;
+          padding-left: 4px;
+          width: 310px;
+          font-size: 17px;
+          color: black;
+          font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+          transform: translate(0px, 0px); }
+          #articulo #noticiasRelacionadas .contenedor-noticias .noticiaRelacionada5 .decoration .titulo2:hover {
+            text-decoration: underline; }
+    #articulo #noticiasRelacionadas .contenedor-noticias .noticiaRelacionada6 {
+      width: 302px;
+      height: 240px;
+      border: solid 1px gray;
+      transform: translate(698px, -940px); }
+      #articulo #noticiasRelacionadas .contenedor-noticias .noticiaRelacionada6 a .imagen-noticia6 {
+        width: 300px;
+        transform: translate(0px, 0px); }
+      #articulo #noticiasRelacionadas .contenedor-noticias .noticiaRelacionada6 .decoration {
+        text-decoration: none;
+        color: black; }
+        #articulo #noticiasRelacionadas .contenedor-noticias .noticiaRelacionada6 .decoration .titulo2 {
+          padding-top: 8px;
+          padding-left: 4px;
+          width: 310px;
+          font-size: 16px;
+          color: black;
+          font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+          transform: translate(0px, 0px); }
+          #articulo #noticiasRelacionadas .contenedor-noticias .noticiaRelacionada6 .decoration .titulo2:hover {
+            text-decoration: underline; }
 
 /*AGENDA*/
 #agenda {
@@ -550,10 +885,12 @@
     transform: translateX(-15px); }
 
 #seccionTitulares {
-  grid-area: seccionTitulares;
-  background-color: aqua; }
+  grid-area: seccionTitulares; }
   #seccionTitulares .tituloSecciones {
-    font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif; }
+    font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+    font-size: 38px; }
+  #seccionTitulares .contenedor-breadcrumb {
+    transform: translate(330px, -40px); }
   #seccionTitulares #titularSecundario {
     display: grid;
     justify-content: flex-start;
@@ -577,10 +914,10 @@
         color: black; }
         #seccionTitulares #titularSecundario .cajaTitular .decoration .titulo2 {
           width: 350px;
-          height: 50px;
           color: black;
-          transform: translate(0px, -20px);
-          text-align: left; }
+          transform: translate(0px, -18px);
+          text-align: left;
+          font-size: 22px; }
           #seccionTitulares #titularSecundario .cajaTitular .decoration .titulo2:hover {
             text-decoration: underline; }
       #seccionTitulares #titularSecundario .cajaTitular .subtitulo3 {
@@ -588,66 +925,86 @@
         text-align: left;
         font-family: Arial, Helvetica, sans-serif;
         font-size: 16px;
-        transform: translate(0px, 5px); }
-  #seccionTitulares #titularSecundario2 {
-    display: grid;
-    justify-content: flex-start;
-    font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif; }
-    #seccionTitulares #titularSecundario2 .cajaTitular2 {
+        transform: translate(0px, -20px); }
+    #seccionTitulares #titularSecundario .cajaTitular2 {
       width: 350px;
       height: 340px;
       transform: translate(700px, -340px); }
-      #seccionTitulares #titularSecundario2 .cajaTitular2 a .imagenTitulo3 {
+      #seccionTitulares #titularSecundario .cajaTitular2 a .imagenTitulo3 {
         width: 350px;
         transform: translate(0px, 0px); }
-      #seccionTitulares #titularSecundario2 .cajaTitular2 .copete3 {
+      #seccionTitulares #titularSecundario .cajaTitular2 .copete3 {
         color: white;
         text-shadow: 1px 1px black;
         font-family: Arial, Helvetica, sans-serif;
         font-size: 10px;
         transform: translate(4px, -170px); }
-      #seccionTitulares #titularSecundario2 .cajaTitular2 .decoration {
+      #seccionTitulares #titularSecundario .cajaTitular2 .decoration {
         text-decoration: none;
         color: black; }
-        #seccionTitulares #titularSecundario2 .cajaTitular2 .decoration .titulo3 {
-          width: 290px;
+        #seccionTitulares #titularSecundario .cajaTitular2 .decoration .titulo3 {
+          width: 350px;
           color: black;
           transform: translate(0px, -20px); }
-          #seccionTitulares #titularSecundario2 .cajaTitular2 .decoration .titulo3:hover {
+          #seccionTitulares #titularSecundario .cajaTitular2 .decoration .titulo3:hover {
             text-decoration: underline; }
-      #seccionTitulares #titularSecundario2 .cajaTitular2 .subtitulo3 {
+      #seccionTitulares #titularSecundario .cajaTitular2 .subtitulo3 {
         width: 357px;
         text-align: left;
         font-family: Arial, Helvetica, sans-serif;
         font-size: 16px;
         transform: translate(0px, -26px); }
-  #seccionTitulares #titularSecundario3 {
-    display: grid;
-    justify-content: flex-start;
-    font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif; }
-    #seccionTitulares #titularSecundario3 .cajaTitular3 {
+    #seccionTitulares #titularSecundario .cajaTitular3 {
       width: 350px;
       height: 340px;
       transform: translate(0px, -310px); }
-      #seccionTitulares #titularSecundario3 .cajaTitular3 a .imagenTitulo4 {
+      #seccionTitulares #titularSecundario .cajaTitular3 a .imagenTitulo4 {
         width: 350px;
         transform: translate(0px, 0px); }
-      #seccionTitulares #titularSecundario3 .cajaTitular3 .copete4 {
+      #seccionTitulares #titularSecundario .cajaTitular3 .copete4 {
         color: white;
         text-shadow: 1px 1px black;
         font-family: Arial, Helvetica, sans-serif;
         font-size: 10px;
         transform: translate(4px, -170px); }
-      #seccionTitulares #titularSecundario3 .cajaTitular3 .decoration {
+      #seccionTitulares #titularSecundario .cajaTitular3 .decoration {
         text-decoration: none;
         color: black; }
-        #seccionTitulares #titularSecundario3 .cajaTitular3 .decoration .titulo4 {
+        #seccionTitulares #titularSecundario .cajaTitular3 .decoration .titulo4 {
           width: 320px;
           color: black;
           transform: translate(0px, -20px); }
-          #seccionTitulares #titularSecundario3 .cajaTitular3 .decoration .titulo4:hover {
+          #seccionTitulares #titularSecundario .cajaTitular3 .decoration .titulo4:hover {
             text-decoration: underline; }
-      #seccionTitulares #titularSecundario3 .cajaTitular3 .subtitulo3 {
+      #seccionTitulares #titularSecundario .cajaTitular3 .subtitulo3 {
+        width: 357px;
+        text-align: left;
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 16px;
+        transform: translate(0px, -26px); }
+    #seccionTitulares #titularSecundario .cajaTitular4 {
+      width: 350px;
+      height: 340px;
+      transform: translate(700px, -650px); }
+      #seccionTitulares #titularSecundario .cajaTitular4 a .imagenTitulo5 {
+        width: 350px;
+        transform: translate(0px, 0px); }
+      #seccionTitulares #titularSecundario .cajaTitular4 .copete5 {
+        color: white;
+        text-shadow: 1px 1px black;
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 10px;
+        transform: translate(4px, -170px); }
+      #seccionTitulares #titularSecundario .cajaTitular4 .decoration {
+        text-decoration: none;
+        color: black; }
+        #seccionTitulares #titularSecundario .cajaTitular4 .decoration .titulo4 {
+          width: 320px;
+          color: black;
+          transform: translate(0px, -20px); }
+          #seccionTitulares #titularSecundario .cajaTitular4 .decoration .titulo4:hover {
+            text-decoration: underline; }
+      #seccionTitulares #titularSecundario .cajaTitular4 .subtitulo3 {
         width: 357px;
         text-align: left;
         font-family: Arial, Helvetica, sans-serif;
@@ -808,8 +1165,8 @@
   #navegador {
     grid-area: navegador; }
     #navegador .menuNav {
-      width: 360px;
-      transform: translate(20px, 10px);
+      width: 300px;
+      transform: translate(100px, 10px);
       position: fixed;
       display: flex;
       flex-direction: row;
@@ -819,16 +1176,16 @@
         width: 30px; }
       #navegador .menuNav ul li a .textoNav {
         display: none; }
-      #navegador .menuNav ul li li a .calendario-icon {
+      #navegador .menuNav ul li a .calendario-icon {
         width: 30px; }
-      #navegador .menuNav .suscribirme {
+      #navegador .menuNav ul li .suscribirme {
         background-color: black;
         color: white;
         font-size: 12px;
         font-family: Arial, Helvetica, sans-serif;
         padding: 10px 10px 10px 10px;
         text-decoration: none;
-        transform: translateY(3px); }
+        transform: translate(-60px, 3px); }
   /*Aside*/
   #publicidad {
     grid-area: aside; }
@@ -944,7 +1301,7 @@
           text-align: center;
           display: grid;
           grid-template-columns: 350px 200px 350px;
-          grid-template-rows: 150px;
+          grid-template-rows: 140px;
           justify-content: space-between;
           align-items: center;
           background-color: #312f2f;
@@ -955,12 +1312,12 @@
             font-family: 'Times New Roman', Times, serif;
             font-weight: bold;
             color: white;
-            text-align: center;
             font-size: 30px;
             display: flex;
             flex-direction: row;
-            transform: translateX(40px); }
-            #articulo #notaPartido .divNota .marcador-partido .equipo-local .escudo {
+            justify-content: flex-end;
+            width: 320px; }
+            #articulo #notaPartido .divNota .marcador-partido .equipo-local p .escudoLocal {
               width: 70px;
               height: 70px; }
           #articulo #notaPartido .divNota .marcador-partido .resultado {
@@ -973,7 +1330,8 @@
             height: 150px;
             display: flex;
             justify-content: center;
-            align-items: center; }
+            align-items: center;
+            transform: translateY(5px); }
           #articulo #notaPartido .divNota .marcador-partido .equipo-visitante {
             font-family: 'Times New Roman', Times, serif;
             font-weight: bold;
@@ -982,14 +1340,16 @@
             font-size: 30px;
             display: flex;
             flex-direction: row;
-            transform: translateX(40px); }
+            justify-content: flex-start;
+            width: 320px;
+            transform: translateX(30px); }
             #articulo #notaPartido .divNota .marcador-partido .equipo-visitante .escudo {
               width: 70px;
               height: 70px; }
           #articulo #notaPartido .divNota .marcador-partido span .goles-local {
-            width: 130px;
+            width: 145px;
             height: 50px;
-            transform: translate(45px, -65px);
+            transform: translate(110px, -60px);
             color: white;
             font-size: 12px; }
           #articulo #notaPartido .divNota .marcador-partido span .goles-visitante {
@@ -1070,6 +1430,151 @@
         height: 25px; }
     #piePagina .columnaFooter {
       display: none; } }
+
+/*SECCIONES*/
+@media (min-width: 0px) and (max-width: 425px) {
+  #padreSecciones {
+    display: grid;
+    grid-template-rows: 100px auto auto auto 465px;
+    grid-template-columns: 10px 415px;
+    grid-row-gap: 35px;
+    grid-template-areas: "cabecera navegador"                         " . seccionTitulares" " . seccionTitulares" " . seccionTitulares" "footer footer"; }
+  #seccionTitulares {
+    grid-area: seccionTitulares; }
+    #seccionTitulares .tituloSecciones {
+      font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif; }
+    #seccionTitulares .contenedor-breadcrumb {
+      transform: translate(0px, 0px); }
+    #seccionTitulares #titularSecundario {
+      display: grid;
+      justify-content: flex-start;
+      font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif; }
+      #seccionTitulares #titularSecundario .cajaTitular {
+        width: 348px;
+        height: 340px;
+        transform: translateY(0px); }
+        #seccionTitulares #titularSecundario .cajaTitular a .imagenTitulo2 {
+          width: 348px;
+          transform: translate(-1px, 0px); }
+        #seccionTitulares #titularSecundario .cajaTitular .copete2 {
+          width: 300px;
+          color: white;
+          text-shadow: 1px 1px black;
+          font-family: Arial, Helvetica, sans-serif;
+          font-size: 10px;
+          transform: translate(4px, -167px); }
+        #seccionTitulares #titularSecundario .cajaTitular .decoration {
+          text-decoration: none;
+          color: black; }
+          #seccionTitulares #titularSecundario .cajaTitular .decoration .titulo2 {
+            width: 350px;
+            height: 54px;
+            color: black;
+            transform: translate(0px, -18px);
+            text-align: left;
+            font-size: 25px; }
+            #seccionTitulares #titularSecundario .cajaTitular .decoration .titulo2:hover {
+              text-decoration: underline; }
+        #seccionTitulares #titularSecundario .cajaTitular .subtitulo3 {
+          width: 357px;
+          text-align: left;
+          font-family: Arial, Helvetica, sans-serif;
+          font-size: 16px;
+          transform: translate(0px, 0px); }
+      #seccionTitulares #titularSecundario .cajaTitular2 {
+        width: 350px;
+        height: 340px;
+        transform: translate(0px, 20px); }
+        #seccionTitulares #titularSecundario .cajaTitular2 a .imagenTitulo3 {
+          width: 350px;
+          transform: translate(0px, 0px); }
+        #seccionTitulares #titularSecundario .cajaTitular2 .copete3 {
+          color: white;
+          text-shadow: 1px 1px black;
+          font-family: Arial, Helvetica, sans-serif;
+          font-size: 10px;
+          transform: translate(4px, -170px); }
+        #seccionTitulares #titularSecundario .cajaTitular2 .decoration {
+          text-decoration: none;
+          color: black; }
+          #seccionTitulares #titularSecundario .cajaTitular2 .decoration .titulo3 {
+            width: 290px;
+            color: black;
+            transform: translate(0px, -20px); }
+            #seccionTitulares #titularSecundario .cajaTitular2 .decoration .titulo3:hover {
+              text-decoration: underline; }
+        #seccionTitulares #titularSecundario .cajaTitular2 .subtitulo3 {
+          width: 357px;
+          text-align: left;
+          font-family: Arial, Helvetica, sans-serif;
+          font-size: 16px;
+          transform: translate(0px, -26px); }
+      #seccionTitulares #titularSecundario .cajaTitular3 {
+        width: 350px;
+        height: 340px;
+        transform: translate(0px, 30px); }
+        #seccionTitulares #titularSecundario .cajaTitular3 a .imagenTitulo4 {
+          width: 350px;
+          transform: translate(0px, 0px); }
+        #seccionTitulares #titularSecundario .cajaTitular3 .copete4 {
+          color: white;
+          text-shadow: 1px 1px black;
+          font-family: Arial, Helvetica, sans-serif;
+          font-size: 10px;
+          transform: translate(4px, -170px); }
+        #seccionTitulares #titularSecundario .cajaTitular3 .decoration {
+          text-decoration: none;
+          color: black; }
+          #seccionTitulares #titularSecundario .cajaTitular3 .decoration .titulo4 {
+            width: 320px;
+            color: black;
+            transform: translate(0px, -20px); }
+            #seccionTitulares #titularSecundario .cajaTitular3 .decoration .titulo4:hover {
+              text-decoration: underline; }
+        #seccionTitulares #titularSecundario .cajaTitular3 .subtitulo3 {
+          width: 357px;
+          text-align: left;
+          font-family: Arial, Helvetica, sans-serif;
+          font-size: 16px;
+          transform: translate(0px, -26px); }
+      #seccionTitulares #titularSecundario .cajaTitular4 {
+        width: 350px;
+        height: 340px;
+        transform: translate(0px, 40px); }
+        #seccionTitulares #titularSecundario .cajaTitular4 a .imagenTitulo5 {
+          width: 350px;
+          transform: translate(0px, 0px); }
+        #seccionTitulares #titularSecundario .cajaTitular4 .copete5 {
+          color: white;
+          text-shadow: 1px 1px black;
+          font-family: Arial, Helvetica, sans-serif;
+          font-size: 10px;
+          transform: translate(4px, -170px); }
+        #seccionTitulares #titularSecundario .cajaTitular4 .decoration {
+          text-decoration: none;
+          color: black; }
+          #seccionTitulares #titularSecundario .cajaTitular4 .decoration .titulo4 {
+            width: 320px;
+            color: black;
+            transform: translate(0px, -20px); }
+            #seccionTitulares #titularSecundario .cajaTitular4 .decoration .titulo4:hover {
+              text-decoration: underline; }
+        #seccionTitulares #titularSecundario .cajaTitular4 .subtitulo3 {
+          width: 357px;
+          text-align: left;
+          font-family: Arial, Helvetica, sans-serif;
+          font-size: 16px;
+          transform: translate(0px, -26px); }
+    #seccionTitulares #titularSecundario2 {
+      display: grid;
+      justify-content: flex-start;
+      font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+      transform: translate(-702px, 360px); }
+    #seccionTitulares #titularSecundario3 {
+      display: grid;
+      justify-content: flex-start;
+      font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+      transform: translate(0px, 360px); } }
 
 /*ESTADISTICAS*/
 @media (min-width: 0px) and (max-width: 425px) {
@@ -1162,7 +1667,7 @@
     grid-area: agenda;
     width: 360px;
     display: grid;
-    grid-template-rows: 580px 100px 40px 80px 1450px; }
+    grid-template-rows: 650px 30px 120px auto; }
     #agenda #encabezadoAgenda {
       width: 300px;
       height: 30px;

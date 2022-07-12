@@ -33,11 +33,11 @@
     grid-row-gap: 90px;
     grid-template-areas:
                         "cabecera navegador navegador navegador"
-                        ". articulo articulo ."                        
+                        ". articulo articulo ."                                                
                         "footer footer footer footer";    
 }
 
-/**/ 
+/*SECCIONES*/ 
 #padreSecciones{
     display: grid;
     grid-template-rows: 100px auto 465px;

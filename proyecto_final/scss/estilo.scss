@@ -84,11 +84,11 @@ $button_green: map-get($button, button_green );
     width: 350px;
 }
 @mixin titular{
-    width: 800px;
+    width: 840px;
     height: 120px;
     font-family: $font_impact;
     font-size: 48px;  
-    line-height: normal;
+    line-height: 60px;
 }
 
 @mixin subtitulo{
@@ -117,23 +117,25 @@ $button_green: map-get($button, button_green );
         text-align: center;
         display: grid;
         grid-template-columns: 350px 200px 350px;
-        grid-template-rows: 150px ;                
+        grid-template-rows: 140px;                
         justify-content: space-between; 
         align-items: center;
         background-color: rgb(49, 47, 47);                 
         .equipo-local{
             font-family: 'Times New Roman', Times, serif;
             font-weight: bold;
-            color: $text_white;
-            text-align: center;
+            color: $text_white;            
             font-size: 30px;
             display: flex;
             flex-direction: row; 
-            transform: translateX(40px);                   
-            .escudo{
+            justify-content: flex-end;               
+            width: 320px;                 
+            p{                
+                .escudoLocal{
                 width: 70px;
                 height: 70px;
-            }
+                }
+            }            
         }
         .resultado{
             font-family: 'Times New Roman', Times, serif;
@@ -146,6 +148,7 @@ $button_green: map-get($button, button_green );
             display: flex;
             justify-content: center;
             align-items: center;
+            transform: translateY(5px);
         }
         .equipo-visitante{
             font-family: 'Times New Roman', Times, serif;
@@ -154,8 +157,10 @@ $button_green: map-get($button, button_green );
             text-align: center;
             font-size: 30px;
             display: flex;
-            flex-direction: row;  
-            transform: translateX(40px);                  
+            flex-direction: row; 
+            justify-content: flex-start; 
+            width: 320px;              
+            transform: translateX(30px);                             
             .escudo{
                 width: 70px;
                 height: 70px;
@@ -163,9 +168,9 @@ $button_green: map-get($button, button_green );
         }
         span{
             .goles-local{                        
-                width: 130px;
+                width: 145px;
                 height: 50px;
-                transform: translate(45px, -65px);
+                transform: translate(110px, -60px);
                 color: $text_white;
                 font-size: 12px;
             }
@@ -200,7 +205,7 @@ $button_green: map-get($button, button_green );
 @mixin cajaComentarios{
     .comentarios{
         display: grid;
-        grid-template-rows: 30px 30px 50px ;
+        grid-template-rows: 30px 30px 150px ;
         .resumenPartido{
             font-family: $font_franklin;
             font-size: 22px;

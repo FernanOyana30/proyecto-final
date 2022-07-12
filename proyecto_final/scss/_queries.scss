@@ -45,10 +45,10 @@
     }        
     /*Nav*/
     #navegador{        
-        grid-area: navegador;       
+        grid-area: navegador;
         .menuNav{         
-            width: 360px;   
-            transform: translate(20px, 10px); 
+            width: 300px;
+            transform: translate(100px, 10px); 
             position: fixed;
             display: flex;
             flex-direction: row;
@@ -59,29 +59,32 @@
                     a{
                         .stat-icon{
                             width: 30px;
+                            
                         }
                         .textoNav{
                             display: none;
                         }
                     }
-                    li{
+                    
                         a{
                             .calendario-icon{
                                 width: 30px;
+                                
                             }
                         } 
-                    }   
+                       
+                    .suscribirme {
+                        background-color: $text_black;
+                        color: $text_white;
+                        font-size: 12px;
+                        font-family: $font_arial;
+                        padding: 10px 10px 10px 10px;   
+                        text-decoration: none;
+                        transform: translate(-60px, 3px);               
+                    }
                 }
             }                   
-            .suscribirme {
-                background-color: $text_black;
-                color: $text_white;
-                font-size: 12px;
-                font-family: $font_arial;
-                padding: 10px 10px 10px 10px;   
-                text-decoration: none;
-                transform: translateY(3px);               
-            }
+            
         }       
     }
     /*Aside*/    
@@ -357,6 +360,191 @@
 
 }
 
+/*SECCIONES*/
+@media (min-width: 0px) and (max-width: 425px) {
+    #padreSecciones{
+        display: grid;
+        grid-template-rows: 100px auto auto auto 465px;
+        grid-template-columns: 10px 415px;
+        grid-row-gap: 35px;
+        grid-template-areas:
+                            "cabecera navegador"                        
+                            " . seccionTitulares"
+                            " . seccionTitulares"
+                            " . seccionTitulares"
+                            "footer footer";
+    }
+
+    #seccionTitulares{
+        grid-area: seccionTitulares;
+        .tituloSecciones{
+            font-family: $font_impact;
+        }
+        .contenedor-breadcrumb{
+            transform: translate(0px, 0px);        
+        }
+        #titularSecundario{
+            display: grid;
+            justify-content: flex-start;        
+            font-family: $font_impact;
+            .cajaTitular{
+                width: 348px;
+                height: 340px; 
+                transform: translateY(0px);          
+                a{
+                    .imagenTitulo2{
+                        width: 348px; 
+                        transform: translate(-1px, 0px);
+                    }
+                }           
+                .copete2{
+                    width: 300px;
+                    @include copete_index;
+                    transform: translate(4px, -167px);
+                }            
+                .decoration{
+                    text-decoration: none;
+                    color: $text_black;
+                    .titulo2{
+                        width: 350px;
+                        height: 54px;
+                        color: $text_black;                
+                        transform: translate(0px, -18px); 
+                        text-align: left;
+                        font-size: 25px;
+                        &:hover{
+                            text-decoration: underline;
+                        }
+                    }
+                }
+                .subtitulo3{
+                    width: 357px;
+                    text-align: left;    
+                    font-family: $font_arial;
+                    font-size: 16px;   
+                    transform: translate(0px, 0px);
+                }
+            }
+            .cajaTitular2{
+                width: 350px;
+                height: 340px; 
+                transform: translate(0px, 20px);
+                a{
+                    .imagenTitulo3{
+                        width: 350px;   
+                        transform: translate(0px, 0px)
+                    }
+                }       
+                .copete3{
+                    @include copete_index;
+                    transform: translate(4px, -170px);
+                }
+                .decoration{
+                    text-decoration: none;
+                    color: $text_black;
+                    .titulo3{
+                        width: 290px;
+                        color: $text_black;    
+                        transform: translate(0px, -20px);
+                        &:hover{
+                            text-decoration: underline;
+                        }
+                    }
+                }
+                .subtitulo3{
+                    width: 357px;
+                    text-align: left;    
+                    font-family: $font_arial;
+                    font-size: 16px;   
+                    transform: translate(0px, -26px);
+                }
+            }
+            .cajaTitular3{
+                width: 350px;
+                height: 340px; 
+                transform: translate(0px, 30px);
+                a{
+                    .imagenTitulo4{
+                        width: 350px;   
+                        transform: translate(0px, 0px)
+                    }
+                }       
+                .copete4{
+                    @include copete_index;
+                    transform: translate(4px, -170px);
+                }
+                .decoration{
+                    text-decoration: none;
+                    color: $text_black;
+                    .titulo4{
+                        width: 320px;
+                        color: $text_black;    
+                        transform: translate(0px, -20px);
+                        &:hover{
+                            text-decoration: underline;
+                        }
+                    }
+                }
+                .subtitulo3{
+                    width: 357px;
+                    text-align: left;    
+                    font-family: $font_arial;
+                    font-size: 16px;   
+                    transform: translate(0px, -26px);
+                }
+            }
+            .cajaTitular4{
+                width: 350px;
+                height: 340px; 
+                transform: translate(0px, 40px);
+                a{
+                    .imagenTitulo5{
+                        width: 350px;   
+                        transform: translate(0px, 0px)
+                    }
+                }       
+                .copete5{
+                    @include copete_index;
+                    transform: translate(4px, -170px);
+                }
+                .decoration{
+                    text-decoration: none;
+                    color: $text_black;
+                    .titulo4{
+                        width: 320px;
+                        color: $text_black;    
+                        transform: translate(0px, -20px);
+                        &:hover{
+                            text-decoration: underline;
+                        }
+                    }
+                }
+                .subtitulo3{
+                    width: 357px;
+                    text-align: left;    
+                    font-family: $font_arial;
+                    font-size: 16px;   
+                    transform: translate(0px, -26px);
+                }
+            }
+        }
+        #titularSecundario2{        
+            display: grid;
+            justify-content: flex-start;
+            font-family: $font_impact;
+            transform: translate(-702px, 360px);            
+            
+        }
+        #titularSecundario3{        
+            display: grid;
+            justify-content: flex-start;
+            font-family: $font_impact;
+            transform: translate(0px, 360px);
+            
+        }
+    }
+} 
+
 /*ESTADISTICAS*/
 @media (min-width: 0px) and (max-width: 425px) {
     #padreStats{
@@ -501,7 +689,7 @@
         grid-area: agenda;
         width: 360px;
         display: grid;
-        grid-template-rows: 580px 100px 40px 80px 1450px;
+        grid-template-rows: 650px 30px 120px auto;
         #encabezadoAgenda{
             width: 300px;
             height: 30px;
