@@ -20,7 +20,7 @@
 /*INDEX*/
 #padreIndex {
   display: grid;
-  grid-template-rows: 100px 128px 952px 465px;
+  grid-template-rows: 100px 128px auto 470px;
   grid-template-columns: 100px 350px 350px 350px 100px;
   grid-row-gap: 35px;
   grid-template-areas: "cabecera navegador navegador navegador navegador"                         ". publicidad publicidad publicidad ."                         " . titulares titulares titulares ." "footer footer footer footer footer"; }
@@ -36,10 +36,10 @@
 /*SECCIONES*/
 #padreSecciones {
   display: grid;
-  grid-template-rows: 100px auto 465px;
-  grid-template-columns: 100px 350px 350px 350px 100px;
+  grid-template-rows: 100px auto 470px;
+  grid-template-columns: 100px 350px 350px 100px;
   grid-row-gap: 35px;
-  grid-template-areas: "cabecera navegador navegador navegador navegador"                         " . seccionTitulares seccionTitulares seccionTitulares ." "footer footer footer footer footer"; }
+  grid-template-areas: "cabecera navegador navegador navegador"                         " . seccionTitulares seccionTitulares ." "footer footer footer footer"; }
 
 /*ESTADISTICAS*/
 #padreStats {
@@ -152,102 +152,312 @@
 /*TITULARES INDEX*/
 #titulares {
   grid-area: titulares; }
-  #titulares #titularPrincipal div {
-    transform: translateY(-29px); }
-    #titulares #titularPrincipal div .copete {
-      color: white;
-      text-shadow: 1px 1px black;
-      font-family: Arial, Helvetica, sans-serif;
-      font-size: 10px;
-      transform: translate(20px, 30px);
-      display: inline-block; }
-    #titulares #titularPrincipal div a .imagenPrincipal {
-      width: 1050px; }
-    #titulares #titularPrincipal div .decoration {
-      text-decoration: none;
-      color: black; }
-      #titulares #titularPrincipal div .decoration .tituloPrincipal {
+  #titulares #titularesPrincipales {
+    height: 920px; }
+    #titulares #titularesPrincipales #titularPrincipal div {
+      transform: translateY(-29px); }
+      #titulares #titularesPrincipales #titularPrincipal div .copete {
+        color: white;
+        text-shadow: 1px 1px black;
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 10px;
+        transform: translate(20px, 30px);
+        display: inline-block; }
+      #titulares #titularesPrincipales #titularPrincipal div a .imagenPrincipal {
+        width: 1050px; }
+      #titulares #titularesPrincipales #titularPrincipal div .decoration {
+        text-decoration: none;
+        color: black; }
+        #titulares #titularesPrincipales #titularPrincipal div .decoration .tituloPrincipal {
+          width: 800px;
+          text-align: center;
+          font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+          font-size: 70px;
+          text-shadow: 1px 1px black;
+          color: white;
+          display: inline-block;
+          transform: translate(120px, -300px);
+          text-align: center; }
+          #titulares #titularesPrincipales #titularPrincipal div .decoration .tituloPrincipal:hover {
+            text-decoration: underline; }
+      #titulares #titularesPrincipales #titularPrincipal div .subtituloPrincipal {
+        transform: translate(120px, -280px);
+        left: 220px;
         width: 800px;
         text-align: center;
-        font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
-        font-size: 70px;
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 12px;
         text-shadow: 1px 1px black;
-        color: white;
-        display: inline-block;
-        transform: translate(120px, -300px);
-        text-align: center; }
-        #titulares #titularPrincipal div .decoration .tituloPrincipal:hover {
-          text-decoration: underline; }
-    #titulares #titularPrincipal div .subtituloPrincipal {
-      transform: translate(120px, -280px);
-      left: 220px;
-      width: 800px;
-      text-align: center;
-      font-family: Arial, Helvetica, sans-serif;
-      font-size: 12px;
-      text-shadow: 1px 1px black;
-      color: white; }
-  #titulares #titularSecundario {
-    display: grid;
-    justify-content: flex-start;
-    font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif; }
-    #titulares #titularSecundario .cajaTitular {
-      width: 348px;
-      height: 340px;
-      transform: translateY(-214px); }
-      #titulares #titularSecundario .cajaTitular a .imagenTitulo2 {
+        color: white; }
+    #titulares #titularesPrincipales #titularSecundario {
+      display: grid;
+      justify-content: flex-start;
+      font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif; }
+      #titulares #titularesPrincipales #titularSecundario .cajaTitular {
         width: 348px;
-        transform: translate(-1px, 0px); }
-      #titulares #titularSecundario .cajaTitular .copete2 {
-        width: 300px;
-        color: white;
-        text-shadow: 1px 1px black;
-        font-family: Arial, Helvetica, sans-serif;
-        font-size: 10px;
-        transform: translate(4px, -167px); }
-      #titulares #titularSecundario .cajaTitular .decoration {
-        text-decoration: none;
-        color: black; }
-        #titulares #titularSecundario .cajaTitular .decoration .titulo2 {
-          width: 350px;
-          height: 50px;
-          color: black;
-          transform: translate(0px, -20px);
-          text-align: left; }
-          #titulares #titularSecundario .cajaTitular .decoration .titulo2:hover {
-            text-decoration: underline; }
-  #titulares #titularSecundario2 {
-    display: grid;
-    justify-content: flex-start;
-    font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif; }
-    #titulares #titularSecundario2 .cajaTitular2 {
-      width: 350px;
-      height: 340px;
-      transform: translate(700px, -554px); }
-      #titulares #titularSecundario2 .cajaTitular2 a .imagenTitulo3 {
+        height: 340px;
+        transform: translateY(-214px); }
+        #titulares #titularesPrincipales #titularSecundario .cajaTitular a .imagenTitulo2 {
+          width: 348px;
+          transform: translate(-1px, 0px); }
+        #titulares #titularesPrincipales #titularSecundario .cajaTitular .copete2 {
+          width: 300px;
+          color: white;
+          text-shadow: 1px 1px black;
+          font-family: Arial, Helvetica, sans-serif;
+          font-size: 10px;
+          transform: translate(4px, -167px); }
+        #titulares #titularesPrincipales #titularSecundario .cajaTitular .decoration {
+          text-decoration: none;
+          color: black; }
+          #titulares #titularesPrincipales #titularSecundario .cajaTitular .decoration .titulo2 {
+            width: 350px;
+            height: 50px;
+            color: black;
+            transform: translate(0px, -20px);
+            text-align: left; }
+            #titulares #titularesPrincipales #titularSecundario .cajaTitular .decoration .titulo2:hover {
+              text-decoration: underline; }
+    #titulares #titularesPrincipales #titularSecundario2 {
+      display: grid;
+      justify-content: flex-start;
+      font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif; }
+      #titulares #titularesPrincipales #titularSecundario2 .cajaTitular2 {
         width: 350px;
-        transform: translate(0px, 0px); }
-      #titulares #titularSecundario2 .cajaTitular2 .copete3 {
+        height: 340px;
+        transform: translate(700px, -554px); }
+        #titulares #titularesPrincipales #titularSecundario2 .cajaTitular2 a .imagenTitulo3 {
+          width: 350px;
+          transform: translate(0px, 0px); }
+        #titulares #titularesPrincipales #titularSecundario2 .cajaTitular2 .copete3 {
+          color: white;
+          text-shadow: 1px 1px black;
+          font-family: Arial, Helvetica, sans-serif;
+          font-size: 10px;
+          transform: translate(4px, -170px); }
+        #titulares #titularesPrincipales #titularSecundario2 .cajaTitular2 .decoration {
+          text-decoration: none;
+          color: black; }
+          #titulares #titularesPrincipales #titularSecundario2 .cajaTitular2 .decoration .titulo3 {
+            width: 290px;
+            color: black;
+            transform: translate(0px, -20px); }
+            #titulares #titularesPrincipales #titularSecundario2 .cajaTitular2 .decoration .titulo3:hover {
+              text-decoration: underline; }
+        #titulares #titularesPrincipales #titularSecundario2 .cajaTitular2 .subtitulo3 {
+          width: 357px;
+          text-align: left;
+          font-family: Arial, Helvetica, sans-serif;
+          font-size: 16px;
+          transform: translate(0px, -26px); }
+  #titulares #otrosTitulares {
+    height: 920px; }
+    #titulares #otrosTitulares #titularPrincipal div {
+      transform: translateY(-29px); }
+      #titulares #otrosTitulares #titularPrincipal div .copete {
         color: white;
         text-shadow: 1px 1px black;
         font-family: Arial, Helvetica, sans-serif;
         font-size: 10px;
-        transform: translate(4px, -170px); }
-      #titulares #titularSecundario2 .cajaTitular2 .decoration {
+        transform: translate(20px, 30px);
+        display: inline-block; }
+      #titulares #otrosTitulares #titularPrincipal div a .imagenPrincipal {
+        width: 1050px; }
+      #titulares #otrosTitulares #titularPrincipal div .decoration {
         text-decoration: none;
         color: black; }
-        #titulares #titularSecundario2 .cajaTitular2 .decoration .titulo3 {
-          width: 290px;
-          color: black;
-          transform: translate(0px, -20px); }
-          #titulares #titularSecundario2 .cajaTitular2 .decoration .titulo3:hover {
+        #titulares #otrosTitulares #titularPrincipal div .decoration .tituloPrincipal {
+          width: 800px;
+          text-align: center;
+          font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+          font-size: 70px;
+          text-shadow: 1px 1px black;
+          color: white;
+          display: inline-block;
+          transform: translate(120px, -400px);
+          text-align: center; }
+          #titulares #otrosTitulares #titularPrincipal div .decoration .tituloPrincipal:hover {
             text-decoration: underline; }
-      #titulares #titularSecundario2 .cajaTitular2 .subtitulo3 {
-        width: 357px;
-        text-align: left;
+      #titulares #otrosTitulares #titularPrincipal div .subtituloPrincipal {
+        transform: translate(120px, -380px);
+        left: 220px;
+        width: 800px;
+        text-align: center;
         font-family: Arial, Helvetica, sans-serif;
-        font-size: 16px;
-        transform: translate(0px, -26px); }
+        font-size: 12px;
+        text-shadow: 1px 1px black;
+        color: white; }
+    #titulares #otrosTitulares #titularSecundario {
+      display: grid;
+      justify-content: flex-start;
+      font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif; }
+      #titulares #otrosTitulares #titularSecundario .cajaTitular {
+        width: 348px;
+        height: 340px;
+        transform: translateY(-294px); }
+        #titulares #otrosTitulares #titularSecundario .cajaTitular a .imagenTitulo2 {
+          width: 348px;
+          transform: translate(-1px, 0px); }
+        #titulares #otrosTitulares #titularSecundario .cajaTitular .copete2 {
+          width: 300px;
+          color: white;
+          text-shadow: 1px 1px black;
+          font-family: Arial, Helvetica, sans-serif;
+          font-size: 10px;
+          transform: translate(4px, -167px); }
+        #titulares #otrosTitulares #titularSecundario .cajaTitular .decoration {
+          text-decoration: none;
+          color: black; }
+          #titulares #otrosTitulares #titularSecundario .cajaTitular .decoration .titular2 {
+            width: 350px;
+            color: black;
+            transform: translate(0px, -18px);
+            text-align: left; }
+            #titulares #otrosTitulares #titularSecundario .cajaTitular .decoration .titular2:hover {
+              text-decoration: underline; }
+        #titulares #otrosTitulares #titularSecundario .cajaTitular .subtitulo3 {
+          width: 357px;
+          text-align: left;
+          font-family: Arial, Helvetica, sans-serif;
+          font-size: 16px;
+          transform: translate(0px, -26px); }
+    #titulares #otrosTitulares #titularSecundario2 {
+      display: grid;
+      justify-content: flex-start;
+      font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif; }
+      #titulares #otrosTitulares #titularSecundario2 .cajaTitular2 {
+        width: 350px;
+        height: 340px;
+        transform: translate(700px, -634px); }
+        #titulares #otrosTitulares #titularSecundario2 .cajaTitular2 a .imagenTitulo3 {
+          width: 350px;
+          transform: translate(0px, 0px); }
+        #titulares #otrosTitulares #titularSecundario2 .cajaTitular2 .copete3 {
+          color: white;
+          text-shadow: 1px 1px black;
+          font-family: Arial, Helvetica, sans-serif;
+          font-size: 10px;
+          transform: translate(4px, -170px); }
+        #titulares #otrosTitulares #titularSecundario2 .cajaTitular2 .decoration {
+          text-decoration: none;
+          color: black; }
+          #titulares #otrosTitulares #titularSecundario2 .cajaTitular2 .decoration .titulo3 {
+            width: 290px;
+            color: black;
+            transform: translate(0px, -20px); }
+            #titulares #otrosTitulares #titularSecundario2 .cajaTitular2 .decoration .titulo3:hover {
+              text-decoration: underline; }
+        #titulares #otrosTitulares #titularSecundario2 .cajaTitular2 .subtitulo3 {
+          width: 357px;
+          text-align: left;
+          font-family: Arial, Helvetica, sans-serif;
+          font-size: 16px;
+          transform: translate(0px, -26px); }
+  #titulares #otrosTitulares2 {
+    height: 920px; }
+    #titulares #otrosTitulares2 #titularPrincipal div {
+      transform: translateY(-29px); }
+      #titulares #otrosTitulares2 #titularPrincipal div .copete {
+        color: white;
+        text-shadow: 1px 1px black;
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 10px;
+        transform: translate(20px, 30px);
+        display: inline-block; }
+      #titulares #otrosTitulares2 #titularPrincipal div a .imagenPrincipal {
+        width: 1050px; }
+      #titulares #otrosTitulares2 #titularPrincipal div .decoration {
+        text-decoration: none;
+        color: black; }
+        #titulares #otrosTitulares2 #titularPrincipal div .decoration .tituloPrincipal {
+          width: 800px;
+          text-align: center;
+          font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+          font-size: 70px;
+          text-shadow: 1px 1px black;
+          color: white;
+          display: inline-block;
+          transform: translate(120px, -300px);
+          text-align: center; }
+          #titulares #otrosTitulares2 #titularPrincipal div .decoration .tituloPrincipal:hover {
+            text-decoration: underline; }
+      #titulares #otrosTitulares2 #titularPrincipal div .subtituloPrincipal {
+        transform: translate(120px, -280px);
+        left: 220px;
+        width: 800px;
+        text-align: center;
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 12px;
+        text-shadow: 1px 1px black;
+        color: white; }
+    #titulares #otrosTitulares2 #titularSecundario {
+      display: grid;
+      justify-content: flex-start;
+      font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif; }
+      #titulares #otrosTitulares2 #titularSecundario .cajaTitular {
+        width: 348px;
+        height: 340px;
+        transform: translateY(-214px); }
+        #titulares #otrosTitulares2 #titularSecundario .cajaTitular a .imagenTitulo2 {
+          width: 348px;
+          transform: translate(-1px, 0px); }
+        #titulares #otrosTitulares2 #titularSecundario .cajaTitular .copete2 {
+          width: 300px;
+          color: white;
+          text-shadow: 1px 1px black;
+          font-family: Arial, Helvetica, sans-serif;
+          font-size: 10px;
+          transform: translate(4px, -167px); }
+        #titulares #otrosTitulares2 #titularSecundario .cajaTitular .decoration {
+          text-decoration: none;
+          color: black; }
+          #titulares #otrosTitulares2 #titularSecundario .cajaTitular .decoration .titular2 {
+            width: 350px;
+            height: 50px;
+            color: black;
+            transform: translate(0px, -20px);
+            text-align: left; }
+            #titulares #otrosTitulares2 #titularSecundario .cajaTitular .decoration .titular2:hover {
+              text-decoration: underline; }
+        #titulares #otrosTitulares2 #titularSecundario .cajaTitular .subtitulo3 {
+          width: 357px;
+          text-align: left;
+          font-family: Arial, Helvetica, sans-serif;
+          font-size: 16px;
+          transform: translate(0px, 25px); }
+    #titulares #otrosTitulares2 #titularSecundario2 {
+      display: grid;
+      justify-content: flex-start;
+      font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+      width: 350px;
+      transform: translate(700px, -555px); }
+      #titulares #otrosTitulares2 #titularSecundario2 .cajaTitular2 {
+        width: 350px;
+        height: 340px; }
+        #titulares #otrosTitulares2 #titularSecundario2 .cajaTitular2 a .imagenTitulo3 {
+          width: 350px;
+          transform: translate(0px, 0px); }
+        #titulares #otrosTitulares2 #titularSecundario2 .cajaTitular2 .copete3 {
+          color: white;
+          text-shadow: 1px 1px black;
+          font-family: Arial, Helvetica, sans-serif;
+          font-size: 10px;
+          transform: translate(4px, -170px); }
+        #titulares #otrosTitulares2 #titularSecundario2 .cajaTitular2 .decoration {
+          text-decoration: none;
+          color: black; }
+          #titulares #otrosTitulares2 #titularSecundario2 .cajaTitular2 .decoration .titulo3 {
+            width: 290px;
+            color: black;
+            transform: translate(0px, -20px); }
+            #titulares #otrosTitulares2 #titularSecundario2 .cajaTitular2 .decoration .titulo3:hover {
+              text-decoration: underline; }
+        #titulares #otrosTitulares2 #titularSecundario2 .cajaTitular2 .subtitulo3 {
+          width: 357px;
+          text-align: left;
+          font-family: Arial, Helvetica, sans-serif;
+          font-size: 16px;
+          transform: translate(0px, -26px); }
 
 /*ARTICULO*/
 #articulo {
@@ -894,7 +1104,8 @@
   #seccionTitulares #titularSecundario {
     display: grid;
     justify-content: flex-start;
-    font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif; }
+    font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+    height: 700px; }
     #seccionTitulares #titularSecundario .cajaTitular {
       width: 348px;
       height: 340px;
@@ -1164,20 +1375,24 @@
   /*Nav*/
   #navegador {
     grid-area: navegador; }
+    #navegador #menuDesplegable {
+      transform: translate(10px, 10px); }
     #navegador .menuNav {
-      width: 300px;
-      transform: translate(100px, 10px);
+      width: 292px;
+      transform: translate(90px, 10px);
       position: fixed;
       display: flex;
       flex-direction: row;
       justify-content: space-between;
       z-index: 3; }
       #navegador .menuNav ul li a .stat-icon {
-        width: 30px; }
+        width: 30px;
+        transform: translateX(40px); }
       #navegador .menuNav ul li a .textoNav {
         display: none; }
       #navegador .menuNav ul li a .calendario-icon {
-        width: 30px; }
+        width: 30px;
+        transform: translateX(40px); }
       #navegador .menuNav ul li .suscribirme {
         background-color: black;
         color: white;
@@ -1409,6 +1624,138 @@
         #articulo #cajaComentarios .comentarios form .area-texto {
           width: 300px;
           height: 50px; }
+    #articulo #noticiasRelacionadas {
+      background-color: aqua;
+      height: 1550px;
+      display: grid;
+      grid-template-rows: 400px 400px; }
+      #articulo #noticiasRelacionadas .contenedor-noticias .title-impact {
+        font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif; }
+      #articulo #noticiasRelacionadas .contenedor-noticias .noticiaRelacionada {
+        width: 301px;
+        height: 240px;
+        border: solid 1px gray;
+        transform: translateY(0px); }
+        #articulo #noticiasRelacionadas .contenedor-noticias .noticiaRelacionada a .imagen-noticia {
+          width: 300px;
+          transform: translate(0px, 0px); }
+        #articulo #noticiasRelacionadas .contenedor-noticias .noticiaRelacionada .decoration {
+          text-decoration: none;
+          color: black; }
+          #articulo #noticiasRelacionadas .contenedor-noticias .noticiaRelacionada .decoration .titulo3 {
+            padding-top: 8px;
+            padding-left: 5px;
+            width: 300px;
+            color: black;
+            font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+            transform: translate(0px, -1px);
+            text-align: left;
+            font-size: 22px; }
+            #articulo #noticiasRelacionadas .contenedor-noticias .noticiaRelacionada .decoration .titulo3:hover {
+              text-decoration: underline; }
+      #articulo #noticiasRelacionadas .contenedor-noticias .noticiaRelacionada2 {
+        width: 302px;
+        height: 240px;
+        border: solid 1px gray;
+        transform: translate(0px, 10px); }
+        #articulo #noticiasRelacionadas .contenedor-noticias .noticiaRelacionada2 a .imagen-noticia2 {
+          width: 300px;
+          transform: translate(0px, 0px); }
+        #articulo #noticiasRelacionadas .contenedor-noticias .noticiaRelacionada2 .decoration {
+          text-decoration: none;
+          color: black; }
+          #articulo #noticiasRelacionadas .contenedor-noticias .noticiaRelacionada2 .decoration .titulo3 {
+            padding-top: 8px;
+            padding-left: 5px;
+            width: 300px;
+            color: black;
+            font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+            transform: translate(0px, 0px); }
+            #articulo #noticiasRelacionadas .contenedor-noticias .noticiaRelacionada2 .decoration .titulo3:hover {
+              text-decoration: underline; }
+      #articulo #noticiasRelacionadas .contenedor-noticias .noticiaRelacionada3 {
+        width: 302px;
+        height: 240px;
+        border: solid 1px gray;
+        transform: translate(0px, 20px); }
+        #articulo #noticiasRelacionadas .contenedor-noticias .noticiaRelacionada3 a .imagen-noticia3 {
+          width: 300px;
+          transform: translate(0px, 0px); }
+        #articulo #noticiasRelacionadas .contenedor-noticias .noticiaRelacionada3 .decoration {
+          text-decoration: none;
+          color: black; }
+          #articulo #noticiasRelacionadas .contenedor-noticias .noticiaRelacionada3 .decoration .titulo2 {
+            padding-top: 8px;
+            padding-left: 5px;
+            width: 300px;
+            color: black;
+            font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+            transform: translate(0px, 0px); }
+            #articulo #noticiasRelacionadas .contenedor-noticias .noticiaRelacionada3 .decoration .titulo2:hover {
+              text-decoration: underline; }
+      #articulo #noticiasRelacionadas .contenedor-noticias .noticiaRelacionada4 {
+        width: 302px;
+        height: 240px;
+        border: solid 1px gray;
+        transform: translate(0px, 30px); }
+        #articulo #noticiasRelacionadas .contenedor-noticias .noticiaRelacionada4 a .imagen-noticia4 {
+          width: 300px;
+          transform: translate(0px, 0px); }
+        #articulo #noticiasRelacionadas .contenedor-noticias .noticiaRelacionada4 .decoration {
+          text-decoration: none;
+          color: black; }
+          #articulo #noticiasRelacionadas .contenedor-noticias .noticiaRelacionada4 .decoration .titulo2 {
+            padding-top: 8px;
+            padding-left: 4px;
+            width: 310px;
+            font-size: 18px;
+            color: black;
+            font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+            transform: translate(0px, 0px); }
+            #articulo #noticiasRelacionadas .contenedor-noticias .noticiaRelacionada4 .decoration .titulo2:hover {
+              text-decoration: underline; }
+      #articulo #noticiasRelacionadas .contenedor-noticias .noticiaRelacionada5 {
+        width: 302px;
+        height: 240px;
+        border: solid 1px gray;
+        transform: translate(0px, 40px); }
+        #articulo #noticiasRelacionadas .contenedor-noticias .noticiaRelacionada5 a .imagen-noticia5 {
+          width: 300px;
+          transform: translate(0px, 0px); }
+        #articulo #noticiasRelacionadas .contenedor-noticias .noticiaRelacionada5 .decoration {
+          text-decoration: none;
+          color: black; }
+          #articulo #noticiasRelacionadas .contenedor-noticias .noticiaRelacionada5 .decoration .titulo2 {
+            padding-top: 8px;
+            padding-left: 4px;
+            width: 310px;
+            font-size: 17px;
+            color: black;
+            font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+            transform: translate(0px, 0px); }
+            #articulo #noticiasRelacionadas .contenedor-noticias .noticiaRelacionada5 .decoration .titulo2:hover {
+              text-decoration: underline; }
+      #articulo #noticiasRelacionadas .contenedor-noticias .noticiaRelacionada6 {
+        width: 302px;
+        height: 240px;
+        border: solid 1px gray;
+        transform: translate(0px, 50px); }
+        #articulo #noticiasRelacionadas .contenedor-noticias .noticiaRelacionada6 a .imagen-noticia6 {
+          width: 300px;
+          transform: translate(0px, 0px); }
+        #articulo #noticiasRelacionadas .contenedor-noticias .noticiaRelacionada6 .decoration {
+          text-decoration: none;
+          color: black; }
+          #articulo #noticiasRelacionadas .contenedor-noticias .noticiaRelacionada6 .decoration .titulo2 {
+            padding-top: 8px;
+            padding-left: 4px;
+            width: 310px;
+            font-size: 16px;
+            color: black;
+            font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+            transform: translate(0px, 0px); }
+            #articulo #noticiasRelacionadas .contenedor-noticias .noticiaRelacionada6 .decoration .titulo2:hover {
+              text-decoration: underline; }
   /*Footer*/
   #piePagina {
     grid-area: footer;
@@ -1416,7 +1763,7 @@
     align-content: center;
     flex-direction: row;
     justify-items: flex-start;
-    width: 425px; }
+    width: 100%; }
     #piePagina .contacto {
       display: flex;
       flex-direction: column;

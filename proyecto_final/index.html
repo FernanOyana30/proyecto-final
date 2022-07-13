@@ -21,7 +21,7 @@
         </header>
         <!--INICIO NAV--> 
         <nav id="navegador">
-            <div class="menu-desplegable position-absolute start-0">
+            <div id="menuDesplegable" class="position-absolute start-0">
                 <button class="btn btn-secondary" type="button" data-bs-toggle="offcanvas" data-bs-target="#staticBackdrop" aria-controls="staticBackdrop">
                     Secciones
                 </button>                  
@@ -138,29 +138,84 @@
         </aside>
         <!--INICIO TITULARES-->
         <main id="titulares">
-            <section id="titularPrincipal">
-                <div>
-                    <h5 class="copete">LIBERTADORES / COLO COLO 1 - RIVER 2</h5>
-                    <a href="pages/river-peleo-acerto-y-marcha-en-la-libertadores.html"><img src="img/river.jpg" alt="River festejó un triunfo de visitante frente a Colo Colo" class="imagenPrincipal"></a> 
-                    <a href="pages/river-peleo-acerto-y-marcha-en-la-libertadores.html" class="decoration"><h1 class="tituloPrincipal">River peleó, acertó y marcha en la Libertadores</h1></a>      
-                    <p class="subtituloPrincipal">El equipo de Gallardo sacó adelante un partido chivo en Santiago, lo ganó sobre el final con goles de Suárez y Barco, y quedó cerca de octavos con puntaje ideal.</p>
-                </div> 
-            </section>
-            <section id="titularSecundario">
-                <div class="cajaTitular">
-                    <a href="pages/racing-el-fin-de-un-largo-invicto-de-gago.html"><img src="img/racing.jpg" alt="Racing perdió el invicto frente a Melgar" class="imagenTitulo2"></a>                       
-                    <h5 class="copete2">SUDAMERICANA / MELGAR - RACING</h5> 
-                    <a href="pages/racing-el-fin-de-un-largo-invicto-de-gago.html" class="decoration"><h2 class="titulo2 fs-3">Racing: el fin de un largo invicto de Gago y hoy afuera de la Sudamericana</h2></a> 
-                </div>             
-            </section>
-            <section id="titularSecundario2">  
-                <div class="cajaTitular2">
-                    <a href="pages/banfield-y-una-dura-derrota-que-lo-complica.html"><img src="img/banfield.jpg" alt="Banfiel cayó ante U. Católica y se complica su clasificación a octavos" class="imagenTitulo3"></a> 
-                    <h5 class="copete3">SUDAMERICANA / U. CATOLICA (E) 2 - BANFIELD 0</h5>
-                    <a href="pages/banfield-y-una-dura-derrota-que-lo-complica.html" class="decoration"><h2 class="titulo3 fs-3">Banfield cae en Ecuador y se complica</h2></a> 
-                    <p class="subtitulo3">Universidad Católica de Quito se impone al Taladro con goles de Ismael Díaz y Martínez Borja y le dificulta la clasificación al equipo argentino.</p> 
-                </div>
-            </section>
+            <div id="titularesPrincipales">
+                <section id="titularPrincipal">
+                    <div>
+                        <h5 class="copete">LIBERTADORES / COLO COLO 1 - RIVER 2</h5>
+                        <a href="pages/river-peleo-acerto-y-marcha-en-la-libertadores.html"><img src="img/river.jpg" alt="River festejó un triunfo de visitante frente a Colo Colo" class="imagenPrincipal"></a> 
+                        <a href="pages/river-peleo-acerto-y-marcha-en-la-libertadores.html" class="decoration"><h1 class="tituloPrincipal">River peleó, acertó y marcha en la Libertadores</h1></a>      
+                        <p class="subtituloPrincipal">El equipo de Gallardo sacó adelante un partido chivo en Santiago, lo ganó sobre el final con goles de Suárez y Barco, y quedó cerca de octavos con puntaje ideal.</p>
+                    </div> 
+                </section>
+                <section id="titularSecundario">
+                    <div class="cajaTitular">
+                        <a href="pages/racing-el-fin-de-un-largo-invicto-de-gago.html"><img src="img/racing.jpg" alt="Racing perdió el invicto frente a Melgar" class="imagenTitulo2"></a>                       
+                        <h5 class="copete2">SUDAMERICANA / MELGAR - RACING</h5> 
+                        <a href="pages/racing-el-fin-de-un-largo-invicto-de-gago.html" class="decoration"><h2 class="titulo2 fs-3">Racing: el fin de un largo invicto de Gago y hoy afuera de la Sudamericana</h2></a> 
+                    </div>             
+                </section>
+                <section id="titularSecundario2">  
+                    <div class="cajaTitular2">
+                        <a href="pages/banfield-y-una-dura-derrota-que-lo-complica.html"><img src="img/banfield.jpg" alt="Banfiel cayó ante U. Católica y se complica su clasificación a octavos" class="imagenTitulo3"></a> 
+                        <h5 class="copete3">SUDAMERICANA / U. CATOLICA (E) 2 - BANFIELD 0</h5>
+                        <a href="pages/banfield-y-una-dura-derrota-que-lo-complica.html" class="decoration"><h2 class="titulo3 fs-3">Banfield cae en Ecuador y se complica</h2></a> 
+                        <p class="subtitulo3">Universidad Católica de Quito se impone al Taladro con goles de Ismael Díaz y Martínez Borja y le dificulta la clasificación al equipo argentino.</p> 
+                    </div>
+                </section>
+            </div>
+            <div id="otrosTitulares">
+                <section id="titularPrincipal">
+                    <div>
+                        <h5 class="copete">LIGA PROFESIONAL / NEWELL'S 1 - SAN LORENZO 2</h5>
+                        <a href="pages/san-lorenzo-volvio-al-triunfo-y-complico-a-newells-en-la-copa-liga-profesional.html"><img src="img/san-lorenzofoto-baires.jpg" alt="San Lorenzo se impuso ante Newell's" class="imagenPrincipal"></a> 
+                        <a href="pages/san-lorenzo-volvio-al-triunfo-y-complico-a-newells-en-la-copa-liga-profesional.html" class="decoration"><h1 class="tituloPrincipal">San Lorenzo volvió al triunfo y complicó a Newell's en la Copa Liga Profesional</h1></a>      
+                        <p class="subtituloPrincipal">El Ciclón se impuso por 2-1 en Rosario, por la fecha 13 de la Zona A de la Copa LPF 2022. La Lepra podría terminar la jornada fuera de la zona de clasificación.</p>
+                    </div> 
+                </section>
+                <section id="titularSecundario">
+                    <div class="cajaTitular">
+                        <a href="pages/quilmes-vencio-a-san-martín-por-2-0-y-se-metió-en-16avos-de-la-copa-argentina.html"><img src="img/quilmes.jpg" alt="Quilmes San Martín Copa Argentina" class="imagenTitulo2"></a>                       
+                        <h5 class="copete2">COPA ARGENTINA / QUILMES 2 - SAN MARTÍN (T) 0</h5> 
+                        <a href="pages/quilmes-vencio-a-san-martín-por-2-0-y-se-metió-en-16avos-de-la-copa-argentina.html" class="decoration fs-4"><h2 class="titular2 fs-5">Quilmes venció a San Martín por 2-0 y se metió en 16vos de la Copa Argentina</h2></a> 
+                        <p class="subtitulo3">Con mayoría de suplentes y una previa cargada de polémicas, el Cervecero venció al Ciruja con goles de Machado y Molina. Ahora, espera por Rosario Central o Sol de Mayo.</p>
+                    </div>             
+                </section>
+                <section id="titularSecundario2">  
+                    <div class="cajaTitular2">
+                        <a href="pages/atletico-le-gano-a-brown-e-ira-contra-Independiente-por-los-16vos.html"><img src="img/atletico-tucuman.jpg" alt="Atlético Tucumán Brown Adrogué" class="imagenTitulo3"></a> 
+                        <h5 class="copete3">COPA ARGENTINA / AT. TUCUMÁN 2 - BROWN (A) 0</h5>
+                        <a href="pages/atletico-le-gano-a-brown-e-ira-contra-Independiente-por-los-16vos.html" class="decoration"><h2 class="titulo3 fs-4 w-100">Atlético le ganó a Brown e irá contra Independiente por los 16vos</h2></a> 
+                        <p class="subtitulo3">Universidad Católica de Quito se impone al Taladro con goles de Ismael Díaz y Martínez Borja y le dificulta la clasificación al equipo argentino.</p> 
+                    </div>
+                </section>
+            </div>
+            <div id="otrosTitulares2">
+                <section id="titularPrincipal">
+                    <div>
+                        <h5 class="copete">CHAMPIONS / LIVERPOOL 2 - VILLARREAL 0</h5>
+                        <a href="pages/liverpool-tiene-un-pie-en-la-final.html"><img src="img/liverpool-villarreal.jpg" alt="Liverpool Villarreal Champions League" class="imagenPrincipal"></a> 
+                        <a href="pages/liverpool-tiene-un-pie-en-la-final.html" class="decoration"><h1 class="tituloPrincipal">Liverpool tiene un pie en la final</h1></a>      
+                        <p class="subtituloPrincipal">El equipo de Klopp le ganó con comodidad al Villarreal y es candidatazo para estar en la final. Rulli, Foyth y Lo Celso poco pudieron hacer ante el poderío inglés.</p>
+                    </div> 
+                </section>
+                <section id="titularSecundario">
+                    <div class="cajaTitular">
+                        <a href="pages/como-quedaron-las-semifinales-de-la-uefa-europa-league.html"><img src="img/trofeo-europa-league_416x234.jpg" alt="Europa League Trofeo" class="imagenTitulo2"></a>                       
+                        <h5 class="copete2">EUROPA LEAGUE / SEMIFINALES</h5> 
+                        <a href="pages/como-quedaron-las-semifinales-de-la-uefa-europa-league.html" class="decoration"><h2 class="titular2 fs-3">Cómo quedaron las semifinales de la UEFA Europa League</h2></a> 
+                        <p class="subtitulo3">Eintracht Frankfurt, RB Leipzig, Rangers y West Ham, con el argentino Manuel Lanzini, siguen en carrera por el título.</p>
+                    </div>             
+                </section>
+                <section id="titularSecundario2">  
+                    <div class="cajaTitular2">
+                        <a href="pages/paulo-dybala-y-el-inter-estan-en-negociaciones-avanzadas.html"><img src="img/dybala-inter_862x485.jpg" alt="Paulo Dybala Inter" class="imagenTitulo3"></a> 
+                        <h5 class="copete3">SERIE A / DYBALA</h5>
+                        <a href="pages/paulo-dybala-y-el-inter-estan-en-negociaciones-avanzadas.html" class="decoration"><h2 class="titulo3 fs-4">Paulo Dybala y el Inter están en negociaciones avanzadas</h2></a> 
+                        <p class="subtitulo3">El cordobés estaría muy cerca de cerrar el acuerdo para convertirse en compañero de Lautaro Martínez y Joaquín Correa en Milano.</p> 
+                    </div>
+                </section>
+
+            </div>
         </main>
         <!--FIN TITULARES-->        
         <!--INICIO FOOTER-->
